@@ -97,6 +97,12 @@ python src/preprocessing/ingest_jolpica_qualifying.py
 python src/preprocessing/build_veteran_features.py
 ```
 
+Optional sanity check before training (confirm latest season is present):
+
+<!-- ```bash
+python -c "import pandas as pd; d=pd.read_csv('data/processed/veteran_training_matrix.csv'); print(d['season'].value_counts().sort_index())"
+``` -->
+
 ### Step 4: Train rankers and evaluate against baseline
 
 ```bash
@@ -118,7 +124,8 @@ streamlit run app.py
 
 ## Engineering Notes
 
-- Chronological training scope is restricted to seasons 2022-2025.
-- Out-of-sample testing is isolated to season 2026.
+- Historical ingestion defaults span from 2022 through the current calendar year.
+- Train/test split is dynamic: train uses all seasons before the latest available season, and test uses the latest available season.
 - Race groups remain contiguous by `race_id` during fitting and scoring.
+- Expanding chronological CV folds are generated dynamically and always end at `latest_season - 1`.
 - The training logger prints model metrics and a direct Qualifying Baseline comparison to quantify uplift.

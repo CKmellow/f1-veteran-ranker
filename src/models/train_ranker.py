@@ -2,9 +2,9 @@
 
 This module implements:
 - Temporal recency weighting for training samples.
-- Purged, chronological, group-aware expanding CV across 2022-2025.
+- Purged, chronological, group-aware expanding CV across available historical seasons.
 - Automated hyperparameter search for XGBRanker and LGBMRanker.
-- Final out-of-sample evaluation on season 2026 with top-heavy metrics.
+- Final out-of-sample evaluation on the latest available season with top-heavy metrics.
 - Persisted artifacts for both optimized models and SHAP summaries.
 """
 
@@ -46,8 +46,7 @@ RELEVANCE_COLUMN = "relevance_score"
 MODEL_TARGET_COLUMN = "model_relevance_score"
 WEIGHT_COLUMN = "temporal_sample_weight"
 
-TRAIN_SEASONS = [2022, 2023, 2024, 2025]
-TEST_SEASON = 2026
+MIN_CV_FOLDS = 1
 
 
 def _ensure_dirs(*paths: str) -> None:
@@ -99,29 +98,55 @@ def _prepare_training_frame(path: str) -> pd.DataFrame:
     return df
 
 
-def _get_train_and_test_frames(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    train_df = df[df["season"].isin(TRAIN_SEASONS)].copy()
-    test_df = df[df["season"] == TEST_SEASON].copy()
+def _get_train_and_test_frames(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, int, list[int]]:
+    seasons = sorted(df["season"].dropna().astype(int).unique().tolist())
+    if len(seasons) < 2:
+        raise ValueError("Need at least two seasons to create train/test split.")
+
+    max_season = int(seasons[-1])
+    train_seasons = seasons[:-1]
+
+    train_df = df[df["season"] < max_season].copy()
+    test_df = df[df["season"] == max_season].copy()
 
     if train_df.empty:
-        raise ValueError("No training rows found for seasons 2022-2025.")
+        raise ValueError(f"No training rows found for seasons before {max_season}.")
     if test_df.empty:
         raise ValueError(
-            "No 2026 test rows found. Ingest 2026 rounds, rebuild matrix, and rerun training."
+            f"No test rows found for latest season {max_season}. "
+            "Ingest latest rounds, rebuild matrix, and rerun training."
+        )
+    if len(train_seasons) < 2:
+        raise ValueError(
+            f"Insufficient historical seasons for expanding CV before {max_season}. "
+            f"Need at least 2 train seasons, found {len(train_seasons)}."
         )
 
     train_df = train_df.sort_values(["season", "race_id", "driver_id"]).reset_index(drop=True)
     test_df = test_df.sort_values(["season", "race_id", "driver_id"]).reset_index(drop=True)
-    return train_df, test_df
+    return train_df, test_df, max_season, train_seasons
 
 
 def _group_sizes(df: pd.DataFrame) -> list[int]:
     return df.groupby("race_id", sort=False).size().astype(int).tolist()
 
 
-def _chronological_cv_folds(train_df: pd.DataFrame) -> list[tuple[pd.DataFrame, pd.DataFrame, str]]:
+def _group_temporal_weights(df: pd.DataFrame) -> np.ndarray:
+    # XGBoost ranker with group list expects one weight per query group.
+    return (
+        df.groupby("race_id", sort=False)[WEIGHT_COLUMN]
+        .mean()
+        .to_numpy(dtype=float)
+    )
+
+
+def _chronological_cv_folds(
+    train_df: pd.DataFrame,
+    train_seasons: list[int],
+    max_season: int,
+) -> list[tuple[pd.DataFrame, pd.DataFrame, str]]:
     folds: list[tuple[pd.DataFrame, pd.DataFrame, str]] = []
-    validation_seasons = [2023, 2024, 2025]
+    validation_seasons = train_seasons[1:]
 
     for valid_season in validation_seasons:
         fold_train = train_df[train_df["season"] < valid_season].copy()
@@ -134,10 +159,20 @@ def _chronological_cv_folds(train_df: pd.DataFrame) -> list[tuple[pd.DataFrame, 
         fold_name = f"train_{fold_train['season'].min()}_{fold_train['season'].max()}_val_{valid_season}"
         folds.append((fold_train, fold_valid, fold_name))
 
-    if len(folds) < 3:
+    if len(folds) < MIN_CV_FOLDS:
         raise ValueError(
-            "Insufficient data for required expanding folds. Expected at least 3 folds over 2022-2025."
+            "Insufficient data for required expanding folds. "
+            f"Expected at least {MIN_CV_FOLDS} folds before test season {max_season}, got {len(folds)}."
         )
+
+    if folds:
+        final_valid_season = int(folds[-1][1]["season"].iloc[0])
+        expected_final = max_season - 1
+        if final_valid_season != expected_final:
+            raise ValueError(
+                "Temporal CV alignment error: "
+                f"final validation season is {final_valid_season}, expected {expected_final}."
+            )
 
     return folds
 
@@ -238,7 +273,7 @@ def _fit_xgb(
         train_df[FEATURE_COLUMNS],
         train_df[MODEL_TARGET_COLUMN],
         group=_group_sizes(train_df),
-        sample_weight=train_df[WEIGHT_COLUMN].to_numpy(dtype=float),
+        sample_weight=_group_temporal_weights(train_df),
         verbose=False,
     )
     return model
@@ -334,8 +369,8 @@ def _save_shap_summary(model, x_frame: pd.DataFrame, output_path: str, model_nam
 
 def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
     df = _prepare_training_frame(input_path)
-    train_df, test_df = _get_train_and_test_frames(df)
-    folds = _chronological_cv_folds(train_df)
+    train_df, test_df, test_season, train_seasons = _get_train_and_test_frames(df)
+    folds = _chronological_cv_folds(train_df, train_seasons, test_season)
 
     xgb_best_params, xgb_cv_ndcg = _search_best_params("xgb", folds)
     lgb_best_params, lgb_cv_ndcg = _search_best_params("lgb", folds)
@@ -391,11 +426,13 @@ def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
             file_obj,
         )
 
-    print("Chronological CV complete over folds: 2022->2023, 2022-2023->2024, 2022-2024->2025")
+    fold_labels = [fold_name for _, _, fold_name in folds]
+    print("Chronological CV complete over folds:")
+    print(", ".join(fold_labels))
     print("Best CV NDCG by model:")
     print(f"XGBRanker params={xgb_best_params} | mean_group_ndcg={xgb_cv_ndcg:.6f}")
     print(f"LGBMRanker params={lgb_best_params} | mean_group_ndcg={lgb_cv_ndcg:.6f}")
-    print("Out-of-sample test metrics (season 2026):")
+    print(f"Out-of-sample test metrics (season {test_season}):")
     print(f"Qualifying Baseline Global NDCG: {baseline_ndcg:.6f} | Global MRR: {baseline_mrr:.6f}")
     print(f"XGBRanker Global NDCG: {xgb_ndcg:.6f} | Global MRR: {xgb_mrr:.6f}")
     print(

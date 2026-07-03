@@ -10,12 +10,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # 1) Results ingestion (historical bulk build)
-INGEST_MODE=historical START_YEAR=2022 END_YEAR=2026 \
+INGEST_MODE=historical START_YEAR=2022 END_YEAR=$(date +%Y) \
 OUTPUT_CSV_PATH=data/raw/jolpica_results_master.csv \
 python src/preprocessing/ingest_jolpica_results.py
 
 # 2) Qualifying ingestion + canonical merge
-INGEST_MODE=historical START_YEAR=2022 END_YEAR=2026 \
+INGEST_MODE=historical START_YEAR=2022 END_YEAR=$(date +%Y) \
 RESULTS_MASTER_CSV_PATH=data/raw/jolpica_results_master.csv \
 QUALIFYING_MASTER_CSV_PATH=data/raw/jolpica_qualifying_master.csv \
 CANONICAL_OUTPUT_CSV_PATH=data/raw/f1_canonical_master.csv \

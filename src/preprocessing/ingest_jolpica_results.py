@@ -18,6 +18,7 @@ The output schema is normalized to one row per driver result with the columns:
 
 import os
 import time
+import datetime
 
 import pandas as pd
 import requests
@@ -26,6 +27,7 @@ BASE_URL = "https://api.jolpi.ca/ergast/f1"
 DEFAULT_TIMEOUT_SECONDS = 30
 DEFAULT_MAX_RETRIES = 3
 REQUEST_DELAY_SECONDS = 1.0
+DEFAULT_START_YEAR = 2022
 
 OUTPUT_COLUMNS = [
     "race_id",
@@ -293,8 +295,9 @@ if __name__ == "__main__":
     output_path = os.environ.get("OUTPUT_CSV_PATH", "data/raw/jolpica_results_master.csv")
 
     if ingest_mode == "historical":
-        start = os.environ.get("START_YEAR", "2022")
-        end = os.environ.get("END_YEAR", "2025")
+        default_end_year = datetime.datetime.now(datetime.UTC).year
+        start = os.environ.get("START_YEAR", str(DEFAULT_START_YEAR))
+        end = os.environ.get("END_YEAR", str(default_end_year))
         result_df = run_ingestion(
             mode="historical",
             output_csv_path=output_path,

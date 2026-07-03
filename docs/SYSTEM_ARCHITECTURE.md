@@ -9,8 +9,8 @@ Core objective:
 - Support both forward-looking simulation and retrospective evaluation inside a production Streamlit interface.
 
 Timeline strategy:
-- Training window: seasons 2022-2025.
-- Validation window: season 2026.
+- Training window: all seasons before the latest available season in the processed matrix.
+- Validation window: latest available season in the processed matrix.
 - This chronological split enforces realistic deployment behavior and avoids look-ahead leakage.
 
 ---
@@ -125,8 +125,8 @@ Non-negative clipping for LightGBM compatibility:
 ### 4.3 Group-Aware Training Split
 
 Chronological split:
-- Train: seasons 2022-2025
-- Validate: season 2026
+- Train: seasons `< max_season`
+- Validate: season `max_season`
 
 Group handling:
 - Race-level group vectors (`group` and `eval_group`) are built from contiguous `race_id` blocks.
@@ -135,7 +135,7 @@ Group handling:
 
 ## 5. Evaluation Performance Metrics
 
-### 5.1 Primary Validation Outputs (2026)
+### 5.1 Primary Validation Outputs (Latest Season)
 
 Observed benchmark values:
 - **XGBoost**: Global NDCG = **0.8921**, Winner MRR = **0.3125**
@@ -166,7 +166,7 @@ SHAP visual diagnostics are generated for both models:
 
 The Streamlit app provides:
 - Live simulation for upcoming race setup.
-- Retrospective audit against completed 2026 rounds.
+- Retrospective audit against completed rounds in the latest available season.
 - Theme-aware rendering across dark/light contexts.
 
 ### 6.2 Theme-Agnostic Styling

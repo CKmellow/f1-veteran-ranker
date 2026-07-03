@@ -29,13 +29,12 @@ dist/
 # Model artifacts and experiment outputs
 models/*
 !models/.gitkeep
+!models/README.md
 *.pkl
 *.joblib
 *.h5
 *.onnx
 mlruns/
-!models/f1_xgb_ranker.pkl
-!models/f1_lgb_ranker.pkl
 
 # Data artifacts (keep folder structure but not large files)
 data/raw/*

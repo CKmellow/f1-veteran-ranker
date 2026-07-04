@@ -222,6 +222,40 @@ def _compute_precision_at_k(df: pd.DataFrame, pred_scores: np.ndarray, k: int = 
     return float(np.mean(precisions))
 
 
+def _compute_map(df: pd.DataFrame, pred_scores: np.ndarray, k: int | None = None) -> float:
+    scored = df.copy()
+    scored["pred_score"] = pred_scores
+    average_precisions: list[float] = []
+
+    for _, race_df in scored.groupby("race_id", sort=False):
+        ranked = race_df.sort_values("pred_score", ascending=False).reset_index(drop=True)
+        relevant_driver_ids = set(
+            race_df.sort_values(TARGET_COLUMN, ascending=True)["driver_id"].tolist()
+        )
+
+        if k is not None:
+            ranked = ranked.head(k)
+            max_relevant = min(k, len(relevant_driver_ids))
+        else:
+            max_relevant = len(relevant_driver_ids)
+
+        if max_relevant == 0:
+            average_precisions.append(0.0)
+            continue
+
+        hit_count = 0
+        precision_accumulator = 0.0
+
+        for idx, driver_id in enumerate(ranked["driver_id"].tolist(), start=1):
+            if driver_id in relevant_driver_ids:
+                hit_count += 1
+                precision_accumulator += hit_count / float(idx)
+
+        average_precisions.append(precision_accumulator / float(max_relevant))
+
+    return float(np.mean(average_precisions))
+
+
 def _qualifying_baseline_scores(df: pd.DataFrame) -> np.ndarray:
     # Lower qualifying position is better, so negate for descending rank score.
     return -df["quali_position"].to_numpy(dtype=float)
@@ -393,6 +427,14 @@ def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
     xgb_ndcg_at_3 = _compute_grouped_ndcg(test_df, xgb_test_pred, k=3)
     lgb_ndcg_at_3 = _compute_grouped_ndcg(test_df, lgb_test_pred, k=3)
 
+    xgb_map = _compute_map(test_df, xgb_test_pred)
+    lgb_map = _compute_map(test_df, lgb_test_pred)
+    baseline_map = _compute_map(test_df, baseline_test_pred)
+
+    xgb_map_at_3 = _compute_map(test_df, xgb_test_pred, k=3)
+    lgb_map_at_3 = _compute_map(test_df, lgb_test_pred, k=3)
+    baseline_map_at_3 = _compute_map(test_df, baseline_test_pred, k=3)
+
     xgb_precision_at_3 = _compute_precision_at_k(test_df, xgb_test_pred, k=3)
     lgb_precision_at_3 = _compute_precision_at_k(test_df, lgb_test_pred, k=3)
 
@@ -439,11 +481,27 @@ def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
         f"XGB vs Qualifying Baseline Uplift -> NDCG: {xgb_ndcg - baseline_ndcg:+.6f} | "
         f"MRR: {xgb_mrr - baseline_mrr:+.6f}"
     )
+    print(
+        f"XGBRanker MAP: {xgb_map:.6f} | MAP@3: {xgb_map_at_3:.6f} | "
+        f"Baseline MAP: {baseline_map:.6f} | Baseline MAP@3: {baseline_map_at_3:.6f}"
+    )
+    print(
+        f"XGB vs Qualifying Baseline Uplift -> MAP: {xgb_map - baseline_map:+.6f} | "
+        f"MAP@3: {xgb_map_at_3 - baseline_map_at_3:+.6f}"
+    )
     print(f"XGBRanker NDCG@3: {xgb_ndcg_at_3:.6f} | Precision@3: {xgb_precision_at_3:.6f}")
     print(f"LGBMRanker Global NDCG: {lgb_ndcg:.6f} | Global MRR: {lgb_mrr:.6f}")
     print(
         f"LGBM vs Qualifying Baseline Uplift -> NDCG: {lgb_ndcg - baseline_ndcg:+.6f} | "
         f"MRR: {lgb_mrr - baseline_mrr:+.6f}"
+    )
+    print(
+        f"LGBMRanker MAP: {lgb_map:.6f} | MAP@3: {lgb_map_at_3:.6f} | "
+        f"Baseline MAP: {baseline_map:.6f} | Baseline MAP@3: {baseline_map_at_3:.6f}"
+    )
+    print(
+        f"LGBM vs Qualifying Baseline Uplift -> MAP: {lgb_map - baseline_map:+.6f} | "
+        f"MAP@3: {lgb_map_at_3 - baseline_map_at_3:+.6f}"
     )
     print(f"LGBMRanker NDCG@3: {lgb_ndcg_at_3:.6f} | Precision@3: {lgb_precision_at_3:.6f}")
     print(f"XGB model saved to: {XGB_MODEL_PATH}")
@@ -456,12 +514,18 @@ def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
         "lgb_cv_ndcg": lgb_cv_ndcg,
         "baseline_ndcg": baseline_ndcg,
         "baseline_mrr": baseline_mrr,
+        "baseline_map": baseline_map,
+        "baseline_map_at_3": baseline_map_at_3,
         "xgb_ndcg": xgb_ndcg,
         "xgb_mrr": xgb_mrr,
+        "xgb_map": xgb_map,
+        "xgb_map_at_3": xgb_map_at_3,
         "xgb_ndcg_at_3": xgb_ndcg_at_3,
         "xgb_precision_at_3": xgb_precision_at_3,
         "lgb_ndcg": lgb_ndcg,
         "lgb_mrr": lgb_mrr,
+        "lgb_map": lgb_map,
+        "lgb_map_at_3": lgb_map_at_3,
         "lgb_ndcg_at_3": lgb_ndcg_at_3,
         "lgb_precision_at_3": lgb_precision_at_3,
     }

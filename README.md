@@ -6,6 +6,8 @@ This repository delivers a production-oriented, explainable machine learning ran
 
 The deployed architecture uses two gradient-boosted rankers, `XGBRanker` and `LGBMRanker`, trained with chronological controls and race-level grouping constraints so that every experiment respects real-world temporal causality. The evaluation layer emphasizes top-heavy quality (podium accuracy), global ordering quality, and reciprocal rank behavior of winner prediction. In practical terms, this means the framework can be used as a transparent race-weekend decision support system, not just a notebook experiment.
 
+Core evaluation outputs include Global NDCG, NDCG@3, MRR, MAP, MAP@3, and Precision@3, reported with qualifying-baseline uplift deltas for direct operational benchmarking.
+
 ## Repository Structure Map
 
 ```text
@@ -128,4 +130,4 @@ streamlit run app.py
 - Train/test split is dynamic: train uses all seasons before the latest available season, and test uses the latest available season.
 - Race groups remain contiguous by `race_id` during fitting and scoring.
 - Expanding chronological CV folds are generated dynamically and always end at `latest_season - 1`.
-- The training logger prints model metrics and a direct Qualifying Baseline comparison to quantify uplift.
+- The training logger prints NDCG, MRR, MAP, MAP@3, NDCG@3, and Precision@3 with direct Qualifying Baseline uplift comparisons.

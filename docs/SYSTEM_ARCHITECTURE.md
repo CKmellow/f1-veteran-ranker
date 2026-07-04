@@ -141,6 +141,15 @@ Observed benchmark values:
 - **XGBoost**: Global NDCG = **0.8921**, Winner MRR = **0.3125**
 - **LightGBM** is trained and reported in parallel for model selection benchmarking.
 
+Operational metric suite reported by the trainer:
+- Global NDCG
+- NDCG@3
+- Global MRR
+- MAP
+- MAP@3
+- Precision@3
+- Qualifying-baseline uplift deltas for NDCG, MRR, MAP, and MAP@3
+
 ### 5.2 Why Group-Aware MRR is Custom
 
 A custom race-group-aware Mean Reciprocal Rank function is implemented because:

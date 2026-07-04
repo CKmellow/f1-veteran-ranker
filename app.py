@@ -410,21 +410,8 @@ def load_model(model_path):
             f"Model file missing: {model_path}. "
             "Run training: python src/models/train_ranker.py"
         )
-    except (pickle.UnpicklingError, EOFError) as exc:
-        return None, (
-            f"Model artifact appears corrupted at {model_path}: {exc}. "
-            "Delete local model files and rebuild: "
-            "python src/preprocessing/ingest_jolpica_results.py && "
-            "python src/preprocessing/ingest_jolpica_qualifying.py && "
-            "python src/preprocessing/build_veteran_features.py && "
-            "python src/models/train_ranker.py"
-        )
     except Exception as exc:
-        return None, (
-            f"Unable to load model at {model_path}: {exc}. "
-            "If this persists, regenerate local model artifacts with "
-            "python src/models/train_ranker.py"
-        )
+        return None, f"Unable to load model at {model_path}: {exc}"
 
 
 def load_feature_matrix(path):

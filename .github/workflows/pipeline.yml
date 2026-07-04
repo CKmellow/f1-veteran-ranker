@@ -61,5 +61,7 @@ jobs:
             data/raw/jolpica_qualifying_master.csv
             data/raw/f1_canonical_master.csv
             data/processed/veteran_training_matrix.csv
-            models/f1_ranker_model.pkl
-            outputs/reports/shap_summary.png
+            models/f1_xgb_ranker.pkl
+            models/f1_lgb_ranker.pkl
+            outputs/reports/xgb_shap_summary.png
+            outputs/reports/lgb_shap_summary.png

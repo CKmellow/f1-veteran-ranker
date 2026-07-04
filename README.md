@@ -1,52 +1,133 @@
-# Project Title: Explainable Prediction of Formula 1 Race Outcomes
+# F1 Veteran Explainable Race Ranker
 
-A Machine Learning semester project investigating whether machine learning models can predict Formula 1 race finishing positions from pre-race features and identifying which factors most strongly drive those predictions.
+## Project Overview
 
-## Problem Statement
+This repository delivers a production-oriented, explainable machine learning ranking system focused on a fixed cohort of 14 Formula 1 veteran drivers. The pipeline ingests race and qualifying records, constructs leakage-safe pre-race features, trains list-wise ranking models, and evaluates ranking quality with information-retrieval metrics that reflect race-order accuracy rather than simple win/loss classification. The system is designed to answer two operational questions with rigor: whether the model can reliably beat a free qualifying-order baseline, and which pre-race variables most strongly influence predicted finishing order.
 
-Formula 1 race outcomes are shaped by a complex interaction of factors including driver skill, team performance, qualifying position, circuit characteristics and historical form. While outcomes are often discussed in terms of single dominant factors ("starting position matters most"), the relative contribution of each factor is rarely quantified transparently. This project investigates whether machine learning models can predict race finishing positions from features available before a race starts and uses SHAP-based explainability to identify which factors most strongly drive those predictions. The aim is not only to model outcomes but to make the model's reasoning visible, turning prediction into an interpretable analysis of what shapes race results.
+The deployed architecture uses two gradient-boosted rankers, `XGBRanker` and `LGBMRanker`, trained with chronological controls and race-level grouping constraints so that every experiment respects real-world temporal causality. The evaluation layer emphasizes top-heavy quality (podium accuracy), global ordering quality, and reciprocal rank behavior of winner prediction. In practical terms, this means the framework can be used as a transparent race-weekend decision support system, not just a notebook experiment.
 
-## Research Question
+Core evaluation outputs include Global NDCG, NDCG@3, MRR, MAP, MAP@3, and Precision@3, reported with qualifying-baseline uplift deltas for direct operational benchmarking.
 
-Can an explainable machine learning model predict Formula 1 race finishing positions from pre-race features and which factors most strongly influence its predictions?
+## Repository Structure Map
 
-## Dataset
-
-This project uses a single secondary-source dataset. See `data/README.md` for full details on the source, schema and how to obtain it.
-
-- **Formula 1 World Championship (1950–2024)** — a normalised relational dataset originally maintained by the Ergast Motor Racing Developer API, mirrored on Kaggle. Covers every Formula 1 season from 1950 onwards, with race results, qualifying, drivers, constructors and circuits. Approximately 25,000 driver-race entries.
-
-## Team and Sprint Structure
-
-The project runs across three one-week sprints (15 June – 3 July 2026).
-
-| Sprint | Dates | Focus | Lead |
-|---|---|---|---|
-| 1 | 15–21 June | Dataset Acquisition, EDA & Data Cleaning | Sharon |
-| 2 | 22–26 June | Data Preprocessing, Feature Engineering & Model Development | Cyprian, Sean |
-| 3 | 29 June – 3 July | Model Evaluation, Visualization & Final Presentation | Amy |
-
-Team members and their ownership areas:
-
-- **Sharon** — Dataset Acquisition, EDA & Data Cleaning
-- **Cyprian** — Data Preprocessing & Feature Engineering
-- **Sean** — Model Development & Hyperparameter Tuning
-- **Amy** — Model Evaluation, Visualization & Final Reporting
-
-## Repository Structure
-
-```
+```text
 .
-├── data/             # Datasets (raw not committed; processed produced during sprints)
-│   ├── raw/
-│   └── processed/
-├── docs/             # Project documentation, sprint plans, workflow guides
-├── models/           # Trained model artifacts saved during Sprint 2
-├── notebooks/        # Jupyter notebooks for EDA, modeling and evaluation
-├── presentation/     # Final presentation slides and supporting materials
-├── reports/          # Sprint reports, EDA reports and final write-up
-├── src/              # Reusable Python modules and utility scripts
-├── .gitignore
+├── app.py
+├── requirements.txt
 ├── README.md
-└── requirements.txt  # Python dependencies for the project
+├── data/
+│   ├── raw/
+│   │   ├── f1_canonical_master.csv
+│   │   ├── jolpica_qualifying_master.csv
+│   │   └── jolpica_results_master.csv
+│   └── processed/
+│       └── veteran_training_matrix.csv
+├── docs/
+│   ├── MODEL_METRICS_AND_METHODOLOGY.md
+│   ├── SYSTEM_ARCHITECTURE.md
+│   └── automation_blueprint.md
+├── models/
+│   ├── f1_xgb_ranker.pkl
+│   └── f1_lgb_ranker.pkl
+├── notebooks/
+├── outputs/
+│   └── reports/
+│       ├── xgb_shap_summary.png
+│       └── lgb_shap_summary.png
+├── reports/
+└── src/
+    ├── preprocessing/
+    │   ├── ingest_jolpica_results.py
+    │   ├── ingest_jolpica_qualifying.py
+    │   └── build_veteran_features.py
+    ├── models/
+    │   └── train_ranker.py
+    ├── features/
+    ├── evaluation/
+    └── visualization/
 ```
+
+## Production Setup Guide
+
+### 1) Clone the repository
+
+```bash
+git clone <your-repository-url>
+cd Machine_Learning_Group_Project
+```
+
+### 2) Provision Python virtual environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3) Install dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4) Optional environment verification
+
+```bash
+python --version
+pip --version
+```
+
+## Operational Execution Runbook
+
+Run the full system sequentially in the exact order below.
+
+### Step 1: Ingest race results
+
+```bash
+python src/preprocessing/ingest_jolpica_results.py
+```
+
+### Step 2: Ingest qualifying and build canonical table
+
+```bash
+python src/preprocessing/ingest_jolpica_qualifying.py
+```
+
+### Step 3: Build veteran feature matrix
+
+```bash
+python src/preprocessing/build_veteran_features.py
+```
+
+Optional sanity check before training (confirm latest season is present):
+
+<!-- ```bash
+python -c "import pandas as pd; d=pd.read_csv('data/processed/veteran_training_matrix.csv'); print(d['season'].value_counts().sort_index())"
+``` -->
+
+### Step 4: Train rankers and evaluate against baseline
+
+```bash
+python src/models/train_ranker.py
+```
+
+### Step 5: Launch interactive Streamlit app
+
+```bash
+streamlit run app.py
+```
+
+## Primary Artifacts Produced
+
+- `models/f1_xgb_ranker.pkl`: optimized XGBoost ranker package with metadata.
+- `models/f1_lgb_ranker.pkl`: optimized LightGBM ranker package with metadata.
+- `outputs/reports/xgb_shap_summary.png`: SHAP global importance view for XGBoost.
+- `outputs/reports/lgb_shap_summary.png`: SHAP global importance view for LightGBM.
+
+## Engineering Notes
+
+- Historical ingestion defaults span from 2022 through the current calendar year.
+- Train/test split is dynamic: train uses all seasons before the latest available season, and test uses the latest available season.
+- Race groups remain contiguous by `race_id` during fitting and scoring.
+- Expanding chronological CV folds are generated dynamically and always end at `latest_season - 1`.
+- The training logger prints NDCG, MRR, MAP, MAP@3, NDCG@3, and Precision@3 with direct Qualifying Baseline uplift comparisons.

@@ -1,0 +1,28 @@
+{
+  "random_trials": 50,
+  "baseline_metrics": {
+    "global_ndcg": 0.890608815633265,
+    "ndcg_at_3": 0.7803235907327322,
+    "mrr": 0.6458333333333333,
+    "map": 0.6770833333333333,
+    "map_at_3": 0.59375,
+    "precision_at_3": 0.7083333333333333
+  },
+  "random_mean_metrics": {
+    "global_ndcg": 0.6911865113976945,
+    "ndcg_at_3": 0.37980181406920216,
+    "mrr": 0.2505707695082695,
+    "map": 0.3211214214026714,
+    "map_at_3": 0.1728472222222222,
+    "precision_at_3": 0.24833333333333332
+  },
+  "oracle_metrics": {
+    "global_ndcg": 1.0,
+    "ndcg_at_3": 0.9999999999999999,
+    "mrr": 1.0,
+    "map": 1.0,
+    "map_at_3": 1.0,
+    "precision_at_3": 1.0
+  },
+  "checks_passed": true
+}

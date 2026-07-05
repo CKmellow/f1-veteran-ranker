@@ -45,6 +45,7 @@ TARGET_COLUMN = "finish_position"
 RELEVANCE_COLUMN = "relevance_score"
 MODEL_TARGET_COLUMN = "model_relevance_score"
 WEIGHT_COLUMN = "temporal_sample_weight"
+TOP_RELEVANT_FINISH = 3
 
 MIN_CV_FOLDS = 1
 
@@ -198,7 +199,8 @@ def _compute_grouped_mrr(df: pd.DataFrame, pred_scores: np.ndarray) -> float:
 
     for _, race_df in scored.groupby("race_id", sort=False):
         predicted = race_df.sort_values("pred_score", ascending=False).reset_index(drop=True)
-        winner_index = predicted.index[predicted[RELEVANCE_COLUMN] == 14]
+        winner_driver_id = race_df.sort_values(TARGET_COLUMN, ascending=True)["driver_id"].iloc[0]
+        winner_index = predicted.index[predicted["driver_id"] == winner_driver_id]
         if len(winner_index) == 0:
             reciprocal_ranks.append(0.0)
         else:
@@ -222,7 +224,12 @@ def _compute_precision_at_k(df: pd.DataFrame, pred_scores: np.ndarray, k: int = 
     return float(np.mean(precisions))
 
 
-def _compute_map(df: pd.DataFrame, pred_scores: np.ndarray, k: int | None = None) -> float:
+def _compute_map(
+    df: pd.DataFrame,
+    pred_scores: np.ndarray,
+    k: int | None = None,
+    relevant_finish_cutoff: int = TOP_RELEVANT_FINISH,
+) -> float:
     scored = df.copy()
     scored["pred_score"] = pred_scores
     average_precisions: list[float] = []
@@ -230,7 +237,7 @@ def _compute_map(df: pd.DataFrame, pred_scores: np.ndarray, k: int | None = None
     for _, race_df in scored.groupby("race_id", sort=False):
         ranked = race_df.sort_values("pred_score", ascending=False).reset_index(drop=True)
         relevant_driver_ids = set(
-            race_df.sort_values(TARGET_COLUMN, ascending=True)["driver_id"].tolist()
+            race_df[race_df[TARGET_COLUMN] <= relevant_finish_cutoff]["driver_id"].tolist()
         )
 
         if k is not None:

@@ -346,6 +346,15 @@ def plot_improvement_over_baseline(metrics_df: pd.DataFrame, output_path: str) -
     bar_width = group_width / max(n_models, 1)
     x = np.arange(n_metrics)
 
+    # Scale label offset (and axis padding) to the actual data range so labels
+    # stay attached to their bars regardless of whether deltas are ~0.2 or ~0.01.
+    all_values = delta_df[metric_cols].to_numpy(dtype=float)
+    data_min, data_max = float(all_values.min()), float(all_values.max())
+    data_range = max(data_max - data_min, 1e-6)
+    label_offset = max(data_range * 0.045, 0.0015)
+    pad = data_range * 0.18
+    ax.set_ylim(min(data_min - pad, -pad), max(data_max + pad, pad))
+
     for i, model in enumerate(delta_df.index):
         offsets = x - group_width / 2 + bar_width * i + bar_width / 2
         values = delta_df.loc[model, metric_cols].to_numpy(dtype=float)
@@ -357,7 +366,7 @@ def plot_improvement_over_baseline(metrics_df: pd.DataFrame, output_path: str) -
         )
         for rect, val in zip(bars, values):
             va = "bottom" if val >= 0 else "top"
-            offset = 0.004 if val >= 0 else -0.004
+            offset = label_offset if val >= 0 else -label_offset
             ax.text(
                 rect.get_x() + rect.get_width() / 2, val + offset,
                 f"{val:+.3f}", ha="center", va=va,

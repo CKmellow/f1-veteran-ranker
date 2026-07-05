@@ -1,0 +1,35 @@
+{
+  "test_season": 2026,
+  "rows_evaluated": 103,
+  "races_evaluated": 8,
+  "metrics": {
+    "xgb_ranker": {
+      "global_ndcg": 0.8794648374993058,
+      "ndcg_at_3": 0.7631807941595139,
+      "mrr": 0.3125,
+      "map": 1.0,
+      "map_at_3": 1.0,
+      "precision_at_3": 0.6666666666666666
+    },
+    "lgbm_ranker": {
+      "global_ndcg": 0.879578482488101,
+      "ndcg_at_3": 0.7644647638156024,
+      "mrr": 0.3125,
+      "map": 1.0,
+      "map_at_3": 1.0,
+      "precision_at_3": 0.6666666666666666
+    },
+    "qualifying_baseline": {
+      "global_ndcg": 0.890608815633265,
+      "ndcg_at_3": 0.7803235907327322,
+      "mrr": 0.3125,
+      "map": 1.0,
+      "map_at_3": 1.0,
+      "precision_at_3": 0.7083333333333333
+    }
+  },
+  "artifacts": {
+    "metrics_csv": "outputs/reports/model_comparison_metrics.csv",
+    "per_race_csv": "outputs/reports/model_per_race_breakdown.csv"
+  }
+}

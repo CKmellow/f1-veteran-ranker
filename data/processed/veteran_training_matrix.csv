@@ -1,0 +1,1385 @@
+race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_position,points,status_str,is_wet,track_temp,quali_position,circuit_type,circuit_type_code,circuit_type_Balanced/Technical,circuit_type_High-Downforce,circuit_type_Power/High-Speed,circuit_type_Street Circuit,driver_form_3races,circuit_historical_avg,constructor_points_current,constructor_mechanical_dnf,constructor_dnf_rate_10races
+2022_1,2022,1,bahrain,albon,williams,14,13,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,alonso,alpine,8,9,2.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,bottas,alfa,6,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,gasly,alphatauri,10,20,0.0,Power Unit,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,,,0.0,1,
+2022_1,2022,1,bahrain,hamilton,mercedes,5,3,15.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,hulkenberg,aston_martin,17,17,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,leclerc,ferrari,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,norris,mclaren,13,15,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,ocon,alpine,11,7,6.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,,,2.0,0,
+2022_1,2022,1,bahrain,perez,red_bull,4,18,0.0,Fuel pressure,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,,,0.0,1,
+2022_1,2022,1,bahrain,russell,mercedes,9,4,12.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,,,15.0,0,
+2022_1,2022,1,bahrain,sainz,ferrari,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,,,26.0,0,
+2022_1,2022,1,bahrain,stroll,aston_martin,19,12,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,,,0.0,0,
+2022_1,2022,1,bahrain,verstappen,red_bull,2,19,0.0,Fuel pressure,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,,,0.0,1,
+2022_2,2022,2,jeddah,albon,williams,16,14,0.0,Collision damage,0,25.0,17.0,Street Circuit,3,0,0,0,1,13.0,,0.0,0,
+2022_2,2022,2,jeddah,alonso,alpine,7,16,0.0,Water pump,1,20.0,7.0,Street Circuit,3,0,0,0,1,9.0,,8.0,0,
+2022_2,2022,2,jeddah,bottas,alfa,8,15,0.0,Cooling system,0,25.0,8.0,Street Circuit,3,0,0,0,1,6.0,,8.0,1,
+2022_2,2022,2,jeddah,gasly,alphatauri,9,8,4.0,Finished,0,25.0,9.0,Street Circuit,3,0,0,0,1,20.0,,0.0,0,
+2022_2,2022,2,jeddah,hamilton,mercedes,15,10,1.0,Finished,0,25.0,16.0,Street Circuit,3,0,0,0,1,3.0,,27.0,0,
+2022_2,2022,2,jeddah,hulkenberg,aston_martin,17,12,0.0,Finished,0,25.0,18.0,Street Circuit,3,0,0,0,1,17.0,,0.0,0,
+2022_2,2022,2,jeddah,leclerc,ferrari,2,2,19.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,1.0,,44.0,0,
+2022_2,2022,2,jeddah,norris,mclaren,11,7,6.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,15.0,,0.0,0,
+2022_2,2022,2,jeddah,ocon,alpine,5,6,8.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,7.0,,8.0,0,0.0
+2022_2,2022,2,jeddah,perez,red_bull,1,4,12.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,18.0,,0.0,0,
+2022_2,2022,2,jeddah,russell,mercedes,6,5,10.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,4.0,,28.0,0,0.0
+2022_2,2022,2,jeddah,sainz,ferrari,3,3,15.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,2.0,,63.0,0,0.0
+2022_2,2022,2,jeddah,stroll,aston_martin,13,13,0.0,+1 Lap,0,25.0,15.0,Street Circuit,3,0,0,0,1,12.0,,0.0,0,0.0
+2022_2,2022,2,jeddah,verstappen,red_bull,4,1,25.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,19.0,,12.0,0,0.6666666666666666
+2022_3,2022,3,albert_park,albon,williams,20,10,1.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,13.5,,0.0,0,
+2022_3,2022,3,albert_park,alonso,alpine,10,17,0.0,+1 Lap,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,12.5,,16.0,0,0.0
+2022_3,2022,3,albert_park,bottas,alfa,12,8,4.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,10.5,,8.0,0,
+2022_3,2022,3,albert_park,gasly,alphatauri,11,9,2.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,14.0,,4.0,0,
+2022_3,2022,3,albert_park,hamilton,mercedes,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,6.5,,38.0,0,0.0
+2022_3,2022,3,albert_park,leclerc,ferrari,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.5,,78.0,0,0.0
+2022_3,2022,3,albert_park,norris,mclaren,4,5,10.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,11.0,,6.0,0,
+2022_3,2022,3,albert_park,ocon,alpine,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,6.5,,16.0,0,0.0
+2022_3,2022,3,albert_park,perez,red_bull,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,11.0,,37.0,0,0.5
+2022_3,2022,3,albert_park,russell,mercedes,6,3,15.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,4.5,,50.0,0,0.0
+2022_3,2022,3,albert_park,sainz,ferrari,9,20,0.0,Spun off,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,2.5,,104.0,0,0.0
+2022_3,2022,3,albert_park,stroll,aston_martin,19,12,0.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,12.5,,0.0,0,0.0
+2022_3,2022,3,albert_park,verstappen,red_bull,2,18,0.0,Fuel leak,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,10.0,,55.0,1,0.4
+2022_4,2022,4,imola,albon,williams,18,11,0.0,+1 Lap,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,1.0,0,0.0
+2022_4,2022,4,imola,alonso,alpine,9,19,0.0,Collision damage,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,14.0,,22.0,0,0.0
+2022_4,2022,4,imola,bottas,alfa,7,5,10.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,12.0,0,0.3333333333333333
+2022_4,2022,4,imola,gasly,alphatauri,17,12,0.0,+1 Lap,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,6.0,0,0.3333333333333333
+2022_4,2022,4,imola,hamilton,mercedes,14,13,0.0,+1 Lap,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,,65.0,0,0.0
+2022_4,2022,4,imola,leclerc,ferrari,2,6,8.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,,104.0,0,0.0
+2022_4,2022,4,imola,norris,mclaren,5,3,15.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,9.0,,16.0,0,0.0
+2022_4,2022,4,imola,ocon,alpine,16,14,0.0,+1 Lap,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,,22.0,0,0.0
+2022_4,2022,4,imola,perez,red_bull,3,2,18.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,8.0,,55.0,0,0.5
+2022_4,2022,4,imola,russell,mercedes,11,4,12.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,4.0,,65.0,0,0.0
+2022_4,2022,4,imola,sainz,ferrari,4,20,0.0,Collision,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,,112.0,0,0.0
+2022_4,2022,4,imola,stroll,aston_martin,15,10,1.0,+1 Lap,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,0.0,0,0.0
+2022_4,2022,4,imola,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,,73.0,0,0.42857142857142855
+2022_5,2022,5,miami,albon,williams,18,9,2.0,Finished,0,25.0,18.0,Street Circuit,3,0,0,0,1,11.666666666666666,,1.0,0,0.0
+2022_5,2022,5,miami,alonso,alpine,11,11,0.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,17.333333333333332,,22.0,0,0.0
+2022_5,2022,5,miami,bottas,alfa,5,7,6.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,9.333333333333334,,22.0,0,0.25
+2022_5,2022,5,miami,gasly,alphatauri,7,18,0.0,Suspension,0,25.0,7.0,Street Circuit,3,0,0,0,1,9.666666666666666,,6.0,1,0.25
+2022_5,2022,5,miami,hamilton,mercedes,6,6,8.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,9.0,,77.0,0,0.0
+2022_5,2022,5,miami,leclerc,ferrari,1,2,18.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,3.0,,112.0,0,0.0
+2022_5,2022,5,miami,norris,mclaren,8,19,0.0,Collision,0,25.0,8.0,Street Circuit,3,0,0,0,1,5.0,,31.0,0,0.0
+2022_5,2022,5,miami,ocon,alpine,20,8,4.0,Finished,0,25.0,20.0,Street Circuit,3,0,0,0,1,9.0,,22.0,0,0.0
+2022_5,2022,5,miami,perez,red_bull,4,4,12.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,2.6666666666666665,,99.0,0,0.375
+2022_5,2022,5,miami,russell,mercedes,12,5,10.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,4.0,,85.0,0,0.0
+2022_5,2022,5,miami,sainz,ferrari,2,3,15.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,14.333333333333334,,130.0,0,0.0
+2022_5,2022,5,miami,stroll,aston_martin,0,10,1.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,11.666666666666666,,1.0,0,0.0
+2022_5,2022,5,miami,verstappen,red_bull,3,1,26.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,6.666666666666667,,111.0,0,0.3333333333333333
+2022_6,2022,6,catalunya,albon,williams,18,18,0.0,+2 Laps,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,10.0,,3.0,0,0.0
+2022_6,2022,6,catalunya,alonso,alpine,20,9,2.0,+1 Lap,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,,26.0,0,0.0
+2022_6,2022,6,catalunya,bottas,alfa,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,,28.0,0,0.2
+2022_6,2022,6,catalunya,gasly,alphatauri,14,13,0.0,+1 Lap,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,13.0,,6.0,0,0.4
+2022_6,2022,6,catalunya,hamilton,mercedes,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,,95.0,0,0.0
+2022_6,2022,6,catalunya,leclerc,ferrari,1,20,0.0,Turbo,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,3.0,,145.0,1,0.0
+2022_6,2022,6,catalunya,norris,mclaren,11,8,4.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,9.0,,31.0,0,0.0
+2022_6,2022,6,catalunya,ocon,alpine,12,7,6.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,28.0,0,0.0
+2022_6,2022,6,catalunya,perez,red_bull,5,2,19.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,,137.0,0,0.3
+2022_6,2022,6,catalunya,russell,mercedes,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,4.0,,105.0,0,0.0
+2022_6,2022,6,catalunya,sainz,ferrari,3,4,12.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,145.0,0,0.1
+2022_6,2022,6,catalunya,stroll,aston_martin,17,15,0.0,+1 Lap,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,,2.0,0,0.0
+2022_6,2022,6,catalunya,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,,156.0,0,0.2
+2022_7,2022,7,monaco,albon,williams,16,18,0.0,Mechanical,0,25.0,16.0,High-Downforce,1,0,1,0,0,12.666666666666666,,3.0,0,0.0
+2022_7,2022,7,monaco,alonso,alpine,7,7,6.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,13.0,,34.0,0,0.0
+2022_7,2022,7,monaco,bottas,alfa,12,9,2.0,Finished,0,25.0,12.0,High-Downforce,1,0,1,0,0,6.0,,36.0,0,0.16666666666666666
+2022_7,2022,7,monaco,gasly,alphatauri,17,11,0.0,Finished,0,25.0,17.0,High-Downforce,1,0,1,0,0,14.333333333333334,,6.0,0,0.3333333333333333
+2022_7,2022,7,monaco,hamilton,mercedes,8,8,4.0,Finished,0,25.0,8.0,High-Downforce,1,0,1,0,0,8.0,,120.0,0,0.0
+2022_7,2022,7,monaco,leclerc,ferrari,1,4,12.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,9.333333333333334,,157.0,0,0.1
+2022_7,2022,7,monaco,norris,mclaren,5,6,9.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,10.0,,35.0,0,0.0
+2022_7,2022,7,monaco,ocon,alpine,10,12,0.0,Finished,0,25.0,10.0,High-Downforce,1,0,1,0,0,9.666666666666666,,40.0,0,0.0
+2022_7,2022,7,monaco,perez,red_bull,3,1,25.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,2.6666666666666665,,181.0,0,0.1
+2022_7,2022,7,monaco,russell,mercedes,6,5,10.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,4.0,,124.0,0,0.0
+2022_7,2022,7,monaco,sainz,ferrari,2,2,18.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,9.0,,169.0,0,0.1
+2022_7,2022,7,monaco,stroll,aston_martin,18,14,0.0,Finished,0,25.0,18.0,High-Downforce,1,0,1,0,0,11.666666666666666,,2.0,0,0.0
+2022_7,2022,7,monaco,verstappen,red_bull,4,3,15.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,1.0,,206.0,0,0.1
+2022_8,2022,8,baku,albon,williams,17,12,0.0,+1 Lap,0,25.0,17.0,Street Circuit,3,0,0,0,1,15.0,,3.0,0,0.0
+2022_8,2022,8,baku,alonso,alpine,10,7,6.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,9.0,,40.0,0,0.0
+2022_8,2022,8,baku,bottas,alfa,15,11,0.0,+1 Lap,0,25.0,15.0,Street Circuit,3,0,0,0,1,7.333333333333333,,38.0,0,0.14285714285714285
+2022_8,2022,8,baku,gasly,alphatauri,6,5,10.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,14.0,,6.0,0,0.2857142857142857
+2022_8,2022,8,baku,hamilton,mercedes,7,4,12.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,6.333333333333333,,134.0,0,0.0
+2022_8,2022,8,baku,leclerc,ferrari,1,19,0.0,Power Unit,0,25.0,1.0,Street Circuit,3,0,0,0,1,8.666666666666666,,187.0,1,0.1
+2022_8,2022,8,baku,norris,mclaren,11,9,2.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,11.0,,44.0,0,0.0
+2022_8,2022,8,baku,ocon,alpine,13,10,1.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,9.0,,46.0,0,0.0
+2022_8,2022,8,baku,perez,red_bull,2,2,19.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,2.3333333333333335,,221.0,0,0.1
+2022_8,2022,8,baku,russell,mercedes,5,3,15.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,4.333333333333333,,146.0,0,0.0
+2022_8,2022,8,baku,sainz,ferrari,4,20,0.0,Hydraulics,0,25.0,4.0,Street Circuit,3,0,0,0,1,3.0,,187.0,1,0.2
+2022_8,2022,8,baku,stroll,aston_martin,19,16,0.0,Vibrations,0,25.0,19.0,Street Circuit,3,0,0,0,1,13.0,,2.0,0,0.0
+2022_8,2022,8,baku,verstappen,red_bull,3,1,25.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,1.6666666666666667,,240.0,0,0.1
+2022_9,2022,9,villeneuve,albon,williams,12,13,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,16.0,,3.0,0,0.0
+2022_9,2022,9,villeneuve,alonso,alpine,2,9,2.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,,47.0,0,0.0
+2022_9,2022,9,villeneuve,bottas,alfa,11,7,6.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,38.0,0,0.125
+2022_9,2022,9,villeneuve,gasly,alphatauri,15,14,0.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,16.0,0,0.25
+2022_9,2022,9,villeneuve,hamilton,mercedes,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,,161.0,0,0.0
+2022_9,2022,9,villeneuve,leclerc,ferrari,19,5,10.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,187.0,0,0.3
+2022_9,2022,9,villeneuve,norris,mclaren,14,15,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,,46.0,0,0.0
+2022_9,2022,9,villeneuve,ocon,alpine,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,49.0,0,0.0
+2022_9,2022,9,villeneuve,perez,red_bull,13,20,0.0,Gearbox,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,,265.0,1,0.0
+2022_9,2022,9,villeneuve,russell,mercedes,8,4,12.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,,176.0,0,0.0
+2022_9,2022,9,villeneuve,sainz,ferrari,3,2,19.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,197.0,0,0.3
+2022_9,2022,9,villeneuve,stroll,aston_martin,17,10,1.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,15.0,,2.0,0,0.0
+2022_9,2022,9,villeneuve,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,,265.0,0,0.1
+2022_10,2022,10,silverstone,albon,williams,16,20,0.0,Collision,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,14.333333333333334,,3.0,0,0.0
+2022_10,2022,10,silverstone,alonso,alpine,7,5,10.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,,57.0,0,0.0
+2022_10,2022,10,silverstone,bottas,alfa,12,17,0.0,Gearbox,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,9.0,,44.0,1,0.1111111111111111
+2022_10,2022,10,silverstone,gasly,alphatauri,11,16,0.0,Collision damage,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,10.0,,16.0,0,0.2222222222222222
+2022_10,2022,10,silverstone,hamilton,mercedes,5,3,16.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,5.0,,188.0,0,0.0
+2022_10,2022,10,silverstone,leclerc,ferrari,3,4,12.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,,216.0,0,0.3
+2022_10,2022,10,silverstone,norris,mclaren,6,6,8.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,10.0,,46.0,0,0.0
+2022_10,2022,10,silverstone,ocon,alpine,15,15,0.0,Fuel pump,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,,67.0,1,0.0
+2022_10,2022,10,silverstone,perez,red_bull,4,2,18.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,,290.0,0,0.1
+2022_10,2022,10,silverstone,russell,mercedes,8,18,0.0,Collision,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,4.0,,204.0,0,0.0
+2022_10,2022,10,silverstone,sainz,ferrari,1,1,25.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,8.0,,228.0,0,0.3
+2022_10,2022,10,silverstone,stroll,aston_martin,20,11,0.0,Finished,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,,3.0,0,0.0
+2022_10,2022,10,silverstone,verstappen,red_bull,2,7,6.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,1.6666666666666667,,308.0,0,0.1
+2022_11,2022,11,red_bull_ring,albon,williams,15,12,0.0,+1 Lap,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,15.0,,3.0,0,0.0
+2022_11,2022,11,red_bull_ring,alonso,alpine,19,10,1.0,+1 Lap,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,7.0,,67.0,0,0.1
+2022_11,2022,11,red_bull_ring,bottas,alfa,0,11,0.0,+1 Lap,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,,44.0,0,0.2
+2022_11,2022,11,red_bull_ring,gasly,alphatauri,14,15,0.0,+1 Lap,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,,16.0,0,0.2
+2022_11,2022,11,red_bull_ring,hamilton,mercedes,8,3,15.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,3.3333333333333335,,204.0,0,0.0
+2022_11,2022,11,red_bull_ring,leclerc,ferrari,2,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,,253.0,0,0.3
+2022_11,2022,11,red_bull_ring,norris,mclaren,10,7,6.0,+1 Lap,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,10.0,,54.0,0,0.0
+2022_11,2022,11,red_bull_ring,ocon,alpine,6,5,10.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,10.333333333333334,,68.0,0,0.1
+2022_11,2022,11,red_bull_ring,perez,red_bull,5,20,0.0,Collision damage,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,8.0,,314.0,0,0.1
+2022_11,2022,11,red_bull_ring,russell,mercedes,4,4,12.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,,219.0,0,0.0
+2022_11,2022,11,red_bull_ring,sainz,ferrari,3,18,0.0,Power Unit,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,,278.0,1,0.2
+2022_11,2022,11,red_bull_ring,stroll,aston_martin,12,13,0.0,+1 Lap,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,,3.0,0,0.0
+2022_11,2022,11,red_bull_ring,verstappen,red_bull,1,2,19.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,3.0,,314.0,0,0.1
+2022_12,2022,12,ricard,albon,williams,13,13,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.0,,3.0,0,0.0
+2022_12,2022,12,ricard,alonso,alpine,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,8.0,,78.0,0,0.1
+2022_12,2022,12,ricard,bottas,alfa,11,14,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,,44.0,0,0.2
+2022_12,2022,12,ricard,gasly,alphatauri,14,12,0.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,15.0,,16.0,0,0.1
+2022_12,2022,12,ricard,hamilton,mercedes,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.0,,231.0,0,0.0
+2022_12,2022,12,ricard,leclerc,ferrari,1,19,0.0,Accident,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,,278.0,0,0.3
+2022_12,2022,12,ricard,norris,mclaren,5,7,6.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,,60.0,0,0.0
+2022_12,2022,12,ricard,ocon,alpine,10,8,4.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,86.0,0,0.1
+2022_12,2022,12,ricard,perez,red_bull,3,4,12.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,14.0,,333.0,0,0.1
+2022_12,2022,12,ricard,russell,mercedes,6,3,15.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,249.0,0,0.0
+2022_12,2022,12,ricard,sainz,ferrari,19,5,11.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,7.0,,278.0,0,0.3
+2022_12,2022,12,ricard,stroll,aston_martin,15,10,1.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,,3.0,0,0.0
+2022_12,2022,12,ricard,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,,345.0,0,0.1
+2022_13,2022,13,hungaroring,albon,williams,17,17,0.0,+1 Lap,0,25.0,17.0,High-Downforce,1,0,1,0,0,15.0,,3.0,0,0.0
+2022_13,2022,13,hungaroring,alonso,alpine,6,8,4.0,+1 Lap,0,25.0,6.0,High-Downforce,1,0,1,0,0,7.0,,90.0,0,0.1
+2022_13,2022,13,hungaroring,bottas,alfa,8,20,0.0,Power Unit,0,25.0,8.0,High-Downforce,1,0,1,0,0,14.0,,44.0,1,0.1
+2022_13,2022,13,hungaroring,gasly,alphatauri,0,12,0.0,+1 Lap,0,25.0,19.0,High-Downforce,1,0,1,0,0,14.333333333333334,,16.0,0,0.1
+2022_13,2022,13,hungaroring,hamilton,mercedes,7,2,19.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,2.6666666666666665,,264.0,0,0.0
+2022_13,2022,13,hungaroring,leclerc,ferrari,3,6,8.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,8.0,,289.0,0,0.3
+2022_13,2022,13,hungaroring,norris,mclaren,4,7,6.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,6.666666666666667,,66.0,0,0.0
+2022_13,2022,13,hungaroring,ocon,alpine,5,9,2.0,+1 Lap,0,25.0,5.0,High-Downforce,1,0,1,0,0,9.333333333333334,,94.0,0,0.1
+2022_13,2022,13,hungaroring,perez,red_bull,11,5,10.0,Finished,0,25.0,11.0,High-Downforce,1,0,1,0,0,8.666666666666666,,370.0,0,0.1
+2022_13,2022,13,hungaroring,russell,mercedes,1,3,15.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,8.333333333333334,,283.0,0,0.0
+2022_13,2022,13,hungaroring,sainz,ferrari,2,4,12.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,8.0,,297.0,0,0.2
+2022_13,2022,13,hungaroring,stroll,aston_martin,14,11,0.0,+1 Lap,0,25.0,14.0,High-Downforce,1,0,1,0,0,11.333333333333334,,4.0,0,0.0
+2022_13,2022,13,hungaroring,verstappen,red_bull,10,1,25.0,Finished,0,25.0,10.0,High-Downforce,1,0,1,0,0,3.3333333333333335,,380.0,0,0.1
+2022_14,2022,14,spa,albon,williams,6,10,1.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,14.0,,3.0,0,0.0
+2022_14,2022,14,spa,alonso,alpine,3,5,10.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,8.0,,96.0,0,0.1
+2022_14,2022,14,spa,bottas,alfa,13,19,0.0,Accident,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,15.0,,44.0,0,0.2
+2022_14,2022,14,spa,gasly,alphatauri,0,9,2.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,13.0,,16.0,0,0.1
+2022_14,2022,14,spa,hamilton,mercedes,4,20,0.0,Collision damage,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,2.3333333333333335,,298.0,0,0.0
+2022_14,2022,14,spa,leclerc,ferrari,15,6,8.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,,309.0,0,0.1
+2022_14,2022,14,spa,norris,mclaren,17,12,0.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,7.0,,72.0,0,0.0
+2022_14,2022,14,spa,ocon,alpine,16,7,6.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,7.333333333333333,,106.0,0,0.1
+2022_14,2022,14,spa,perez,red_bull,2,2,18.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,,405.0,0,0.1
+2022_14,2022,14,spa,russell,mercedes,5,4,12.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,3.3333333333333335,,298.0,0,0.0
+2022_14,2022,14,spa,sainz,ferrari,1,3,15.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,9.0,,317.0,0,0.1
+2022_14,2022,14,spa,stroll,aston_martin,9,11,0.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,,4.0,0,0.0
+2022_14,2022,14,spa,verstappen,red_bull,14,1,26.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,1.3333333333333333,,423.0,0,0.0
+2022_15,2022,15,zandvoort,albon,williams,15,12,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,,4.0,0,0.0
+2022_15,2022,15,zandvoort,alonso,alpine,13,6,8.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,,112.0,0,0.1
+2022_15,2022,15,zandvoort,bottas,alfa,16,19,0.0,Engine,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,,44.0,1,0.2
+2022_15,2022,15,zandvoort,gasly,alphatauri,11,11,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,,18.0,0,0.1
+2022_15,2022,15,zandvoort,hamilton,mercedes,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,8.0,,310.0,0,0.0
+2022_15,2022,15,zandvoort,leclerc,ferrari,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,,332.0,0,0.1
+2022_15,2022,15,zandvoort,norris,mclaren,7,7,6.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,72.0,0,0.0
+2022_15,2022,15,zandvoort,ocon,alpine,12,9,2.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,8.0,,120.0,0,0.1
+2022_15,2022,15,zandvoort,perez,red_bull,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,,449.0,0,0.0
+2022_15,2022,15,zandvoort,russell,mercedes,6,2,18.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,,322.0,0,0.0
+2022_15,2022,15,zandvoort,sainz,ferrari,3,8,4.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.0,,347.0,0,0.1
+2022_15,2022,15,zandvoort,stroll,aston_martin,10,10,1.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,,4.0,0,0.0
+2022_15,2022,15,zandvoort,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,,459.0,0,0.0
+2022_16,2022,16,monza,alonso,alpine,6,19,0.0,Water pressure,1,20.0,10.0,Power/High-Speed,0,0,0,1,0,6.333333333333333,,122.0,0,0.0
+2022_16,2022,16,monza,bottas,alfa,15,13,0.0,+1 Lap,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,19.333333333333332,,44.0,0,0.3
+2022_16,2022,16,monza,gasly,alphatauri,5,8,4.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,,18.0,0,0.0
+2022_16,2022,16,monza,hamilton,mercedes,19,5,10.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,,340.0,0,0.0
+2022_16,2022,16,monza,leclerc,ferrari,1,2,18.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,5.0,,351.0,0,0.1
+2022_16,2022,16,monza,norris,mclaren,3,7,6.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,,78.0,0,0.0
+2022_16,2022,16,monza,ocon,alpine,14,11,0.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,,122.0,0,0.0
+2022_16,2022,16,monza,perez,red_bull,13,6,9.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,4.0,,485.0,0,0.0
+2022_16,2022,16,monza,russell,mercedes,2,3,15.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,3.0,,350.0,0,0.0
+2022_16,2022,16,monza,sainz,ferrari,18,4,12.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,5.0,,369.0,0,0.1
+2022_16,2022,16,monza,stroll,aston_martin,12,18,0.0,Engine,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,,5.0,1,0.0
+2022_16,2022,16,monza,verstappen,red_bull,7,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,1.0,,494.0,0,0.0
+2022_17,2022,17,marina_bay,albon,williams,18,17,0.0,Collision damage,0,25.0,19.0,High-Downforce,1,0,1,0,0,13.0,,4.0,0,0.0
+2022_17,2022,17,marina_bay,alonso,alpine,5,18,0.0,Engine,0,25.0,5.0,High-Downforce,1,0,1,0,0,10.0,,122.0,1,0.0
+2022_17,2022,17,marina_bay,bottas,alfa,15,11,0.0,Finished,0,25.0,16.0,High-Downforce,1,0,1,0,0,17.0,,44.0,0,0.3
+2022_17,2022,17,marina_bay,gasly,alphatauri,7,10,1.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,9.333333333333334,,22.0,0,0.0
+2022_17,2022,17,marina_bay,hamilton,mercedes,3,9,2.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,9.666666666666666,,365.0,0,0.0
+2022_17,2022,17,marina_bay,leclerc,ferrari,1,2,18.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,3.6666666666666665,,381.0,0,0.0
+2022_17,2022,17,marina_bay,norris,mclaren,6,4,12.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,8.666666666666666,,84.0,0,0.0
+2022_17,2022,17,marina_bay,ocon,alpine,17,16,0.0,Engine,0,25.0,18.0,High-Downforce,1,0,1,0,0,9.0,,122.0,1,0.1
+2022_17,2022,17,marina_bay,perez,red_bull,2,1,25.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,4.333333333333333,,519.0,0,0.0
+2022_17,2022,17,marina_bay,russell,mercedes,0,14,0.0,+2 Laps,0,25.0,11.0,High-Downforce,1,0,1,0,0,3.0,,367.0,0,0.0
+2022_17,2022,17,marina_bay,sainz,ferrari,4,3,15.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,5.0,,399.0,0,0.0
+2022_17,2022,17,marina_bay,stroll,aston_martin,11,6,8.0,Finished,0,25.0,12.0,High-Downforce,1,0,1,0,0,13.0,,5.0,0,0.1
+2022_17,2022,17,marina_bay,verstappen,red_bull,8,7,6.0,Finished,0,25.0,8.0,High-Downforce,1,0,1,0,0,1.0,,544.0,0,0.0
+2022_18,2022,18,suzuka,albon,williams,16,20,0.0,Hydraulics,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,13.0,,4.0,1,0.0
+2022_18,2022,18,suzuka,alonso,alpine,7,7,6.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,122.0,0,0.2
+2022_18,2022,18,suzuka,bottas,alfa,12,15,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,44.0,0,0.3
+2022_18,2022,18,suzuka,gasly,alphatauri,17,18,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,23.0,0,0.0
+2022_18,2022,18,suzuka,hamilton,mercedes,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,6.0,,367.0,0,0.0
+2022_18,2022,18,suzuka,leclerc,ferrari,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,,414.0,0,0.0
+2022_18,2022,18,suzuka,norris,mclaren,10,10,1.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,6.0,,96.0,0,0.0
+2022_18,2022,18,suzuka,ocon,alpine,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,12.0,,128.0,0,0.2
+2022_18,2022,18,suzuka,perez,red_bull,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,4.0,,550.0,0,0.0
+2022_18,2022,18,suzuka,russell,mercedes,8,8,4.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,,377.0,0,0.0
+2022_18,2022,18,suzuka,sainz,ferrari,3,19,0.0,Accident,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.0,,429.0,0,0.0
+2022_18,2022,18,suzuka,stroll,aston_martin,19,12,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,,13.0,0,0.1
+2022_18,2022,18,suzuka,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,3.0,,568.0,0,0.0
+2022_19,2022,19,americas,albon,williams,8,13,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,,4.0,0,0.1
+2022_19,2022,19,americas,alonso,alpine,14,7,6.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,,140.0,0,0.2
+2022_19,2022,19,americas,bottas,alfa,7,19,0.0,Spun off,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,13.0,,44.0,0,0.3
+2022_19,2022,19,americas,gasly,alphatauri,11,14,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,12.0,,23.0,0,0.0
+2022_19,2022,19,americas,hamilton,mercedes,3,2,18.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,,381.0,0,0.0
+2022_19,2022,19,americas,leclerc,ferrari,12,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,,429.0,0,0.0
+2022_19,2022,19,americas,norris,mclaren,6,6,8.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,7.0,,97.0,0,0.0
+2022_19,2022,19,americas,ocon,alpine,0,11,0.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,,146.0,0,0.2
+2022_19,2022,19,americas,perez,red_bull,9,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.0,,593.0,0,0.0
+2022_19,2022,19,americas,russell,mercedes,4,5,11.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,,399.0,0,0.0
+2022_19,2022,19,americas,sainz,ferrari,1,20,0.0,Collision damage,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,444.0,0,0.0
+2022_19,2022,19,americas,stroll,aston_martin,5,18,0.0,Collision,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,12.0,,13.0,0,0.1
+2022_19,2022,19,americas,verstappen,red_bull,2,1,25.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,3.0,,605.0,0,0.0
+2022_20,2022,20,rodriguez,albon,williams,17,12,0.0,+1 Lap,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,,4.0,0,0.1
+2022_20,2022,20,rodriguez,alonso,alpine,9,19,0.0,Engine,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,,146.0,1,0.2
+2022_20,2022,20,rodriguez,bottas,alfa,6,10,1.0,+1 Lap,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,15.0,,44.0,0,0.3
+2022_20,2022,20,rodriguez,gasly,alphatauri,14,11,0.0,+1 Lap,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,14.0,,23.0,0,0.0
+2022_20,2022,20,rodriguez,hamilton,mercedes,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,,410.0,0,0.0
+2022_20,2022,20,rodriguez,leclerc,ferrari,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,,444.0,0,0.0
+2022_20,2022,20,rodriguez,norris,mclaren,8,9,2.0,+1 Lap,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,,105.0,0,0.0
+2022_20,2022,20,rodriguez,ocon,alpine,10,8,4.0,+1 Lap,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,,146.0,0,0.3
+2022_20,2022,20,rodriguez,perez,red_bull,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,,630.0,0,0.0
+2022_20,2022,20,rodriguez,russell,mercedes,2,4,13.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,9.0,,428.0,0,0.0
+2022_20,2022,20,rodriguez,sainz,ferrari,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,14.0,,452.0,0,0.0
+2022_20,2022,20,rodriguez,stroll,aston_martin,20,15,0.0,+1 Lap,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.0,,13.0,0,0.1
+2022_20,2022,20,rodriguez,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,3.0,,645.0,0,0.0
+2022_21,2022,21,interlagos,albon,williams,19,15,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,15.0,,4.0,0,0.1
+2022_21,2022,21,interlagos,alonso,alpine,17,5,10.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.0,,150.0,0,0.3
+2022_21,2022,21,interlagos,bottas,alfa,14,9,2.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,,45.0,0,0.2
+2022_21,2022,21,interlagos,gasly,alphatauri,10,14,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,23.0,0,0.0
+2022_21,2022,21,interlagos,hamilton,mercedes,2,2,18.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,3.0,,441.0,0,0.0
+2022_21,2022,21,interlagos,leclerc,ferrari,5,4,12.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,4.0,,462.0,0,0.0
+2022_21,2022,21,interlagos,norris,mclaren,6,18,0.0,Gearbox,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,,107.0,1,0.0
+2022_21,2022,21,interlagos,ocon,alpine,16,8,4.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,,160.0,0,0.3
+2022_21,2022,21,interlagos,perez,red_bull,4,7,6.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,3.0,,670.0,0,0.0
+2022_21,2022,21,interlagos,russell,mercedes,1,1,26.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,,459.0,0,0.0
+2022_21,2022,21,interlagos,sainz,ferrari,7,3,15.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,,474.0,0,0.0
+2022_21,2022,21,interlagos,stroll,aston_martin,15,10,1.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.0,,13.0,0,0.1
+2022_21,2022,21,interlagos,verstappen,red_bull,3,6,8.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,1.0,,676.0,0,0.0
+2022_22,2022,22,yas_marina,albon,williams,19,13,0.0,+1 Lap,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,,4.0,0,0.1
+2022_22,2022,22,yas_marina,alonso,alpine,10,20,0.0,Water leak,1,20.0,11.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,,164.0,1,0.3
+2022_22,2022,22,yas_marina,bottas,alfa,18,15,0.0,+1 Lap,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,,47.0,0,0.2
+2022_22,2022,22,yas_marina,gasly,alphatauri,17,14,0.0,+1 Lap,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,13.0,,23.0,0,0.0
+2022_22,2022,22,yas_marina,hamilton,mercedes,5,18,0.0,Hydraulics,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,2.0,,485.0,1,0.0
+2022_22,2022,22,yas_marina,leclerc,ferrari,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,,489.0,0,0.0
+2022_22,2022,22,yas_marina,norris,mclaren,7,6,9.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.0,,107.0,0,0.1
+2022_22,2022,22,yas_marina,ocon,alpine,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,9.0,,164.0,0,0.3
+2022_22,2022,22,yas_marina,perez,red_bull,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,,684.0,0,0.0
+2022_22,2022,22,yas_marina,russell,mercedes,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,,485.0,0,0.1
+2022_22,2022,22,yas_marina,sainz,ferrari,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,,507.0,0,0.0
+2022_22,2022,22,yas_marina,stroll,aston_martin,14,8,4.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,14.0,0,0.1
+2022_22,2022,22,yas_marina,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,,699.0,0,0.0
+2023_1,2023,1,bahrain,albon,williams,15,10,1.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,13.0,0.0,0,0.1
+2023_1,2023,1,bahrain,alonso,aston_martin,5,3,15.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,9.0,0.0,0,0.1
+2023_1,2023,1,bahrain,bottas,alfa,12,8,4.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,6.0,0.0,0,0.2
+2023_1,2023,1,bahrain,gasly,alpine,20,9,2.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,13.0,20.0,0.0,0,0.2
+2023_1,2023,1,bahrain,hamilton,mercedes,7,5,10.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,3.0,0.0,0,0.1
+2023_1,2023,1,bahrain,hulkenberg,haas,10,15,0.0,Lapped,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,14.5,17.0,0.0,0,
+2023_1,2023,1,bahrain,leclerc,ferrari,3,19,0.0,Retired,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.0,1.0,0.0,0,0.0
+2023_1,2023,1,bahrain,norris,mclaren,11,17,0.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,15.0,0.0,0,0.1
+2023_1,2023,1,bahrain,ocon,alpine,9,18,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,7.0,2.0,0,0.2
+2023_1,2023,1,bahrain,perez,red_bull,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,18.0,0.0,0,0.0
+2023_1,2023,1,bahrain,russell,mercedes,6,7,6.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,4.0,10.0,0,0.1
+2023_1,2023,1,bahrain,sainz,ferrari,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,4.0,2.0,0.0,0,0.0
+2023_1,2023,1,bahrain,stroll,aston_martin,8,6,8.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,11.0,12.0,15.0,0,0.1
+2023_1,2023,1,bahrain,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,19.0,18.0,0,0.0
+2023_2,2023,2,jeddah,albon,williams,17,19,0.0,Retired,0,25.0,17.0,Street Circuit,3,0,0,0,1,12.666666666666666,14.0,1.0,0,0.1
+2023_2,2023,2,jeddah,alonso,aston_martin,2,3,15.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,9.333333333333334,16.0,23.0,0,0.1
+2023_2,2023,2,jeddah,bottas,alfa,14,18,0.0,Lapped,0,25.0,14.0,Street Circuit,3,0,0,0,1,10.666666666666666,15.0,4.0,0,0.1
+2023_2,2023,2,jeddah,gasly,alpine,9,9,2.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,12.333333333333334,8.0,2.0,0,0.2
+2023_2,2023,2,jeddah,hamilton,mercedes,7,5,10.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,8.333333333333334,10.0,16.0,0,0.1
+2023_2,2023,2,jeddah,hulkenberg,haas,10,12,0.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,14.666666666666666,12.0,0.0,0,
+2023_2,2023,2,jeddah,leclerc,ferrari,12,7,6.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,8.333333333333334,2.0,12.0,0,0.0
+2023_2,2023,2,jeddah,norris,mclaren,19,17,0.0,Finished,0,25.0,19.0,Street Circuit,3,0,0,0,1,13.666666666666666,7.0,0.0,0,0.1
+2023_2,2023,2,jeddah,ocon,alpine,6,8,4.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,11.0,6.0,4.0,0,0.2
+2023_2,2023,2,jeddah,perez,red_bull,1,1,25.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,4.0,4.0,43.0,0,0.0
+2023_2,2023,2,jeddah,russell,mercedes,3,4,12.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,4.333333333333333,5.0,26.0,0,0.1
+2023_2,2023,2,jeddah,sainz,ferrari,4,6,8.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,3.6666666666666665,3.0,18.0,0,0.0
+2023_2,2023,2,jeddah,stroll,aston_martin,5,20,0.0,Retired,0,25.0,6.0,Street Circuit,3,0,0,0,1,8.0,13.0,38.0,0,0.1
+2023_2,2023,2,jeddah,verstappen,red_bull,15,2,19.0,Finished,0,25.0,15.0,Street Circuit,3,0,0,0,1,2.6666666666666665,1.0,68.0,0,0.0
+2023_3,2023,3,albert_park,albon,williams,8,19,0.0,Retired,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.0,10.0,1.0,0,0.1
+2023_3,2023,3,albert_park,alonso,aston_martin,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,17.0,38.0,0,0.0
+2023_3,2023,3,albert_park,bottas,alfa,19,11,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,8.0,4.0,0,0.1
+2023_3,2023,3,albert_park,gasly,alpine,9,13,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,9.0,8.0,0,0.2
+2023_3,2023,3,albert_park,hamilton,mercedes,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,4.0,38.0,0,0.1
+2023_3,2023,3,albert_park,hulkenberg,haas,10,7,6.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,13.0,,0.0,0,
+2023_3,2023,3,albert_park,leclerc,ferrari,7,20,0.0,Retired,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,1.0,26.0,0,0.0
+2023_3,2023,3,albert_park,norris,mclaren,13,6,8.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,5.0,0.0,0,0.1
+2023_3,2023,3,albert_park,ocon,alpine,11,14,0.0,Retired,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,7.0,8.0,0,0.1
+2023_3,2023,3,albert_park,perez,red_bull,20,5,11.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,2.0,2.0,87.0,0,0.0
+2023_3,2023,3,albert_park,russell,mercedes,2,18,0.0,Retired,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,3.0,56.0,0,0.1
+2023_3,2023,3,albert_park,sainz,ferrari,5,12,0.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,20.0,26.0,0,0.0
+2023_3,2023,3,albert_park,stroll,aston_martin,6,4,12.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,12.0,53.0,0,0.0
+2023_3,2023,3,albert_park,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,18.0,98.0,0,0.0
+2023_4,2023,4,baku,albon,williams,12,12,0.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,16.0,12.0,1.0,0,0.1
+2023_4,2023,4,baku,alonso,aston_martin,6,4,12.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,3.0,7.0,65.0,0,0.0
+2023_4,2023,4,baku,bottas,alfa,13,18,0.0,Lapped,0,25.0,14.0,Street Circuit,3,0,0,0,1,12.333333333333334,11.0,4.0,0,0.0
+2023_4,2023,4,baku,gasly,alpine,17,14,0.0,Finished,0,25.0,19.0,Street Circuit,3,0,0,0,1,10.333333333333334,5.0,8.0,0,0.1
+2023_4,2023,4,baku,hamilton,mercedes,5,6,8.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,4.0,4.0,56.0,0,0.1
+2023_4,2023,4,baku,hulkenberg,haas,20,17,0.0,Lapped,0,25.0,17.0,Street Circuit,3,0,0,0,1,11.333333333333334,,6.0,0,0.0
+2023_4,2023,4,baku,leclerc,ferrari,1,3,15.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,15.333333333333334,19.0,26.0,0,0.0
+2023_4,2023,4,baku,norris,mclaren,7,9,2.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,13.333333333333334,9.0,8.0,0,0.1
+2023_4,2023,4,baku,ocon,alpine,19,15,0.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,13.333333333333334,10.0,8.0,0,0.1
+2023_4,2023,4,baku,perez,red_bull,3,1,25.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,2.6666666666666665,2.0,123.0,0,0.0
+2023_4,2023,4,baku,russell,mercedes,11,8,5.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,9.666666666666666,3.0,64.0,0,0.1
+2023_4,2023,4,baku,sainz,ferrari,4,5,10.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,7.333333333333333,20.0,41.0,0,0.0
+2023_4,2023,4,baku,stroll,aston_martin,9,7,6.0,Finished,0,25.0,9.0,Street Circuit,3,0,0,0,1,10.0,16.0,77.0,0,0.0
+2023_4,2023,4,baku,verstappen,red_bull,2,2,18.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,1.3333333333333333,1.0,148.0,0,0.0
+2023_5,2023,5,miami,albon,williams,11,14,0.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,16.666666666666668,9.0,1.0,0,0.1
+2023_5,2023,5,miami,alonso,aston_martin,2,3,15.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,3.3333333333333335,11.0,83.0,0,0.0
+2023_5,2023,5,miami,bottas,alfa,10,13,0.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,15.666666666666666,7.0,4.0,0,0.0
+2023_5,2023,5,miami,gasly,alpine,5,8,4.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,12.0,18.0,8.0,0,0.1
+2023_5,2023,5,miami,hamilton,mercedes,13,6,8.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,4.333333333333333,6.0,69.0,0,0.1
+2023_5,2023,5,miami,hulkenberg,haas,12,15,0.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,12.0,,6.0,0,0.0
+2023_5,2023,5,miami,leclerc,ferrari,7,7,6.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,10.0,2.0,51.0,0,0.0
+2023_5,2023,5,miami,norris,mclaren,16,17,0.0,Finished,0,25.0,16.0,Street Circuit,3,0,0,0,1,10.666666666666666,19.0,10.0,0,0.1
+2023_5,2023,5,miami,ocon,alpine,8,9,2.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,12.333333333333334,8.0,12.0,0,0.0
+2023_5,2023,5,miami,perez,red_bull,1,2,18.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,2.3333333333333335,4.0,166.0,0,0.0
+2023_5,2023,5,miami,russell,mercedes,6,4,12.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,10.0,5.0,77.0,0,0.0
+2023_5,2023,5,miami,sainz,ferrari,3,5,10.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,7.666666666666667,3.0,57.0,0,0.0
+2023_5,2023,5,miami,stroll,aston_martin,18,12,0.0,Finished,0,25.0,18.0,Street Circuit,3,0,0,0,1,10.333333333333334,10.0,98.0,0,0.0
+2023_5,2023,5,miami,verstappen,red_bull,9,1,26.0,Finished,0,25.0,9.0,Street Circuit,3,0,0,0,1,1.6666666666666667,1.0,184.0,0,0.0
+2023_6,2023,6,monaco,albon,williams,13,14,0.0,Lapped,0,25.0,13.0,High-Downforce,1,0,1,0,0,15.0,18.0,1.0,0,0.1
+2023_6,2023,6,monaco,alonso,aston_martin,2,2,18.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,3.3333333333333335,7.0,98.0,0,0.0
+2023_6,2023,6,monaco,bottas,alfa,15,11,0.0,Lapped,0,25.0,15.0,High-Downforce,1,0,1,0,0,14.0,9.0,4.0,0,0.0
+2023_6,2023,6,monaco,gasly,alpine,7,7,6.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,11.666666666666666,11.0,14.0,0,0.0
+2023_6,2023,6,monaco,hamilton,mercedes,5,4,13.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,4.666666666666667,8.0,89.0,0,0.0
+2023_6,2023,6,monaco,hulkenberg,haas,18,17,0.0,Lapped,0,25.0,18.0,High-Downforce,1,0,1,0,0,13.0,,6.0,0,0.0
+2023_6,2023,6,monaco,leclerc,ferrari,6,6,8.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,10.0,4.0,67.0,0,0.0
+2023_6,2023,6,monaco,norris,mclaren,10,9,2.0,Lapped,0,25.0,10.0,High-Downforce,1,0,1,0,0,10.666666666666666,6.0,10.0,0,0.1
+2023_6,2023,6,monaco,ocon,alpine,3,3,15.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,12.666666666666666,12.0,20.0,0,0.0
+2023_6,2023,6,monaco,perez,red_bull,20,16,0.0,Lapped,0,25.0,20.0,High-Downforce,1,0,1,0,0,2.6666666666666665,1.0,210.0,0,0.0
+2023_6,2023,6,monaco,russell,mercedes,8,5,10.0,Finished,0,25.0,8.0,High-Downforce,1,0,1,0,0,10.0,5.0,102.0,0,0.0
+2023_6,2023,6,monaco,sainz,ferrari,4,8,4.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,7.333333333333333,2.0,75.0,0,0.0
+2023_6,2023,6,monaco,stroll,aston_martin,14,20,0.0,Retired,0,25.0,14.0,High-Downforce,1,0,1,0,0,7.666666666666667,14.0,116.0,0,0.0
+2023_6,2023,6,monaco,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,1.3333333333333333,3.0,210.0,0,0.0
+2023_7,2023,7,catalunya,albon,williams,18,16,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,18.0,1.0,0,0.0
+2023_7,2023,7,catalunya,alonso,aston_martin,8,7,6.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,3.0,9.0,116.0,0,0.0
+2023_7,2023,7,catalunya,bottas,alfa,16,19,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,14.0,6.0,4.0,0,0.0
+2023_7,2023,7,catalunya,gasly,alpine,10,10,1.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,13.0,35.0,0,0.0
+2023_7,2023,7,catalunya,hamilton,mercedes,4,2,18.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,5.0,112.0,0,0.0
+2023_7,2023,7,catalunya,hulkenberg,haas,7,15,0.0,Lapped,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,,6.0,0,0.0
+2023_7,2023,7,catalunya,leclerc,ferrari,19,11,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,20.0,79.0,0,0.0
+2023_7,2023,7,catalunya,norris,mclaren,3,17,0.0,Lapped,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,8.0,12.0,0,0.1
+2023_7,2023,7,catalunya,ocon,alpine,6,8,4.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.0,7.0,36.0,0,0.0
+2023_7,2023,7,catalunya,perez,red_bull,11,4,12.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,2.0,235.0,0,0.0
+2023_7,2023,7,catalunya,russell,mercedes,12,3,15.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,3.0,130.0,0,0.0
+2023_7,2023,7,catalunya,sainz,ferrari,2,5,10.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,6.0,4.0,79.0,0,0.0
+2023_7,2023,7,catalunya,stroll,aston_martin,5,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,13.0,15.0,122.0,0,0.0
+2023_7,2023,7,catalunya,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,1.0,247.0,0,0.0
+2023_8,2023,8,villeneuve,albon,williams,9,7,6.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,13.0,1.0,0,0.0
+2023_8,2023,8,villeneuve,alonso,aston_martin,2,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.0,9.0,130.0,0,0.0
+2023_8,2023,8,villeneuve,bottas,alfa,14,10,1.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,7.0,4.0,0,0.0
+2023_8,2023,8,villeneuve,gasly,alpine,15,12,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,14.0,40.0,0,0.0
+2023_8,2023,8,villeneuve,hamilton,mercedes,3,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,4.0,3.0,145.0,0,0.0
+2023_8,2023,8,villeneuve,hulkenberg,haas,5,15,0.0,Lapped,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,,6.0,0,0.0
+2023_8,2023,8,villeneuve,leclerc,ferrari,10,4,12.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,8.0,5.0,89.0,0,0.0
+2023_8,2023,8,villeneuve,norris,mclaren,7,13,0.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,15.0,12.0,0,0.1
+2023_8,2023,8,villeneuve,ocon,alpine,6,8,4.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,6.0,40.0,0,0.0
+2023_8,2023,8,villeneuve,perez,red_bull,12,6,9.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,20.0,273.0,0,0.0
+2023_8,2023,8,villeneuve,russell,mercedes,4,19,0.0,Retired,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.0,4.0,160.0,0,0.0
+2023_8,2023,8,villeneuve,sainz,ferrari,11,5,10.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,6.0,2.0,101.0,0,0.0
+2023_8,2023,8,villeneuve,stroll,aston_martin,16,9,2.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,10.0,148.0,0,0.0
+2023_8,2023,8,villeneuve,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,1.0,282.0,0,0.0
+2023_9,2023,9,red_bull_ring,albon,williams,10,11,0.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,12.0,7.0,0,0.0
+2023_9,2023,9,red_bull_ring,alonso,aston_martin,7,5,10.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,3.6666666666666665,10.0,150.0,0,0.0
+2023_9,2023,9,red_bull_ring,bottas,alfa,14,15,0.0,Lapped,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,11.0,5.0,0,0.0
+2023_9,2023,9,red_bull_ring,gasly,alpine,9,10,1.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,15.0,44.0,0,0.0
+2023_9,2023,9,red_bull_ring,hamilton,mercedes,5,8,4.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,3.0,3.0,160.0,0,0.0
+2023_9,2023,9,red_bull_ring,hulkenberg,haas,8,20,0.0,Retired,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,,6.0,0,0.0
+2023_9,2023,9,red_bull_ring,leclerc,ferrari,2,2,18.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,7.0,1.0,111.0,0,0.0
+2023_9,2023,9,red_bull_ring,norris,mclaren,4,4,12.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,13.0,7.0,12.0,0,0.1
+2023_9,2023,9,red_bull_ring,ocon,alpine,12,14,0.0,Lapped,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,6.333333333333333,5.0,45.0,0,0.0
+2023_9,2023,9,red_bull_ring,perez,red_bull,15,3,15.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,20.0,307.0,0,0.0
+2023_9,2023,9,red_bull_ring,russell,mercedes,11,7,6.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,9.0,4.0,164.0,0,0.0
+2023_9,2023,9,red_bull_ring,sainz,ferrari,3,6,8.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,6.0,18.0,129.0,0,0.0
+2023_9,2023,9,red_bull_ring,stroll,aston_martin,6,9,2.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,13.0,160.0,0,0.0
+2023_9,2023,9,red_bull_ring,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,1.0,2.0,322.0,0,0.0
+2023_10,2023,10,silverstone,albon,williams,8,8,4.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,20.0,7.0,0,0.0
+2023_10,2023,10,silverstone,alonso,aston_martin,9,7,6.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,4.666666666666667,5.0,162.0,0,0.0
+2023_10,2023,10,silverstone,bottas,alfa,20,12,0.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,14.666666666666666,17.0,5.0,0,0.0
+2023_10,2023,10,silverstone,gasly,alpine,10,18,0.0,Retired,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,16.0,45.0,0,0.0
+2023_10,2023,10,silverstone,hamilton,mercedes,7,3,15.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,4.333333333333333,3.0,170.0,0,0.0
+2023_10,2023,10,silverstone,hulkenberg,haas,11,13,0.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,16.666666666666668,,6.0,0,0.0
+2023_10,2023,10,silverstone,leclerc,ferrari,4,9,2.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,5.666666666666667,4.0,137.0,0,0.0
+2023_10,2023,10,silverstone,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,6.0,24.0,0,0.0
+2023_10,2023,10,silverstone,ocon,alpine,13,20,0.0,Retired,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,10.0,15.0,45.0,0,0.0
+2023_10,2023,10,silverstone,perez,red_bull,15,6,8.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,4.333333333333333,2.0,348.0,0,0.0
+2023_10,2023,10,silverstone,russell,mercedes,6,5,10.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,18.0,185.0,0,0.0
+2023_10,2023,10,silverstone,sainz,ferrari,5,10,1.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,1.0,139.0,0,0.0
+2023_10,2023,10,silverstone,stroll,aston_martin,12,14,0.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,8.0,11.0,168.0,0,0.0
+2023_10,2023,10,silverstone,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,1.0,7.0,356.0,0,0.0
+2023_11,2023,11,hungaroring,albon,williams,16,11,0.0,Lapped,0,25.0,16.0,High-Downforce,1,0,1,0,0,8.666666666666666,17.0,11.0,0,0.0
+2023_11,2023,11,hungaroring,alonso,aston_martin,8,9,2.0,Finished,0,25.0,8.0,High-Downforce,1,0,1,0,0,4.666666666666667,8.0,168.0,0,0.0
+2023_11,2023,11,hungaroring,bottas,alfa,7,12,0.0,Lapped,0,25.0,7.0,High-Downforce,1,0,1,0,0,12.333333333333334,20.0,5.0,0,0.0
+2023_11,2023,11,hungaroring,gasly,alpine,15,20,0.0,Retired,0,25.0,15.0,High-Downforce,1,0,1,0,0,13.333333333333334,12.0,45.0,0,0.0
+2023_11,2023,11,hungaroring,hamilton,mercedes,1,4,12.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,4.666666666666667,2.0,195.0,0,0.0
+2023_11,2023,11,hungaroring,hulkenberg,haas,10,14,0.0,Lapped,0,25.0,10.0,High-Downforce,1,0,1,0,0,16.0,,6.0,0,0.0
+2023_11,2023,11,hungaroring,leclerc,ferrari,6,7,6.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,5.0,6.0,140.0,0,0.0
+2023_11,2023,11,hungaroring,norris,mclaren,3,2,18.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,6.333333333333333,7.0,42.0,0,0.0
+2023_11,2023,11,hungaroring,ocon,alpine,12,19,0.0,Retired,0,25.0,12.0,High-Downforce,1,0,1,0,0,14.0,9.0,45.0,0,0.0
+2023_11,2023,11,hungaroring,perez,red_bull,9,3,15.0,Finished,0,25.0,9.0,High-Downforce,1,0,1,0,0,5.0,5.0,382.0,0,0.0
+2023_11,2023,11,hungaroring,russell,mercedes,18,6,8.0,Finished,0,25.0,18.0,High-Downforce,1,0,1,0,0,10.333333333333334,3.0,207.0,0,0.0
+2023_11,2023,11,hungaroring,sainz,ferrari,11,8,4.0,Finished,0,25.0,11.0,High-Downforce,1,0,1,0,0,7.0,4.0,146.0,0,0.0
+2023_11,2023,11,hungaroring,stroll,aston_martin,14,10,1.0,Lapped,0,25.0,14.0,High-Downforce,1,0,1,0,0,10.666666666666666,11.0,170.0,0,0.0
+2023_11,2023,11,hungaroring,verstappen,red_bull,2,1,26.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,1.0,1.0,397.0,0,0.0
+2023_12,2023,12,spa,albon,williams,15,14,0.0,Finished,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,10.0,10.0,11.0,0,0.0
+2023_12,2023,12,spa,alonso,aston_martin,9,5,10.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,7.0,5.0,171.0,0,0.0
+2023_12,2023,12,spa,bottas,alfa,13,12,0.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,13.0,19.0,5.0,0,0.0
+2023_12,2023,12,spa,gasly,alpine,12,11,0.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,16.0,9.0,45.0,0,0.0
+2023_12,2023,12,spa,hamilton,mercedes,3,4,13.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,5.0,20.0,215.0,0,0.0
+2023_12,2023,12,spa,hulkenberg,haas,20,18,0.0,Finished,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,,6.0,0,0.0
+2023_12,2023,12,spa,leclerc,ferrari,1,3,15.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,6.0,6.0,150.0,0,0.0
+2023_12,2023,12,spa,norris,mclaren,7,7,6.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,12.0,60.0,0,0.0
+2023_12,2023,12,spa,ocon,alpine,14,8,4.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,17.666666666666668,7.0,45.0,0,0.0
+2023_12,2023,12,spa,perez,red_bull,2,2,18.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,4.0,2.0,423.0,0,0.0
+2023_12,2023,12,spa,russell,mercedes,8,6,8.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,6.0,4.0,228.0,0,0.0
+2023_12,2023,12,spa,sainz,ferrari,4,19,0.0,Retired,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,8.0,3.0,165.0,0,0.0
+2023_12,2023,12,spa,stroll,aston_martin,10,9,2.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,11.0,11.0,181.0,0,0.0
+2023_12,2023,12,spa,verstappen,red_bull,6,1,25.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,1.0,1.0,441.0,0,0.0
+2023_13,2023,13,zandvoort,albon,williams,4,8,4.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,11.0,12.0,11.0,0,0.0
+2023_13,2023,13,zandvoort,alonso,aston_martin,5,2,19.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,7.0,6.0,183.0,0,0.0
+2023_13,2023,13,zandvoort,bottas,alfa,18,14,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,12.0,19.0,5.0,0,0.0
+2023_13,2023,13,zandvoort,gasly,alpine,12,3,15.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,11.0,49.0,0,0.0
+2023_13,2023,13,zandvoort,hamilton,mercedes,13,6,8.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,4.0,236.0,0,0.0
+2023_13,2023,13,zandvoort,hulkenberg,haas,14,12,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.0,,6.0,0,0.0
+2023_13,2023,13,zandvoort,leclerc,ferrari,9,19,0.0,Undertray,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,3.0,165.0,0,0.0
+2023_13,2023,13,zandvoort,norris,mclaren,2,7,6.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,7.0,66.0,0,0.0
+2023_13,2023,13,zandvoort,ocon,alpine,16,10,1.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,9.0,64.0,0,0.0
+2023_13,2023,13,zandvoort,perez,red_bull,7,4,12.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,5.0,466.0,0,0.0
+2023_13,2023,13,zandvoort,russell,mercedes,3,17,0.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,2.0,244.0,0,0.0
+2023_13,2023,13,zandvoort,sainz,ferrari,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,8.0,165.0,0,0.0
+2023_13,2023,13,zandvoort,stroll,aston_martin,11,11,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,10.0,202.0,0,0.0
+2023_13,2023,13,zandvoort,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,1.0,478.0,0,0.0
+2023_14,2023,14,monza,albon,williams,6,7,6.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,11.0,,15.0,0,0.0
+2023_14,2023,14,monza,alonso,aston_martin,10,9,2.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,19.0,202.0,0,0.0
+2023_14,2023,14,monza,bottas,alfa,14,10,1.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,12.666666666666666,13.0,5.0,0,0.0
+2023_14,2023,14,monza,gasly,alpine,17,15,0.0,Finished,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,8.0,65.0,0,0.0
+2023_14,2023,14,monza,hamilton,mercedes,8,6,8.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,4.666666666666667,5.0,244.0,0,0.0
+2023_14,2023,14,monza,hulkenberg,haas,13,17,0.0,Lapped,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,14.666666666666666,,6.0,0,0.0
+2023_14,2023,14,monza,leclerc,ferrari,3,4,12.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,2.0,175.0,0,0.0
+2023_14,2023,14,monza,norris,mclaren,9,8,4.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,7.0,72.0,0,0.0
+2023_14,2023,14,monza,ocon,alpine,18,19,0.0,Retired,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,11.0,65.0,0,0.0
+2023_14,2023,14,monza,perez,red_bull,5,2,18.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,3.0,6.0,503.0,0,0.0
+2023_14,2023,14,monza,russell,mercedes,4,5,10.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,3.0,252.0,0,0.0
+2023_14,2023,14,monza,sainz,ferrari,1,3,15.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,4.0,187.0,0,0.0
+2023_14,2023,14,monza,stroll,aston_martin,20,16,0.0,Finished,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,10.0,18.0,204.0,0,0.0
+2023_14,2023,14,monza,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,1.0,1.0,521.0,0,0.0
+2023_15,2023,15,marina_bay,albon,williams,14,11,0.0,Finished,0,25.0,14.0,High-Downforce,1,0,1,0,0,9.666666666666666,17.0,21.0,0,0.0
+2023_15,2023,15,marina_bay,alonso,aston_martin,7,15,0.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,5.333333333333333,18.0,204.0,0,0.0
+2023_15,2023,15,marina_bay,bottas,alfa,16,17,0.0,Retired,0,25.0,16.0,High-Downforce,1,0,1,0,0,12.0,11.0,6.0,0,0.0
+2023_15,2023,15,marina_bay,gasly,alpine,12,6,8.0,Finished,0,25.0,12.0,High-Downforce,1,0,1,0,0,9.666666666666666,10.0,65.0,0,0.0
+2023_15,2023,15,marina_bay,hamilton,mercedes,5,3,16.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,5.333333333333333,9.0,262.0,0,0.0
+2023_15,2023,15,marina_bay,hulkenberg,haas,9,13,0.0,Finished,0,25.0,9.0,High-Downforce,1,0,1,0,0,15.666666666666666,,6.0,0,0.0
+2023_15,2023,15,marina_bay,leclerc,ferrari,3,4,12.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,8.666666666666666,2.0,202.0,0,0.0
+2023_15,2023,15,marina_bay,norris,mclaren,4,2,18.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,7.333333333333333,4.0,76.0,0,0.0
+2023_15,2023,15,marina_bay,ocon,alpine,8,18,0.0,Retired,0,25.0,8.0,High-Downforce,1,0,1,0,0,12.333333333333334,16.0,73.0,0,0.0
+2023_15,2023,15,marina_bay,perez,red_bull,13,8,4.0,Finished,0,25.0,13.0,High-Downforce,1,0,1,0,0,2.6666666666666665,1.0,546.0,0,0.0
+2023_15,2023,15,marina_bay,russell,mercedes,2,16,0.0,Retired,0,25.0,2.0,High-Downforce,1,0,1,0,0,9.333333333333334,14.0,278.0,0,0.0
+2023_15,2023,15,marina_bay,sainz,ferrari,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,9.0,3.0,214.0,0,0.0
+2023_15,2023,15,marina_bay,stroll,aston_martin,0,20,0.0,Withdrew,0,25.0,20.0,High-Downforce,1,0,1,0,0,12.0,6.0,204.0,0,0.0
+2023_15,2023,15,marina_bay,verstappen,red_bull,11,5,10.0,Finished,0,25.0,11.0,High-Downforce,1,0,1,0,0,1.0,7.0,550.0,0,0.0
+2023_16,2023,16,suzuka,albon,williams,13,16,0.0,Retired,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,20.0,21.0,0,0.0
+2023_16,2023,16,suzuka,alonso,aston_martin,10,8,4.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,7.0,204.0,0,0.0
+2023_16,2023,16,suzuka,bottas,alfa,16,20,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,15.0,6.0,0,0.0
+2023_16,2023,16,suzuka,gasly,alpine,12,10,1.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,8.0,18.0,73.0,0,0.0
+2023_16,2023,16,suzuka,hamilton,mercedes,7,5,10.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,5.0,5.0,278.0,0,0.0
+2023_16,2023,16,suzuka,hulkenberg,haas,18,14,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,14.0,,6.0,0,0.0
+2023_16,2023,16,suzuka,leclerc,ferrari,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,9.0,3.0,239.0,0,0.0
+2023_16,2023,16,suzuka,norris,mclaren,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,10.0,94.0,0,0.0
+2023_16,2023,16,suzuka,ocon,alpine,14,9,2.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,4.0,74.0,0,0.0
+2023_16,2023,16,suzuka,perez,red_bull,5,19,0.0,Retired,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,2.0,560.0,0,0.0
+2023_16,2023,16,suzuka,russell,mercedes,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,8.0,288.0,0,0.0
+2023_16,2023,16,suzuka,sainz,ferrari,6,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,3.0,19.0,251.0,0,0.0
+2023_16,2023,16,suzuka,stroll,aston_martin,17,18,0.0,Retired,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,12.0,208.0,0,0.0
+2023_16,2023,16,suzuka,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,1.0,560.0,0,0.0
+2023_17,2023,17,losail,albon,williams,13,13,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,,21.0,0,0.0
+2023_17,2023,17,losail,alonso,aston_martin,4,6,8.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,,208.0,0,0.0
+2023_17,2023,17,losail,bottas,alfa,9,8,4.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,,6.0,0,0.0
+2023_17,2023,17,losail,gasly,alpine,7,12,0.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,,76.0,0,0.0
+2023_17,2023,17,losail,hamilton,mercedes,3,19,0.0,Retired,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,,294.0,0,0.0
+2023_17,2023,17,losail,hulkenberg,haas,14,16,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,,6.0,0,0.0
+2023_17,2023,17,losail,leclerc,ferrari,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.0,,259.0,0,0.0
+2023_17,2023,17,losail,norris,mclaren,10,3,15.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,4.0,,112.0,0,0.0
+2023_17,2023,17,losail,ocon,alpine,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,,76.0,0,0.0
+2023_17,2023,17,losail,perez,red_bull,20,10,1.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,586.0,0,0.0
+2023_17,2023,17,losail,russell,mercedes,2,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,,294.0,0,0.0
+2023_17,2023,17,losail,sainz,ferrari,12,20,0.0,Did not start,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,,269.0,0,0.0
+2023_17,2023,17,losail,stroll,aston_martin,16,11,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,18.0,,216.0,0,0.0
+2023_17,2023,17,losail,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,,587.0,0,0.0
+2023_18,2023,18,americas,albon,williams,15,9,2.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,13.0,21.0,0,0.0
+2023_18,2023,18,americas,alonso,aston_martin,19,16,0.0,Retired,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,7.0,216.0,0,0.0
+2023_18,2023,18,americas,bottas,alfa,13,12,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,15.0,19.0,10.0,0,0.0
+2023_18,2023,18,americas,gasly,alpine,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,14.0,82.0,0,0.0
+2023_18,2023,18,americas,hamilton,mercedes,3,19,0.0,Disqualified,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,9.0,2.0,306.0,0,0.0
+2023_18,2023,18,americas,hulkenberg,haas,18,11,0.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,6.0,0,0.0
+2023_18,2023,18,americas,leclerc,ferrari,1,20,0.0,Disqualified,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,3.0,269.0,0,0.0
+2023_18,2023,18,americas,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,6.0,127.0,0,0.0
+2023_18,2023,18,americas,ocon,alpine,8,18,0.0,Retired,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,11.0,90.0,0,0.0
+2023_18,2023,18,americas,perez,red_bull,9,4,12.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,4.0,613.0,0,0.0
+2023_18,2023,18,americas,russell,mercedes,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,9.0,5.0,306.0,0,0.0
+2023_18,2023,18,americas,sainz,ferrari,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,9.0,20.0,269.0,0,0.0
+2023_18,2023,18,americas,stroll,aston_martin,20,7,6.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,18.0,216.0,0,0.0
+2023_18,2023,18,americas,verstappen,red_bull,6,1,25.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,1.0,625.0,0,0.0
+2023_19,2023,19,rodriguez,albon,williams,14,9,2.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,12.0,23.0,0,0.0
+2023_19,2023,19,rodriguez,alonso,aston_martin,13,18,0.0,Withdrew,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,10.0,19.0,222.0,0,0.0
+2023_19,2023,19,rodriguez,bottas,alfa,9,15,0.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,10.0,10.0,0,0.0
+2023_19,2023,19,rodriguez,gasly,alpine,11,11,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,11.0,90.0,0,0.0
+2023_19,2023,19,rodriguez,hamilton,mercedes,6,2,19.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,2.0,316.0,0,0.0
+2023_19,2023,19,rodriguez,hulkenberg,haas,12,13,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,,6.0,0,0.0
+2023_19,2023,19,rodriguez,leclerc,ferrari,1,3,15.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,6.0,284.0,0,0.0
+2023_19,2023,19,rodriguez,norris,mclaren,17,5,10.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,9.0,145.0,0,0.0
+2023_19,2023,19,rodriguez,ocon,alpine,15,10,1.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,8.0,90.0,0,0.0
+2023_19,2023,19,rodriguez,perez,red_bull,5,20,0.0,Collision damage,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,11.0,3.0,650.0,0,0.0
+2023_19,2023,19,rodriguez,russell,mercedes,8,6,8.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,4.0,335.0,0,0.0
+2023_19,2023,19,rodriguez,sainz,ferrari,2,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,5.0,299.0,0,0.0
+2023_19,2023,19,rodriguez,stroll,aston_martin,0,17,0.0,Collision damage,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.0,15.0,222.0,0,0.0
+2023_19,2023,19,rodriguez,verstappen,red_bull,3,1,25.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,1.0,1.0,650.0,0,0.0
+2023_20,2023,20,interlagos,albon,williams,13,19,0.0,Retired,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,15.0,25.0,0,0.0
+2023_20,2023,20,interlagos,alonso,aston_martin,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,5.0,222.0,0,0.0
+2023_20,2023,20,interlagos,bottas,alfa,18,16,0.0,Retired,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,9.0,10.0,0,0.0
+2023_20,2023,20,interlagos,gasly,alpine,15,7,6.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,14.0,91.0,0,0.0
+2023_20,2023,20,interlagos,hamilton,mercedes,5,8,4.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,2.0,343.0,0,0.0
+2023_20,2023,20,interlagos,hulkenberg,haas,11,12,0.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,,6.0,0,0.0
+2023_20,2023,20,interlagos,leclerc,ferrari,2,20,0.0,Did not start,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,4.0,311.0,0,0.0
+2023_20,2023,20,interlagos,norris,mclaren,6,2,19.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,18.0,155.0,0,0.0
+2023_20,2023,20,interlagos,ocon,alpine,14,10,1.0,Lapped,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,8.0,97.0,0,0.0
+2023_20,2023,20,interlagos,perez,red_bull,9,4,12.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,7.0,675.0,0,0.0
+2023_20,2023,20,interlagos,russell,mercedes,8,15,0.0,Retired,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,5.0,1.0,347.0,0,0.0
+2023_20,2023,20,interlagos,sainz,ferrari,7,6,8.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,9.0,3.0,311.0,0,0.0
+2023_20,2023,20,interlagos,stroll,aston_martin,3,5,10.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,10.0,237.0,0,0.0
+2023_20,2023,20,interlagos,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,6.0,687.0,0,0.0
+2023_21,2023,21,vegas,albon,williams,5,12,0.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,25.0,0,0.0
+2023_21,2023,21,vegas,alonso,aston_martin,9,9,2.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,247.0,0,0.0
+2023_21,2023,21,vegas,bottas,alfa,7,17,0.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,10.0,0,0.0
+2023_21,2023,21,vegas,gasly,alpine,4,11,0.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,8.0,,98.0,0,0.0
+2023_21,2023,21,vegas,hamilton,mercedes,10,7,6.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,347.0,0,0.0
+2023_21,2023,21,vegas,hulkenberg,haas,13,19,0.0,Retired,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,12.0,,6.0,0,0.0
+2023_21,2023,21,vegas,leclerc,ferrari,1,2,18.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,,319.0,0,0.0
+2023_21,2023,21,vegas,norris,mclaren,15,20,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,3.0,,174.0,0,0.0
+2023_21,2023,21,vegas,ocon,alpine,16,4,12.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,,98.0,0,0.0
+2023_21,2023,21,vegas,perez,red_bull,11,3,15.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,,712.0,0,0.0
+2023_21,2023,21,vegas,russell,mercedes,3,8,4.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,353.0,0,0.0
+2023_21,2023,21,vegas,sainz,ferrari,12,6,8.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,,337.0,0,0.0
+2023_21,2023,21,vegas,stroll,aston_martin,19,5,10.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,,249.0,0,0.0
+2023_21,2023,21,vegas,verstappen,red_bull,2,1,25.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,1.0,,727.0,0,0.0
+2023_22,2023,22,yas_marina,albon,williams,14,14,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,13.0,25.0,0,0.0
+2023_22,2023,22,yas_marina,alonso,aston_martin,7,7,6.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,10.0,20.0,259.0,0,0.0
+2023_22,2023,22,yas_marina,bottas,alfa,18,19,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,16.0,15.0,10.0,0,0.0
+2023_22,2023,22,yas_marina,gasly,alpine,10,13,0.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,14.0,110.0,0,0.0
+2023_22,2023,22,yas_marina,hamilton,mercedes,11,9,2.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,18.0,357.0,0,0.0
+2023_22,2023,22,yas_marina,hulkenberg,haas,8,15,0.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,,6.0,0,0.0
+2023_22,2023,22,yas_marina,leclerc,ferrari,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,2.0,345.0,0,0.0
+2023_22,2023,22,yas_marina,norris,mclaren,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,9.0,6.0,174.0,0,0.0
+2023_22,2023,22,yas_marina,ocon,alpine,12,12,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,8.0,7.0,110.0,0,0.0
+2023_22,2023,22,yas_marina,perez,red_bull,9,4,12.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,9.0,3.0,752.0,0,0.0
+2023_22,2023,22,yas_marina,russell,mercedes,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,5.0,359.0,0,0.0
+2023_22,2023,22,yas_marina,sainz,ferrari,16,18,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,4.0,363.0,0,0.0
+2023_22,2023,22,yas_marina,stroll,aston_martin,13,10,1.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,9.0,8.0,265.0,0,0.0
+2023_22,2023,22,yas_marina,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,1.0,764.0,0,0.0
+2024_1,2024,1,bahrain,albon,williams,13,15,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,15.0,11.5,0.0,0,0.0
+2024_1,2024,1,bahrain,alonso,aston_martin,6,9,2.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,6.0,0.0,0,0.0
+2024_1,2024,1,bahrain,bottas,sauber,16,19,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,7.0,0.0,0,
+2024_1,2024,1,bahrain,gasly,alpine,20,18,0.0,Lapped,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,14.5,0.0,0,0.0
+2024_1,2024,1,bahrain,hamilton,mercedes,9,7,6.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,8.0,4.0,0.0,0,0.0
+2024_1,2024,1,bahrain,hulkenberg,haas,10,16,0.0,Lapped,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,16.0,0.0,0,0.0
+2024_1,2024,1,bahrain,leclerc,ferrari,2,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,8.0,10.0,0.0,0,0.0
+2024_1,2024,1,bahrain,norris,mclaren,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.0,16.0,0.0,0,0.0
+2024_1,2024,1,bahrain,ocon,alpine,19,17,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,12.5,0.0,0,0.0
+2024_1,2024,1,bahrain,perez,red_bull,5,2,18.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,10.0,0.0,0,0.0
+2024_1,2024,1,bahrain,russell,mercedes,3,5,10.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,5.5,6.0,0,0.0
+2024_1,2024,1,bahrain,sainz,ferrari,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,10.0,3.0,12.0,0,0.0
+2024_1,2024,1,bahrain,stroll,aston_martin,12,10,1.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,9.0,2.0,0,0.0
+2024_1,2024,1,bahrain,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,10.0,18.0,0,0.0
+2024_2,2024,2,jeddah,albon,williams,12,11,0.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,13.666666666666666,16.5,0.0,0,0.0
+2024_2,2024,2,jeddah,alonso,aston_martin,4,5,10.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,8.333333333333334,9.5,3.0,0,0.0
+2024_2,2024,2,jeddah,bottas,sauber,16,17,0.0,Lapped,0,25.0,16.0,Street Circuit,3,0,0,0,1,18.333333333333332,16.5,0.0,0,
+2024_2,2024,2,jeddah,gasly,alpine,18,20,0.0,Retired,0,25.0,18.0,Street Circuit,3,0,0,0,1,14.0,8.5,0.0,0,0.0
+2024_2,2024,2,jeddah,hamilton,mercedes,8,9,2.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,7.666666666666667,7.5,16.0,0,0.0
+2024_2,2024,2,jeddah,hulkenberg,haas,15,10,1.0,Finished,0,25.0,15.0,Street Circuit,3,0,0,0,1,16.666666666666668,12.0,0.0,0,0.0
+2024_2,2024,2,jeddah,leclerc,ferrari,2,3,16.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,2.6666666666666665,4.5,27.0,0,0.0
+2024_2,2024,2,jeddah,norris,mclaren,6,8,4.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,10.333333333333334,12.0,8.0,0,0.0
+2024_2,2024,2,jeddah,ocon,alpine,17,13,0.0,Lapped,0,25.0,17.0,Street Circuit,3,0,0,0,1,11.0,7.0,0.0,0,0.0
+2024_2,2024,2,jeddah,perez,red_bull,3,2,18.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,3.0,2.5,44.0,0,0.0
+2024_2,2024,2,jeddah,russell,mercedes,7,6,8.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,5.333333333333333,4.5,18.0,0,0.0
+2024_2,2024,2,jeddah,stroll,aston_martin,10,19,0.0,Retired,0,25.0,10.0,Street Circuit,3,0,0,0,1,8.333333333333334,16.5,13.0,0,0.0
+2024_2,2024,2,jeddah,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,1.0,1.5,62.0,0,0.0
+2024_3,2024,3,albert_park,albon,williams,12,11,0.0,Lapped,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,14.5,0.0,0,0.0
+2024_3,2024,3,albert_park,alonso,aston_martin,10,8,4.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,7.0,10.0,13.0,0,0.0
+2024_3,2024,3,albert_park,bottas,sauber,13,14,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,18.333333333333332,9.5,0.0,0,
+2024_3,2024,3,albert_park,gasly,alpine,17,13,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,17.0,11.0,0.0,0,0.0
+2024_3,2024,3,albert_park,hamilton,mercedes,11,18,0.0,Retired,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,3.0,26.0,0,0.0
+2024_3,2024,3,albert_park,hulkenberg,haas,16,9,2.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,7.0,1.0,0,0.0
+2024_3,2024,3,albert_park,leclerc,ferrari,4,2,19.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,3.0,10.5,43.0,0,0.0
+2024_3,2024,3,albert_park,norris,mclaren,3,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,5.5,12.0,0,0.0
+2024_3,2024,3,albert_park,ocon,alpine,15,16,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.0,10.5,0.0,0,0.0
+2024_3,2024,3,albert_park,perez,red_bull,6,5,10.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,3.5,87.0,0,0.0
+2024_3,2024,3,albert_park,russell,mercedes,7,17,0.0,Retired,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,10.5,26.0,0,0.0
+2024_3,2024,3,albert_park,sainz,ferrari,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,9.0,16.0,62.0,0,0.0
+2024_3,2024,3,albert_park,stroll,aston_martin,9,6,8.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,13.0,8.0,17.0,0,0.0
+2024_3,2024,3,albert_park,verstappen,red_bull,1,19,0.0,Retired,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.0,9.5,97.0,0,0.0
+2024_4,2024,4,suzuka,albon,williams,14,20,0.0,Retired,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,18.0,0.0,0,0.0
+2024_4,2024,4,suzuka,alonso,aston_martin,5,6,8.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,7.5,25.0,0,0.0
+2024_4,2024,4,suzuka,bottas,sauber,13,14,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,17.5,0.0,0,0.0
+2024_4,2024,4,suzuka,gasly,alpine,17,16,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,17.0,14.0,0.0,0,0.0
+2024_4,2024,4,suzuka,hamilton,mercedes,7,9,2.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,5.0,26.0,0,0.0
+2024_4,2024,4,suzuka,hulkenberg,haas,12,11,0.0,Lapped,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,14.0,3.0,0,0.0
+2024_4,2024,4,suzuka,leclerc,ferrari,8,4,12.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,3.0,3.5,87.0,0,0.0
+2024_4,2024,4,suzuka,norris,mclaren,3,5,10.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,6.0,27.0,0,0.0
+2024_4,2024,4,suzuka,ocon,alpine,15,15,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,6.5,0.0,0,0.0
+2024_4,2024,4,suzuka,perez,red_bull,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.0,10.5,97.0,0,0.0
+2024_4,2024,4,suzuka,russell,mercedes,9,7,6.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,7.5,28.0,0,0.0
+2024_4,2024,4,suzuka,sainz,ferrari,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,12.5,99.0,0,0.0
+2024_4,2024,4,suzuka,stroll,aston_martin,16,12,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,15.0,33.0,0,0.0
+2024_4,2024,4,suzuka,verstappen,red_bull,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,7.0,1.0,115.0,0,0.0
+2024_5,2024,5,shanghai,albon,williams,14,12,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,14.0,,0.0,0,0.0
+2024_5,2024,5,shanghai,alonso,aston_martin,3,7,7.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,,33.0,0,0.0
+2024_5,2024,5,shanghai,bottas,sauber,10,20,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,15.0,,0.0,0,0.0
+2024_5,2024,5,shanghai,gasly,alpine,15,13,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,,0.0,0,0.0
+2024_5,2024,5,shanghai,hamilton,mercedes,18,9,2.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.0,,34.0,0,0.0
+2024_5,2024,5,shanghai,hulkenberg,haas,9,10,1.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,10.0,,3.0,0,0.0
+2024_5,2024,5,shanghai,leclerc,ferrari,6,4,12.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,3.0,,114.0,0,0.0
+2024_5,2024,5,shanghai,norris,mclaren,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,,37.0,0,0.0
+2024_5,2024,5,shanghai,ocon,alpine,13,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,,0.0,0,0.0
+2024_5,2024,5,shanghai,perez,red_bull,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.0,,141.0,0,0.0
+2024_5,2024,5,shanghai,russell,mercedes,8,6,8.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,10.0,,36.0,0,0.0
+2024_5,2024,5,shanghai,sainz,ferrari,7,5,10.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,,126.0,0,0.0
+2024_5,2024,5,shanghai,stroll,aston_martin,11,15,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,40.0,0,0.0
+2024_5,2024,5,shanghai,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,7.0,,156.0,0,0.0
+2024_6,2024,6,miami,albon,williams,14,18,0.0,Finished,0,25.0,14.0,Street Circuit,3,0,0,0,1,14.333333333333334,11.5,0.0,0,0.0
+2024_6,2024,6,miami,alonso,aston_martin,15,9,2.0,Finished,0,25.0,15.0,Street Circuit,3,0,0,0,1,7.0,7.0,40.0,0,0.0
+2024_6,2024,6,miami,bottas,sauber,16,16,0.0,Finished,0,25.0,16.0,Street Circuit,3,0,0,0,1,16.0,10.0,0.0,0,0.0
+2024_6,2024,6,miami,gasly,alpine,12,12,0.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,14.0,13.0,0.0,0,0.0
+2024_6,2024,6,miami,hamilton,mercedes,8,6,8.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,12.0,6.0,44.0,0,0.0
+2024_6,2024,6,miami,hulkenberg,haas,9,11,0.0,Finished,0,25.0,9.0,Street Circuit,3,0,0,0,1,10.0,15.0,4.0,0,0.0
+2024_6,2024,6,miami,leclerc,ferrari,2,3,15.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,3.3333333333333335,4.5,136.0,0,0.0
+2024_6,2024,6,miami,norris,mclaren,5,1,25.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,3.3333333333333335,18.0,55.0,0,0.0
+2024_6,2024,6,miami,ocon,alpine,13,10,1.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,14.0,8.5,0.0,0,0.0
+2024_6,2024,6,miami,perez,red_bull,4,4,12.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,3.3333333333333335,3.0,181.0,0,0.0
+2024_6,2024,6,miami,russell,mercedes,7,8,4.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,10.0,4.5,52.0,0,0.0
+2024_6,2024,6,miami,sainz,ferrari,3,5,10.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,3.0,4.0,151.0,0,0.0
+2024_6,2024,6,miami,stroll,aston_martin,11,17,0.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,11.0,11.0,42.0,0,0.0
+2024_6,2024,6,miami,verstappen,red_bull,1,2,18.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,7.0,1.0,193.0,0,0.0
+2024_7,2024,7,imola,albon,williams,14,20,0.0,Retired,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,11.0,0.0,0,0.0
+2024_7,2024,7,imola,alonso,aston_martin,20,19,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,19.0,42.0,0,0.0
+2024_7,2024,7,imola,bottas,sauber,16,18,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,5.0,0.0,0,0.0
+2024_7,2024,7,imola,gasly,alpine,15,16,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,12.0,1.0,0,0.0
+2024_7,2024,7,imola,hamilton,mercedes,8,6,8.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,8.0,13.0,56.0,0,0.0
+2024_7,2024,7,imola,hulkenberg,haas,10,11,0.0,Lapped,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,,4.0,0,0.0
+2024_7,2024,7,imola,leclerc,ferrari,3,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,6.0,161.0,0,0.0
+2024_7,2024,7,imola,norris,mclaren,2,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,3.0,80.0,0,0.0
+2024_7,2024,7,imola,ocon,alpine,12,14,0.0,Lapped,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,12.0,14.0,1.0,0,0.0
+2024_7,2024,7,imola,perez,red_bull,11,8,4.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,3.0,2.0,211.0,0,0.0
+2024_7,2024,7,imola,russell,mercedes,6,7,7.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,7.0,4.0,64.0,0,0.0
+2024_7,2024,7,imola,sainz,ferrari,4,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,20.0,176.0,0,0.0
+2024_7,2024,7,imola,stroll,aston_martin,13,9,2.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,10.0,42.0,0,0.0
+2024_7,2024,7,imola,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,1.0,215.0,0,0.0
+2024_8,2024,8,monaco,albon,williams,9,9,2.0,Lapped,0,25.0,9.0,High-Downforce,1,0,1,0,0,16.666666666666668,16.0,0.0,0,0.0
+2024_8,2024,8,monaco,alonso,aston_martin,14,11,0.0,Lapped,0,25.0,14.0,High-Downforce,1,0,1,0,0,11.666666666666666,4.5,44.0,0,0.0
+2024_8,2024,8,monaco,bottas,sauber,17,13,0.0,Lapped,0,25.0,17.0,High-Downforce,1,0,1,0,0,18.0,10.0,0.0,0,0.0
+2024_8,2024,8,monaco,gasly,alpine,10,10,1.0,Lapped,0,25.0,10.0,High-Downforce,1,0,1,0,0,13.666666666666666,9.0,1.0,0,0.0
+2024_8,2024,8,monaco,hamilton,mercedes,7,7,7.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,7.0,6.0,71.0,0,0.0
+2024_8,2024,8,monaco,hulkenberg,haas,19,19,0.0,Retired,0,25.0,14.0,High-Downforce,1,0,1,0,0,10.666666666666666,17.0,4.0,0,0.0
+2024_8,2024,8,monaco,leclerc,ferrari,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,3.3333333333333335,5.0,186.0,0,0.0
+2024_8,2024,8,monaco,norris,mclaren,4,4,12.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,1.6666666666666667,7.5,98.0,0,0.0
+2024_8,2024,8,monaco,ocon,alpine,11,17,0.0,Retired,0,25.0,11.0,High-Downforce,1,0,1,0,0,11.666666666666666,7.5,2.0,0,0.0
+2024_8,2024,8,monaco,perez,red_bull,16,18,0.0,Retired,0,25.0,16.0,High-Downforce,1,0,1,0,0,5.0,8.5,240.0,0,0.0
+2024_8,2024,8,monaco,russell,mercedes,5,5,10.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,7.0,5.0,78.0,0,0.0
+2024_8,2024,8,monaco,sainz,ferrari,3,3,15.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,5.0,5.0,211.0,0,0.0
+2024_8,2024,8,monaco,stroll,aston_martin,13,14,0.0,Lapped,0,25.0,13.0,High-Downforce,1,0,1,0,0,13.666666666666666,17.0,44.0,0,0.0
+2024_8,2024,8,monaco,verstappen,red_bull,6,6,8.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,1.3333333333333333,2.0,240.0,0,0.0
+2024_9,2024,9,villeneuve,albon,williams,10,17,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,10.0,2.0,0,0.0
+2024_9,2024,9,villeneuve,alonso,aston_martin,6,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,13.0,5.5,44.0,0,0.0
+2024_9,2024,9,villeneuve,bottas,sauber,19,13,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,8.5,0.0,0,0.0
+2024_9,2024,9,villeneuve,gasly,alpine,15,9,2.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,13.0,2.0,0,0.0
+2024_9,2024,9,villeneuve,hamilton,mercedes,7,4,13.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,3.0,88.0,0,0.0
+2024_9,2024,9,villeneuve,hulkenberg,haas,17,11,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,15.0,4.0,0,0.0
+2024_9,2024,9,villeneuve,leclerc,ferrari,11,19,0.0,Retired,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,4.5,226.0,0,0.0
+2024_9,2024,9,villeneuve,norris,mclaren,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,14.0,110.0,0,0.0
+2024_9,2024,9,villeneuve,ocon,alpine,18,10,1.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,7.0,4.0,0,0.0
+2024_9,2024,9,villeneuve,perez,red_bull,16,18,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,10.0,13.0,248.0,0,0.0
+2024_9,2024,9,villeneuve,russell,mercedes,1,3,15.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,11.5,101.0,0,0.0
+2024_9,2024,9,villeneuve,sainz,ferrari,12,16,0.0,Retired,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,3.5,226.0,0,0.0
+2024_9,2024,9,villeneuve,stroll,aston_martin,9,7,6.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,9.5,52.0,0,0.0
+2024_9,2024,9,villeneuve,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.0,1.0,248.0,0,0.0
+2024_10,2024,10,catalunya,albon,williams,20,18,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,17.0,2.0,0,0.0
+2024_10,2024,10,catalunya,alonso,aston_martin,10,12,0.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,12.0,8.0,58.0,0,0.0
+2024_10,2024,10,catalunya,bottas,sauber,12,16,0.0,Lapped,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,12.5,0.0,0,0.0
+2024_10,2024,10,catalunya,gasly,alpine,7,9,2.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,11.5,5.0,0,0.0
+2024_10,2024,10,catalunya,hamilton,mercedes,3,3,15.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,3.5,116.0,0,0.0
+2024_10,2024,10,catalunya,hulkenberg,haas,13,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,15.0,4.0,0,0.0
+2024_10,2024,10,catalunya,leclerc,ferrari,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,15.5,226.0,0,0.0
+2024_10,2024,10,catalunya,norris,mclaren,1,2,19.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,12.5,128.0,0,0.0
+2024_10,2024,10,catalunya,ocon,alpine,8,10,1.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,7.5,7.0,0,0.0
+2024_10,2024,10,catalunya,perez,red_bull,11,8,4.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,3.0,273.0,0,0.0
+2024_10,2024,10,catalunya,russell,mercedes,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,5.0,3.0,131.0,0,0.0
+2024_10,2024,10,catalunya,sainz,ferrari,6,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,8.0,4.5,236.0,0,0.0
+2024_10,2024,10,catalunya,stroll,aston_martin,14,14,0.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,10.0,10.5,58.0,0,0.0
+2024_10,2024,10,catalunya,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,1.0,277.0,0,0.0
+2024_11,2024,11,red_bull_ring,albon,williams,16,15,0.0,Lapped,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,14.666666666666666,11.5,2.0,0,0.0
+2024_11,2024,11,red_bull_ring,alonso,aston_martin,15,18,0.0,Lapped,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,7.5,58.0,0,0.0
+2024_11,2024,11,red_bull_ring,bottas,sauber,18,16,0.0,Lapped,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,14.0,13.0,0.0,0,0.0
+2024_11,2024,11,red_bull_ring,gasly,alpine,13,10,1.0,Finished,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,12.5,8.0,0,0.0
+2024_11,2024,11,red_bull_ring,hamilton,mercedes,5,4,12.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,4.666666666666667,5.5,143.0,0,0.0
+2024_11,2024,11,red_bull_ring,hulkenberg,haas,9,6,8.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,13.666666666666666,20.0,4.0,0,0.0
+2024_11,2024,11,red_bull_ring,leclerc,ferrari,6,11,0.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,1.5,244.0,0,0.0
+2024_11,2024,11,red_bull_ring,norris,mclaren,2,20,0.0,Lapped,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,5.5,147.0,0,0.0
+2024_11,2024,11,red_bull_ring,ocon,alpine,10,12,0.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,9.5,9.0,0,0.0
+2024_11,2024,11,red_bull_ring,perez,red_bull,8,7,6.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,14.666666666666666,11.5,302.0,0,0.0
+2024_11,2024,11,red_bull_ring,russell,mercedes,3,1,25.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,4.0,5.5,155.0,0,0.0
+2024_11,2024,11,red_bull_ring,sainz,ferrari,4,3,15.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,12.0,244.0,0,0.0
+2024_11,2024,11,red_bull_ring,stroll,aston_martin,17,13,0.0,Lapped,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,11.0,58.0,0,0.0
+2024_11,2024,11,red_bull_ring,verstappen,red_bull,1,5,10.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,1.5,308.0,0,0.0
+2024_12,2024,12,silverstone,albon,williams,9,9,2.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,16.666666666666668,14.0,2.0,0,0.0
+2024_12,2024,12,silverstone,alonso,aston_martin,10,8,4.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,12.0,6.0,58.0,0,0.0
+2024_12,2024,12,silverstone,bottas,sauber,16,15,0.0,Lapped,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,15.0,14.5,0.0,0,0.0
+2024_12,2024,12,silverstone,gasly,alpine,19,20,0.0,Did not start,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,17.0,9.0,0,0.0
+2024_12,2024,12,silverstone,hamilton,mercedes,2,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,3.6666666666666665,3.0,180.0,0,0.0
+2024_12,2024,12,silverstone,hulkenberg,haas,6,6,8.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,13.0,12.0,0,0.0
+2024_12,2024,12,silverstone,leclerc,ferrari,11,14,0.0,Lapped,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,6.5,259.0,0,0.0
+2024_12,2024,12,silverstone,norris,mclaren,3,3,15.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,8.0,4.0,147.0,0,0.0
+2024_12,2024,12,silverstone,ocon,alpine,18,16,0.0,Lapped,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,17.5,9.0,0,0.0
+2024_12,2024,12,silverstone,perez,red_bull,20,17,0.0,Lapped,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,11.0,4.0,318.0,0,0.0
+2024_12,2024,12,silverstone,russell,mercedes,1,19,0.0,Retired,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,11.5,205.0,0,0.0
+2024_12,2024,12,silverstone,sainz,ferrari,7,5,11.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,5.5,259.0,0,0.0
+2024_12,2024,12,silverstone,stroll,aston_martin,8,7,6.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,12.5,62.0,0,0.0
+2024_12,2024,12,silverstone,verstappen,red_bull,4,2,18.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,2.3333333333333335,4.0,318.0,0,0.0
+2024_13,2024,13,hungaroring,albon,williams,13,14,0.0,Lapped,0,25.0,13.0,High-Downforce,1,0,1,0,0,14.0,14.0,4.0,0,0.0
+2024_13,2024,13,hungaroring,alonso,aston_martin,7,11,0.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,12.666666666666666,8.5,68.0,0,0.0
+2024_13,2024,13,hungaroring,bottas,sauber,12,16,0.0,Lapped,0,25.0,12.0,High-Downforce,1,0,1,0,0,15.666666666666666,16.0,0.0,0,0.0
+2024_13,2024,13,hungaroring,gasly,alpine,20,20,0.0,Retired,0,25.0,20.0,High-Downforce,1,0,1,0,0,13.0,16.0,9.0,0,0.0
+2024_13,2024,13,hungaroring,hamilton,mercedes,5,3,15.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,2.6666666666666665,3.0,205.0,0,0.0
+2024_13,2024,13,hungaroring,hulkenberg,haas,11,13,0.0,Lapped,0,25.0,11.0,High-Downforce,1,0,1,0,0,7.666666666666667,14.0,20.0,0,0.0
+2024_13,2024,13,hungaroring,leclerc,ferrari,6,4,12.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,10.0,6.5,270.0,0,0.0
+2024_13,2024,13,hungaroring,norris,mclaren,1,2,18.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,8.333333333333334,4.5,162.0,0,0.0
+2024_13,2024,13,hungaroring,ocon,alpine,19,18,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,12.666666666666666,14.0,9.0,0,0.0
+2024_13,2024,13,hungaroring,perez,red_bull,16,7,6.0,Finished,0,25.0,16.0,High-Downforce,1,0,1,0,0,10.666666666666666,4.0,336.0,0,0.0
+2024_13,2024,13,hungaroring,russell,mercedes,17,8,5.0,Finished,0,25.0,17.0,High-Downforce,1,0,1,0,0,8.0,4.5,220.0,0,0.0
+2024_13,2024,13,hungaroring,sainz,ferrari,4,6,8.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,4.666666666666667,6.0,282.0,0,0.0
+2024_13,2024,13,hungaroring,stroll,aston_martin,8,10,1.0,Finished,0,25.0,8.0,High-Downforce,1,0,1,0,0,11.333333333333334,10.5,68.0,0,0.0
+2024_13,2024,13,hungaroring,verstappen,red_bull,3,5,10.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,2.6666666666666665,1.0,342.0,0,0.0
+2024_14,2024,14,spa,albon,williams,10,12,0.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,12.666666666666666,12.0,4.0,0,0.0
+2024_14,2024,14,spa,alonso,aston_martin,8,8,4.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,5.0,69.0,0,0.0
+2024_14,2024,14,spa,bottas,sauber,14,15,0.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,15.5,0.0,0,0.0
+2024_14,2024,14,spa,gasly,alpine,12,13,0.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,16.666666666666668,10.0,9.0,0,0.0
+2024_14,2024,14,spa,hamilton,mercedes,3,1,25.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,12.0,225.0,0,0.0
+2024_14,2024,14,spa,hulkenberg,haas,16,18,0.0,Finished,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,18.0,20.0,0,0.0
+2024_14,2024,14,spa,leclerc,ferrari,1,3,15.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,4.5,290.0,0,0.0
+2024_14,2024,14,spa,norris,mclaren,4,5,10.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,9.5,180.0,0,0.0
+2024_14,2024,14,spa,ocon,alpine,9,9,2.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,15.333333333333334,7.5,9.0,0,0.0
+2024_14,2024,14,spa,perez,red_bull,2,7,7.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,10.333333333333334,2.0,352.0,0,0.0
+2024_14,2024,14,spa,russell,mercedes,6,20,0.0,Disqualified,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,5.0,250.0,0,0.0
+2024_14,2024,14,spa,sainz,ferrari,7,6,8.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,4.666666666666667,11.0,305.0,0,0.0
+2024_14,2024,14,spa,stroll,aston_martin,15,11,0.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,10.0,10.0,73.0,0,0.0
+2024_14,2024,14,spa,verstappen,red_bull,11,4,12.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,4.0,1.0,359.0,0,0.0
+2024_15,2024,15,zandvoort,albon,williams,19,14,0.0,Lapped,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,10.0,4.0,0,0.0
+2024_15,2024,15,zandvoort,alonso,aston_martin,7,10,1.0,Lapped,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.0,4.0,73.0,0,0.0
+2024_15,2024,15,zandvoort,bottas,sauber,16,19,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,16.5,0.0,0,0.0
+2024_15,2024,15,zandvoort,gasly,alpine,9,9,2.0,Lapped,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,7.0,11.0,0,0.0
+2024_15,2024,15,zandvoort,hamilton,mercedes,14,8,4.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,5.0,250.0,0,0.0
+2024_15,2024,15,zandvoort,hulkenberg,haas,12,11,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,12.0,20.0,0,0.0
+2024_15,2024,15,zandvoort,leclerc,ferrari,6,3,15.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,7.0,11.0,313.0,0,0.0
+2024_15,2024,15,zandvoort,norris,mclaren,1,1,26.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,7.0,190.0,0,0.0
+2024_15,2024,15,zandvoort,ocon,alpine,15,15,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,9.5,13.0,0,0.0
+2024_15,2024,15,zandvoort,perez,red_bull,5,6,8.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,4.5,371.0,0,0.0
+2024_15,2024,15,zandvoort,russell,mercedes,4,7,6.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,9.5,254.0,0,0.0
+2024_15,2024,15,zandvoort,sainz,ferrari,10,5,10.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,6.5,328.0,0,0.0
+2024_15,2024,15,zandvoort,stroll,aston_martin,8,13,0.0,Lapped,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,10.5,74.0,0,0.0
+2024_15,2024,15,zandvoort,verstappen,red_bull,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,1.0,379.0,0,0.0
+2024_16,2024,16,monza,albon,williams,9,9,2.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,7.0,4.0,0,0.0
+2024_16,2024,16,monza,alonso,aston_martin,11,11,0.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,14.0,74.0,0,0.0
+2024_16,2024,16,monza,bottas,sauber,19,16,0.0,Lapped,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,16.666666666666668,11.5,0.0,0,0.0
+2024_16,2024,16,monza,gasly,alpine,14,15,0.0,Lapped,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,14.0,11.5,13.0,0,0.0
+2024_16,2024,16,monza,hamilton,mercedes,6,5,10.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,4.0,5.5,260.0,0,0.0
+2024_16,2024,16,monza,hulkenberg,haas,10,17,0.0,Lapped,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,14.0,17.0,20.0,0,0.0
+2024_16,2024,16,monza,leclerc,ferrari,4,1,25.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,3.3333333333333335,3.0,338.0,0,0.0
+2024_16,2024,16,monza,norris,mclaren,1,3,16.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,7.5,216.0,0,0.0
+2024_16,2024,16,monza,ocon,alpine,15,14,0.0,Lapped,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,14.0,15.0,13.0,0,0.0
+2024_16,2024,16,monza,perez,red_bull,8,8,4.0,Finished,0,25.0,8.0,Power/High-Speed,0,0,0,1,0,6.666666666666667,4.0,397.0,0,0.0
+2024_16,2024,16,monza,russell,mercedes,3,7,6.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,4.0,270.0,0,0.0
+2024_16,2024,16,monza,sainz,ferrari,5,4,12.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,5.666666666666667,3.5,363.0,0,0.0
+2024_16,2024,16,monza,stroll,aston_martin,17,19,0.0,Lapped,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,17.0,74.0,0,0.0
+2024_16,2024,16,monza,verstappen,red_bull,7,6,8.0,Finished,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,3.6666666666666665,1.0,401.0,0,0.0
+2024_17,2024,17,baku,albon,williams,9,7,6.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,11.666666666666666,12.0,6.0,0,0.0
+2024_17,2024,17,baku,alonso,aston_martin,7,6,8.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,9.666666666666666,5.5,74.0,0,0.0
+2024_17,2024,17,baku,bottas,sauber,16,16,0.0,Lapped,0,25.0,17.0,Street Circuit,3,0,0,0,1,16.666666666666668,14.5,0.0,0,0.0
+2024_17,2024,17,baku,gasly,alpine,18,12,0.0,Finished,0,25.0,15.0,Street Circuit,3,0,0,0,1,12.333333333333334,9.5,13.0,0,0.0
+2024_17,2024,17,baku,hamilton,mercedes,19,9,2.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,4.666666666666667,5.0,276.0,0,0.0
+2024_17,2024,17,baku,hulkenberg,haas,12,11,0.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,15.333333333333334,17.0,20.0,0,0.0
+2024_17,2024,17,baku,leclerc,ferrari,1,2,18.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,2.3333333333333335,11.0,375.0,0,0.0
+2024_17,2024,17,baku,norris,mclaren,15,4,13.0,Finished,0,25.0,16.0,Street Circuit,3,0,0,0,1,3.0,9.0,232.0,0,0.0
+2024_17,2024,17,baku,ocon,alpine,20,15,0.0,Lapped,0,25.0,19.0,Street Circuit,3,0,0,0,1,12.666666666666666,12.5,13.0,0,0.0
+2024_17,2024,17,baku,perez,red_bull,4,17,0.0,Retired,0,25.0,4.0,Street Circuit,3,0,0,0,1,7.0,1.5,409.0,0,0.0
+2024_17,2024,17,baku,russell,mercedes,5,3,15.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,11.333333333333334,5.5,278.0,0,0.0
+2024_17,2024,17,baku,sainz,ferrari,3,18,0.0,Retired,0,25.0,3.0,Street Circuit,3,0,0,0,1,5.0,12.5,393.0,0,0.0
+2024_17,2024,17,baku,stroll,aston_martin,13,19,0.0,Retired,0,25.0,14.0,Street Circuit,3,0,0,0,1,14.333333333333334,11.5,82.0,0,0.0
+2024_17,2024,17,baku,verstappen,red_bull,6,5,10.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,4.0,1.5,409.0,0,0.0
+2024_18,2024,18,marina_bay,albon,williams,11,20,0.0,Retired,0,25.0,11.0,High-Downforce,1,0,1,0,0,10.0,14.0,12.0,0,0.0
+2024_18,2024,18,marina_bay,alonso,aston_martin,7,8,4.0,Lapped,0,25.0,7.0,High-Downforce,1,0,1,0,0,9.0,16.5,82.0,0,0.0
+2024_18,2024,18,marina_bay,bottas,sauber,19,16,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,17.0,14.0,0.0,0,0.0
+2024_18,2024,18,marina_bay,gasly,alpine,18,17,0.0,Lapped,0,25.0,18.0,High-Downforce,1,0,1,0,0,12.0,8.0,13.0,0,0.0
+2024_18,2024,18,marina_bay,hamilton,mercedes,3,6,8.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,7.333333333333333,6.0,293.0,0,0.0
+2024_18,2024,18,marina_bay,hulkenberg,haas,6,9,2.0,Lapped,0,25.0,6.0,High-Downforce,1,0,1,0,0,13.0,13.0,20.0,0,0.0
+2024_18,2024,18,marina_bay,leclerc,ferrari,9,5,10.0,Finished,0,25.0,9.0,High-Downforce,1,0,1,0,0,2.0,3.0,393.0,0,0.0
+2024_18,2024,18,marina_bay,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,2.6666666666666665,3.0,245.0,0,0.0
+2024_18,2024,18,marina_bay,ocon,alpine,15,13,0.0,Lapped,0,25.0,15.0,High-Downforce,1,0,1,0,0,14.666666666666666,17.0,13.0,0,0.0
+2024_18,2024,18,marina_bay,perez,red_bull,13,10,1.0,Lapped,0,25.0,13.0,High-Downforce,1,0,1,0,0,10.333333333333334,4.5,419.0,0,0.0
+2024_18,2024,18,marina_bay,russell,mercedes,4,4,12.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,5.666666666666667,15.0,301.0,0,0.0
+2024_18,2024,18,marina_bay,sainz,ferrari,10,7,6.0,Finished,0,25.0,10.0,High-Downforce,1,0,1,0,0,9.0,2.0,403.0,0,0.0
+2024_18,2024,18,marina_bay,stroll,aston_martin,17,14,0.0,Lapped,0,25.0,17.0,High-Downforce,1,0,1,0,0,17.0,13.0,86.0,0,0.0
+2024_18,2024,18,marina_bay,verstappen,red_bull,2,2,18.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,4.333333333333333,6.0,420.0,0,0.0
+2024_19,2024,19,americas,albon,williams,14,16,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,12.0,11.0,12.0,0,0.0
+2024_19,2024,19,americas,alonso,aston_martin,7,13,0.0,Lapped,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,11.5,86.0,0,0.0
+2024_19,2024,19,americas,bottas,sauber,16,17,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,16.0,15.5,0.0,0,0.0
+2024_19,2024,19,americas,gasly,alpine,6,12,0.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,10.0,13.0,0,0.0
+2024_19,2024,19,americas,hamilton,mercedes,17,20,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,10.5,313.0,0,0.0
+2024_19,2024,19,americas,hulkenberg,haas,11,8,4.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,11.0,22.0,0,0.0
+2024_19,2024,19,americas,leclerc,ferrari,4,1,25.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,11.5,409.0,0,0.0
+2024_19,2024,19,americas,norris,mclaren,1,4,12.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,4.0,270.0,0,0.0
+2024_19,2024,19,americas,ocon,alpine,12,18,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.0,14.5,13.0,0,0.0
+2024_19,2024,19,americas,perez,red_bull,9,7,6.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,4.0,438.0,0,0.0
+2024_19,2024,19,americas,russell,mercedes,20,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,5.0,313.0,0,0.0
+2024_19,2024,19,americas,sainz,ferrari,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,11.5,434.0,0,0.0
+2024_19,2024,19,americas,stroll,aston_martin,13,15,0.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,12.5,86.0,0,0.0
+2024_19,2024,19,americas,verstappen,red_bull,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,1.0,444.0,0,0.0
+2024_20,2024,20,rodriguez,albon,williams,9,19,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,10.5,12.0,0,0.0
+2024_20,2024,20,rodriguez,alonso,aston_martin,13,18,0.0,Retired,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,9.0,18.5,86.0,0,0.0
+2024_20,2024,20,rodriguez,bottas,sauber,15,14,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,12.5,0.0,0,0.0
+2024_20,2024,20,rodriguez,gasly,alpine,8,10,1.0,Lapped,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,11.0,13.0,0,0.0
+2024_20,2024,20,rodriguez,hamilton,mercedes,6,4,12.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,2.0,321.0,0,0.0
+2024_20,2024,20,rodriguez,hulkenberg,haas,10,9,2.0,Lapped,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,13.0,26.0,0,0.0
+2024_20,2024,20,rodriguez,leclerc,ferrari,4,3,16.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,4.5,452.0,0,0.0
+2024_20,2024,20,rodriguez,norris,mclaren,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,3.0,7.0,282.0,0,0.0
+2024_20,2024,20,rodriguez,ocon,alpine,0,13,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,9.0,14.0,0,0.0
+2024_20,2024,20,rodriguez,perez,red_bull,18,17,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,11.5,459.0,0,0.0
+2024_20,2024,20,rodriguez,russell,mercedes,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,5.0,333.0,0,0.0
+2024_20,2024,20,rodriguez,sainz,ferrari,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,9.0,4.5,468.0,0,0.0
+2024_20,2024,20,rodriguez,stroll,aston_martin,14,11,0.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,16.0,16.0,86.0,0,0.0
+2024_20,2024,20,rodriguez,verstappen,red_bull,2,6,8.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,1.0,459.0,0,0.0
+2024_21,2024,21,interlagos,albon,williams,7,18,0.0,Did not start,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,18.333333333333332,17.0,12.0,0,0.0
+2024_21,2024,21,interlagos,alonso,aston_martin,9,14,0.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,13.0,4.0,86.0,0,0.0
+2024_21,2024,21,interlagos,bottas,sauber,11,13,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,12.5,0.0,0,0.0
+2024_21,2024,21,interlagos,gasly,alpine,13,3,15.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,13.0,10.5,14.0,0,0.0
+2024_21,2024,21,interlagos,hamilton,mercedes,14,10,1.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,10.0,5.0,343.0,0,0.0
+2024_21,2024,21,interlagos,hulkenberg,haas,18,20,0.0,Disqualified,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,12.0,28.0,0,0.0
+2024_21,2024,21,interlagos,leclerc,ferrari,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,3.0,12.0,493.0,0,0.0
+2024_21,2024,21,interlagos,norris,mclaren,1,6,8.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,10.0,300.0,0,0.0
+2024_21,2024,21,interlagos,ocon,alpine,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,9.0,29.0,0,0.0
+2024_21,2024,21,interlagos,perez,red_bull,12,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,5.5,467.0,0,0.0
+2024_21,2024,21,interlagos,russell,mercedes,2,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,5.0,8.0,344.0,0,0.0
+2024_21,2024,21,interlagos,sainz,ferrari,20,16,0.0,Retired,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,4.5,503.0,0,0.0
+2024_21,2024,21,interlagos,stroll,aston_martin,10,19,0.0,Did not start,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,7.5,86.0,0,0.0
+2024_21,2024,21,interlagos,verstappen,red_bull,17,1,26.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,3.5,467.0,0,0.0
+2024_22,2024,22,vegas,albon,williams,17,19,0.0,Retired,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,12.0,12.0,0,0.0
+2024_22,2024,22,vegas,alonso,aston_martin,16,11,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.0,9.0,86.0,0,0.0
+2024_22,2024,22,vegas,bottas,sauber,19,18,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,17.0,0.0,0,0.0
+2024_22,2024,22,vegas,gasly,alpine,3,20,0.0,Retired,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,11.0,47.0,0,0.0
+2024_22,2024,22,vegas,hamilton,mercedes,10,2,18.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,7.0,356.0,0,0.0
+2024_22,2024,22,vegas,hulkenberg,haas,9,8,4.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,19.0,28.0,0,0.0
+2024_22,2024,22,vegas,leclerc,ferrari,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.0,2.0,503.0,0,0.0
+2024_22,2024,22,vegas,norris,mclaren,6,6,9.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,4.0,20.0,308.0,0,0.0
+2024_22,2024,22,vegas,ocon,alpine,11,17,0.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,4.0,47.0,0,0.0
+2024_22,2024,22,vegas,perez,red_bull,15,10,1.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,3.0,493.0,0,0.0
+2024_22,2024,22,vegas,russell,mercedes,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,5.0,8.0,374.0,0,0.0
+2024_22,2024,22,vegas,sainz,ferrari,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,6.0,515.0,0,0.0
+2024_22,2024,22,vegas,stroll,aston_martin,18,15,0.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,15.0,5.0,86.0,0,0.0
+2024_22,2024,22,vegas,verstappen,red_bull,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,1.0,494.0,0,0.0
+2024_23,2024,23,losail,albon,williams,16,15,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,13.0,12.0,0,0.0
+2024_23,2024,23,losail,alonso,aston_martin,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,6.0,86.0,0,0.0
+2024_23,2024,23,losail,bottas,sauber,13,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,15.0,8.0,0.0,0,0.0
+2024_23,2024,23,losail,gasly,alpine,11,5,10.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,12.0,47.0,0,0.0
+2024_23,2024,23,losail,hamilton,mercedes,6,12,0.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,19.0,399.0,0,0.0
+2024_23,2024,23,losail,hulkenberg,haas,18,16,0.0,Retired,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,16.0,32.0,0,0.0
+2024_23,2024,23,losail,leclerc,ferrari,5,2,18.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.0,5.0,530.0,0,0.0
+2024_23,2024,23,losail,norris,mclaren,3,10,2.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,3.0,317.0,0,0.0
+2024_23,2024,23,losail,ocon,alpine,20,20,0.0,Retired,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,7.0,57.0,0,0.0
+2024_23,2024,23,losail,perez,red_bull,9,17,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,10.0,504.0,0,0.0
+2024_23,2024,23,losail,russell,mercedes,1,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,4.0,399.0,0,0.0
+2024_23,2024,23,losail,sainz,ferrari,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,20.0,548.0,0,0.0
+2024_23,2024,23,losail,stroll,aston_martin,15,18,0.0,Retired,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.0,11.0,92.0,0,0.0
+2024_23,2024,23,losail,verstappen,red_bull,2,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,4.0,1.0,504.0,0,0.0
+2024_24,2024,24,yas_marina,albon,williams,18,11,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,13.5,12.0,0,0.0
+2024_24,2024,24,yas_marina,alonso,aston_martin,8,9,2.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,13.5,92.0,0,0.0
+2024_24,2024,24,yas_marina,bottas,sauber,9,18,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,14.0,17.0,0.0,0,0.0
+2024_24,2024,24,yas_marina,gasly,alpine,5,7,6.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,13.5,57.0,0,0.0
+2024_24,2024,24,yas_marina,hamilton,mercedes,16,4,12.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,8.0,13.5,411.0,0,0.0
+2024_24,2024,24,yas_marina,hulkenberg,haas,7,8,4.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,15.0,32.0,0,0.0
+2024_24,2024,24,yas_marina,leclerc,ferrari,19,3,15.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,2.0,556.0,0,0.0
+2024_24,2024,24,yas_marina,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,5.5,319.0,0,0.0
+2024_24,2024,24,yas_marina,perez,red_bull,10,20,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,3.5,529.0,0,0.0
+2024_24,2024,24,yas_marina,russell,mercedes,6,5,10.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,3.0,4.0,423.0,0,0.0
+2024_24,2024,24,yas_marina,sainz,ferrari,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,11.0,571.0,0,0.0
+2024_24,2024,24,yas_marina,stroll,aston_martin,13,14,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,9.0,94.0,0,0.0
+2024_24,2024,24,yas_marina,verstappen,red_bull,4,6,8.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,1.0,529.0,0,0.0
+2025_1,2025,1,albert_park,albon,williams,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,15.0,13.333333333333334,0.0,0,0.0
+2025_1,2025,1,albert_park,alonso,aston_martin,12,17,0.0,Retired,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,9.0,9.333333333333334,0.0,0,0.0
+2025_1,2025,1,albert_park,gasly,alpine,9,11,0.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,11.666666666666666,0.0,0,0.0
+2025_1,2025,1,albert_park,hamilton,ferrari,8,10,1.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,6.0,8.0,0.0,0,0.0
+2025_1,2025,1,albert_park,hulkenberg,sauber,17,7,6.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,8.0,0.0,0,0.0
+2025_1,2025,1,albert_park,leclerc,ferrari,7,8,4.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,3.0,7.666666666666667,1.0,0,0.0
+2025_1,2025,1,albert_park,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,4.666666666666667,0.0,0,0.0
+2025_1,2025,1,albert_park,ocon,haas,19,13,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,13.0,12.333333333333334,0.0,0,0.0
+2025_1,2025,1,albert_park,russell,mercedes,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,12.666666666666666,0.0,0,0.0
+2025_1,2025,1,albert_park,sainz,williams,10,18,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,11.0,10.0,0,0.0
+2025_1,2025,1,albert_park,stroll,aston_martin,13,6,8.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,7.333333333333333,0.0,0,0.0
+2025_1,2025,1,albert_park,verstappen,red_bull,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.0,12.666666666666666,0.0,0,0.0
+2025_2,2025,2,shanghai,albon,williams,10,7,6.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,12.0,10.0,0,0.0
+2025_2,2025,2,shanghai,alonso,aston_martin,13,17,0.0,Retired,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,11.0,7.0,8.0,0,0.0
+2025_2,2025,2,shanghai,gasly,alpine,16,20,0.0,Disqualified,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,13.0,0.0,0,0.0
+2025_2,2025,2,shanghai,hamilton,ferrari,5,19,0.0,Disqualified,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,9.0,5.0,0,0.0
+2025_2,2025,2,shanghai,hulkenberg,sauber,12,15,0.0,Lapped,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,10.0,6.0,0,0.0
+2025_2,2025,2,shanghai,leclerc,ferrari,6,18,0.0,Disqualified,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,4.0,5.0,0,0.0
+2025_2,2025,2,shanghai,norris,mclaren,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,4.0,2.0,25.0,0,0.0
+2025_2,2025,2,shanghai,ocon,haas,11,5,10.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,11.0,0.0,0,0.0
+2025_2,2025,2,shanghai,russell,mercedes,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.0,6.0,15.0,0,0.0
+2025_2,2025,2,shanghai,sainz,williams,15,10,1.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,5.0,16.0,0,0.0
+2025_2,2025,2,shanghai,stroll,aston_martin,14,9,2.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,15.0,8.0,0,0.0
+2025_2,2025,2,shanghai,verstappen,red_bull,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.0,1.0,18.0,0,0.0
+2025_3,2025,3,suzuka,albon,williams,9,9,2.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,18.666666666666668,17.0,0,0.0
+2025_3,2025,3,suzuka,alonso,aston_martin,12,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,7.0,10.0,0,0.0
+2025_3,2025,3,suzuka,gasly,alpine,11,13,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,14.666666666666666,0.0,0,0.0
+2025_3,2025,3,suzuka,hamilton,ferrari,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,11.0,6.333333333333333,5.0,0,0.0
+2025_3,2025,3,suzuka,hulkenberg,sauber,16,16,0.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,10.0,12.5,6.0,0,0.0
+2025_3,2025,3,suzuka,leclerc,ferrari,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,3.6666666666666665,11.0,0,0.0
+2025_3,2025,3,suzuka,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,5.666666666666667,43.0,0,0.0
+2025_3,2025,3,suzuka,ocon,haas,18,18,0.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,9.333333333333334,10.0,0,0.0
+2025_3,2025,3,suzuka,russell,mercedes,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,7.333333333333333,30.0,0,0.0
+2025_3,2025,3,suzuka,sainz,williams,15,14,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,10.0,9.333333333333334,19.0,0,0.0
+2025_3,2025,3,suzuka,stroll,aston_martin,20,20,0.0,Lapped,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,14.0,10.0,0,0.0
+2025_3,2025,3,suzuka,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,4.0,1.0,30.0,0,0.0
+2025_4,2025,4,bahrain,albon,williams,15,12,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,7.0,12.666666666666666,19.0,0,0.0
+2025_4,2025,4,bahrain,alonso,aston_martin,13,15,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,15.0,7.0,10.0,0,0.0
+2025_4,2025,4,bahrain,gasly,alpine,4,7,6.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,15.666666666666666,0.0,0,0.0
+2025_4,2025,4,bahrain,hamilton,ferrari,9,5,10.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,12.0,5.0,23.0,0,0.0
+2025_4,2025,4,bahrain,hulkenberg,sauber,16,20,0.0,Disqualified,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,16.0,6.0,0,0.0
+2025_4,2025,4,bahrain,leclerc,ferrari,2,4,12.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,10.0,8.0,33.0,0,0.0
+2025_4,2025,4,bahrain,norris,mclaren,6,3,15.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,12.666666666666666,61.0,0,0.0
+2025_4,2025,4,bahrain,ocon,haas,14,8,4.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,12.0,14.0,10.0,0,0.0
+2025_4,2025,4,bahrain,russell,mercedes,3,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,5.333333333333333,40.0,0,0.0
+2025_4,2025,4,bahrain,sainz,williams,8,19,0.0,Retired,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.0,3.0,19.0,0,0.0
+2025_4,2025,4,bahrain,stroll,aston_martin,19,17,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,9.333333333333334,10.0,0,0.0
+2025_4,2025,4,bahrain,verstappen,red_bull,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,7.0,55.0,0,0.0
+2025_5,2025,5,jeddah,albon,williams,11,9,2.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,9.333333333333334,14.666666666666666,19.0,0,0.0
+2025_5,2025,5,jeddah,alonso,aston_martin,13,11,0.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,14.333333333333334,8.0,10.0,0,0.0
+2025_5,2025,5,jeddah,gasly,alpine,9,20,0.0,Retired,0,25.0,9.0,Street Circuit,3,0,0,0,1,13.333333333333334,12.333333333333334,6.0,0,0.0
+2025_5,2025,5,jeddah,hamilton,ferrari,7,7,6.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,10.333333333333334,8.0,45.0,0,0.0
+2025_5,2025,5,jeddah,hulkenberg,sauber,18,15,0.0,Lapped,0,25.0,18.0,Street Circuit,3,0,0,0,1,17.0,11.333333333333334,6.0,0,0.0
+2025_5,2025,5,jeddah,leclerc,ferrari,4,3,15.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,8.666666666666666,4.0,51.0,0,0.0
+2025_5,2025,5,jeddah,norris,mclaren,10,4,12.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,2.3333333333333335,10.666666666666666,76.0,0,0.0
+2025_5,2025,5,jeddah,ocon,haas,19,14,0.0,Finished,0,25.0,19.0,Street Circuit,3,0,0,0,1,10.333333333333334,9.0,14.0,0,0.0
+2025_5,2025,5,jeddah,russell,mercedes,3,5,10.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,3.3333333333333335,5.0,58.0,0,0.0
+2025_5,2025,5,jeddah,sainz,williams,6,8,4.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,14.333333333333334,4.5,21.0,0,0.0
+2025_5,2025,5,jeddah,stroll,aston_martin,16,16,0.0,Lapped,0,25.0,16.0,Street Circuit,3,0,0,0,1,15.333333333333334,17.333333333333332,10.0,0,0.0
+2025_5,2025,5,jeddah,verstappen,red_bull,1,2,18.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,3.6666666666666665,1.3333333333333333,63.0,0,0.0
+2025_6,2025,6,miami,albon,williams,7,5,10.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,10.0,13.666666666666666,25.0,0,0.0
+2025_6,2025,6,miami,alonso,aston_martin,17,15,0.0,Lapped,0,25.0,17.0,Street Circuit,3,0,0,0,1,12.333333333333334,7.666666666666667,10.0,0,0.0
+2025_6,2025,6,miami,gasly,alpine,20,13,0.0,Finished,0,25.0,18.0,Street Circuit,3,0,0,0,1,13.333333333333334,12.666666666666666,6.0,0,0.0
+2025_6,2025,6,miami,hamilton,ferrari,12,8,4.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,6.333333333333333,6.0,66.0,0,0.0
+2025_6,2025,6,miami,hulkenberg,sauber,16,14,0.0,Lapped,0,25.0,16.0,Street Circuit,3,0,0,0,1,17.0,13.0,6.0,0,0.0
+2025_6,2025,6,miami,leclerc,ferrari,8,7,6.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,3.6666666666666665,4.0,70.0,0,0.0
+2025_6,2025,6,miami,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,3.0,12.333333333333334,88.0,0,0.0
+2025_6,2025,6,miami,ocon,haas,9,12,0.0,Finished,0,25.0,9.0,Street Circuit,3,0,0,0,1,13.333333333333334,9.0,14.0,0,0.0
+2025_6,2025,6,miami,russell,mercedes,5,3,15.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,4.0,5.666666666666667,68.0,0,0.0
+2025_6,2025,6,miami,sainz,williams,6,9,2.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,13.666666666666666,4.333333333333333,35.0,0,0.0
+2025_6,2025,6,miami,stroll,aston_martin,18,16,0.0,Lapped,0,25.0,19.0,Street Circuit,3,0,0,0,1,17.666666666666668,13.0,10.0,0,0.0
+2025_6,2025,6,miami,verstappen,red_bull,1,4,12.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,3.0,1.3333333333333333,81.0,0,0.0
+2025_7,2025,7,imola,albon,williams,7,5,10.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,15.5,37.0,0,0.0
+2025_7,2025,7,imola,alonso,aston_martin,5,11,0.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,19.0,10.0,0,0.0
+2025_7,2025,7,imola,gasly,alpine,10,13,0.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,14.0,6.0,0,0.0
+2025_7,2025,7,imola,hamilton,ferrari,12,4,12.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,9.5,76.0,0,0.0
+2025_7,2025,7,imola,hulkenberg,sauber,17,12,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,11.0,6.0,0,0.0
+2025_7,2025,7,imola,leclerc,ferrari,11,6,8.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,4.5,88.0,0,0.0
+2025_7,2025,7,imola,norris,mclaren,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.0,2.5,106.0,0,0.0
+2025_7,2025,7,imola,ocon,haas,18,20,0.0,Retired,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,14.0,14.0,0,0.0
+2025_7,2025,7,imola,russell,mercedes,3,7,6.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,5.5,83.0,0,0.0
+2025_7,2025,7,imola,sainz,williams,6,8,4.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,12.0,12.5,47.0,0,0.0
+2025_7,2025,7,imola,stroll,aston_martin,8,15,0.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,9.5,10.0,0,0.0
+2025_7,2025,7,imola,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.0,1.0,93.0,0,0.0
+2025_8,2025,8,monaco,albon,williams,10,9,2.0,Lapped,0,25.0,10.0,High-Downforce,1,0,1,0,0,6.333333333333333,13.666666666666666,51.0,0,0.0
+2025_8,2025,8,monaco,alonso,aston_martin,6,19,0.0,Retired,0,25.0,7.0,High-Downforce,1,0,1,0,0,12.333333333333334,6.666666666666667,10.0,0,0.0
+2025_8,2025,8,monaco,gasly,alpine,17,20,0.0,Retired,0,25.0,18.0,High-Downforce,1,0,1,0,0,15.333333333333334,9.333333333333334,6.0,0,0.0
+2025_8,2025,8,monaco,hamilton,ferrari,7,5,10.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,6.333333333333333,6.333333333333333,96.0,0,0.0
+2025_8,2025,8,monaco,hulkenberg,sauber,13,16,0.0,Lapped,0,25.0,13.0,High-Downforce,1,0,1,0,0,13.666666666666666,18.0,6.0,0,0.0
+2025_8,2025,8,monaco,leclerc,ferrari,2,2,18.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,5.333333333333333,3.6666666666666665,106.0,0,0.0
+2025_8,2025,8,monaco,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,2.6666666666666665,6.333333333333333,124.0,0,0.0
+2025_8,2025,8,monaco,ocon,haas,8,7,6.0,Lapped,0,25.0,8.0,High-Downforce,1,0,1,0,0,15.333333333333334,10.666666666666666,14.0,0,0.0
+2025_8,2025,8,monaco,russell,mercedes,14,11,0.0,Lapped,0,25.0,14.0,High-Downforce,1,0,1,0,0,5.0,5.0,89.0,0,0.0
+2025_8,2025,8,monaco,sainz,williams,11,10,1.0,Lapped,0,25.0,11.0,High-Downforce,1,0,1,0,0,8.333333333333334,4.333333333333333,53.0,0,0.0
+2025_8,2025,8,monaco,stroll,aston_martin,19,15,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,15.666666666666666,16.0,10.0,0,0.0
+2025_8,2025,8,monaco,verstappen,red_bull,4,4,12.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,2.3333333333333335,3.3333333333333335,118.0,0,0.0
+2025_9,2025,9,catalunya,albon,williams,11,19,0.0,Retired,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,17.333333333333332,54.0,0,0.0
+2025_9,2025,9,catalunya,alonso,aston_martin,10,9,2.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,15.0,9.333333333333334,10.0,0,0.0
+2025_9,2025,9,catalunya,gasly,alpine,8,8,4.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,10.666666666666666,6.0,0,0.0
+2025_9,2025,9,catalunya,hamilton,ferrari,5,6,8.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,3.3333333333333335,124.0,0,0.0
+2025_9,2025,9,catalunya,hulkenberg,sauber,15,5,10.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,14.0,13.0,6.0,0,0.0
+2025_9,2025,9,catalunya,leclerc,ferrari,7,3,15.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,5.0,12.0,132.0,0,0.0
+2025_9,2025,9,catalunya,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,9.0,149.0,0,0.0
+2025_9,2025,9,catalunya,ocon,haas,16,16,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,13.0,8.333333333333334,20.0,0,0.0
+2025_9,2025,9,catalunya,russell,mercedes,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,7.0,3.3333333333333335,89.0,0,0.0
+2025_9,2025,9,catalunya,sainz,williams,17,14,0.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,9.0,5.0,54.0,0,0.0
+2025_9,2025,9,catalunya,verstappen,red_bull,3,10,1.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,3.0,1.0,130.0,0,0.0
+2025_10,2025,10,villeneuve,albon,williams,9,20,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,11.0,12.333333333333334,54.0,0,0.0
+2025_10,2025,10,villeneuve,alonso,aston_martin,6,7,6.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,13.0,5.666666666666667,12.0,0,0.0
+2025_10,2025,10,villeneuve,gasly,alpine,20,15,0.0,Lapped,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,11.666666666666666,10.0,0,0.0
+2025_10,2025,10,villeneuve,hamilton,ferrari,5,6,8.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,5.0,3.3333333333333335,147.0,0,0.0
+2025_10,2025,10,villeneuve,hulkenberg,sauber,11,8,4.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,11.0,13.0,16.0,0,0.0
+2025_10,2025,10,villeneuve,leclerc,ferrari,8,5,10.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,9.333333333333334,155.0,0,0.0
+2025_10,2025,10,villeneuve,norris,mclaren,7,18,0.0,Retired,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,10.0,167.0,0,0.0
+2025_10,2025,10,villeneuve,ocon,haas,14,9,2.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,8.0,20.0,0,0.0
+2025_10,2025,10,villeneuve,russell,mercedes,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,8.666666666666666,101.0,0,0.0
+2025_10,2025,10,villeneuve,sainz,williams,16,10,1.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,7.666666666666667,54.0,0,0.0
+2025_10,2025,10,villeneuve,stroll,aston_martin,17,17,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,8.666666666666666,18.0,0,0.0
+2025_10,2025,10,villeneuve,verstappen,red_bull,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,5.0,1.0,131.0,0,0.0
+2025_11,2025,11,red_bull_ring,albon,williams,12,17,0.0,Retired,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,16.0,12.666666666666666,55.0,0,0.0
+2025_11,2025,11,red_bull_ring,alonso,aston_martin,11,7,6.0,Lapped,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,11.0,18.0,0,0.0
+2025_11,2025,11,red_bull_ring,gasly,alpine,10,13,0.0,Lapped,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,14.333333333333334,11.666666666666666,10.0,0,0.0
+2025_11,2025,11,red_bull_ring,hamilton,ferrari,4,4,12.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,5.666666666666667,5.0,165.0,0,0.0
+2025_11,2025,11,red_bull_ring,hulkenberg,sauber,20,9,2.0,Lapped,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,13.0,20.0,0,0.0
+2025_11,2025,11,red_bull_ring,leclerc,ferrari,2,3,15.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,3.3333333333333335,4.666666666666667,177.0,0,0.0
+2025_11,2025,11,red_bull_ring,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,7.0,10.333333333333334,167.0,0,0.0
+2025_11,2025,11,red_bull_ring,ocon,haas,17,10,1.0,Lapped,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,10.333333333333334,22.0,0,0.0
+2025_11,2025,11,red_bull_ring,russell,mercedes,5,5,10.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,4.0,126.0,0,0.0
+2025_11,2025,11,red_bull_ring,sainz,williams,19,20,0.0,Did not start,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,9.0,55.0,0,0.0
+2025_11,2025,11,red_bull_ring,stroll,aston_martin,16,14,0.0,Lapped,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,11.666666666666666,24.0,0,0.0
+2025_11,2025,11,red_bull_ring,verstappen,red_bull,7,18,0.0,Retired,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,2.6666666666666665,149.0,0,0.0
+2025_12,2025,12,silverstone,albon,williams,13,8,4.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,18.666666666666668,12.333333333333334,55.0,0,0.0
+2025_12,2025,12,silverstone,alonso,aston_martin,7,9,2.0,Finished,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,6.666666666666667,24.0,0,0.0
+2025_12,2025,12,silverstone,gasly,alpine,8,6,8.0,Finished,0,25.0,10.0,Power/High-Speed,0,0,0,1,0,12.0,18.0,10.0,0,0.0
+2025_12,2025,12,silverstone,hamilton,ferrari,5,4,12.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,2.3333333333333335,192.0,0,0.0
+2025_12,2025,12,silverstone,hulkenberg,sauber,19,3,15.0,Finished,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,7.333333333333333,9.5,22.0,0,0.0
+2025_12,2025,12,silverstone,leclerc,ferrari,6,14,0.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,3.6666666666666665,9.0,204.0,0,0.0
+2025_12,2025,12,silverstone,norris,mclaren,3,1,25.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,7.0,3.6666666666666665,192.0,0,0.0
+2025_12,2025,12,silverstone,ocon,haas,14,13,0.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,11.666666666666666,17.0,23.0,0,0.0
+2025_12,2025,12,silverstone,russell,mercedes,4,10,1.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,3.3333333333333335,14.0,136.0,0,0.0
+2025_12,2025,12,silverstone,sainz,williams,9,12,0.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,14.666666666666666,5.333333333333333,59.0,0,0.0
+2025_12,2025,12,silverstone,stroll,aston_martin,17,7,6.0,Finished,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,15.333333333333334,10.666666666666666,26.0,0,0.0
+2025_12,2025,12,silverstone,verstappen,red_bull,1,5,10.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,10.0,3.3333333333333335,149.0,0,0.0
+2025_13,2025,13,spa,albon,williams,5,6,8.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,15.0,12.0,59.0,0,0.0
+2025_13,2025,13,spa,alonso,aston_martin,20,17,0.0,Finished,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,6.0,32.0,0,0.0
+2025_13,2025,13,spa,gasly,alpine,13,10,1.0,Finished,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,11.333333333333334,11.0,18.0,0,0.0
+2025_13,2025,13,spa,hamilton,ferrari,18,7,6.0,Finished,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,4.666666666666667,8.333333333333334,204.0,0,0.0
+2025_13,2025,13,spa,hulkenberg,sauber,14,12,0.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,6.666666666666667,18.0,37.0,0,0.0
+2025_13,2025,13,spa,leclerc,ferrari,3,3,15.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,7.333333333333333,4.0,210.0,0,0.0
+2025_13,2025,13,spa,norris,mclaren,1,2,18.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,6.666666666666667,8.0,217.0,0,0.0
+2025_13,2025,13,spa,ocon,haas,11,15,0.0,Finished,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,10.666666666666666,8.0,23.0,0,0.0
+2025_13,2025,13,spa,russell,mercedes,6,5,10.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,5.333333333333333,10.0,137.0,0,0.0
+2025_13,2025,13,spa,sainz,williams,17,18,0.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,14.0,9.333333333333334,67.0,0,0.0
+2025_13,2025,13,spa,stroll,aston_martin,16,14,0.0,Finished,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,12.666666666666666,10.333333333333334,32.0,0,0.0
+2025_13,2025,13,spa,verstappen,red_bull,4,4,12.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,8.333333333333334,2.0,159.0,0,0.0
+2025_14,2025,14,hungaroring,albon,williams,19,15,0.0,Lapped,0,25.0,20.0,High-Downforce,1,0,1,0,0,10.333333333333334,14.0,67.0,0,0.0
+2025_14,2025,14,hungaroring,alonso,aston_martin,5,5,10.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,11.0,9.333333333333334,32.0,0,0.0
+2025_14,2025,14,hungaroring,gasly,alpine,16,19,0.0,Lapped,0,25.0,17.0,High-Downforce,1,0,1,0,0,9.666666666666666,17.333333333333332,19.0,0,0.0
+2025_14,2025,14,hungaroring,hamilton,ferrari,12,12,0.0,Lapped,0,25.0,12.0,High-Downforce,1,0,1,0,0,5.0,3.0,225.0,0,0.0
+2025_14,2025,14,hungaroring,hulkenberg,sauber,18,13,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,8.0,13.5,37.0,0,0.0
+2025_14,2025,14,hungaroring,leclerc,ferrari,1,4,12.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,6.666666666666667,5.666666666666667,225.0,0,0.0
+2025_14,2025,14,hungaroring,norris,mclaren,3,1,25.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,1.3333333333333333,3.6666666666666665,235.0,0,0.0
+2025_14,2025,14,hungaroring,ocon,haas,17,16,0.0,Lapped,0,25.0,18.0,High-Downforce,1,0,1,0,0,12.666666666666666,15.333333333333334,23.0,0,0.0
+2025_14,2025,14,hungaroring,russell,mercedes,4,3,15.0,Finished,0,25.0,4.0,High-Downforce,1,0,1,0,0,6.666666666666667,5.666666666666667,147.0,0,0.0
+2025_14,2025,14,hungaroring,sainz,williams,13,14,0.0,Lapped,0,25.0,13.0,High-Downforce,1,0,1,0,0,16.666666666666668,6.0,67.0,0,0.0
+2025_14,2025,14,hungaroring,stroll,aston_martin,6,7,6.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,11.666666666666666,10.333333333333334,42.0,0,0.0
+2025_14,2025,14,hungaroring,verstappen,red_bull,8,9,2.0,Finished,0,25.0,8.0,High-Downforce,1,0,1,0,0,9.0,2.3333333333333335,171.0,0,0.0
+2025_15,2025,15,zandvoort,albon,williams,15,5,10.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,11.333333333333334,67.0,0,0.0
+2025_15,2025,15,zandvoort,alonso,aston_martin,10,8,4.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,6.0,48.0,0,0.0
+2025_15,2025,15,zandvoort,gasly,alpine,14,17,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,7.666666666666667,19.0,0,0.0
+2025_15,2025,15,zandvoort,hamilton,ferrari,7,20,0.0,Retired,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,6.0,237.0,0,0.0
+2025_15,2025,15,zandvoort,hulkenberg,sauber,17,14,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,11.5,37.0,0,0.0
+2025_15,2025,15,zandvoort,leclerc,ferrari,6,19,0.0,Retired,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,7.0,8.333333333333334,237.0,0,0.0
+2025_15,2025,15,zandvoort,norris,mclaren,2,18,0.0,Retired,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,5.0,260.0,0,0.0
+2025_15,2025,15,zandvoort,ocon,haas,18,10,1.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,11.333333333333334,23.0,0,0.0
+2025_15,2025,15,zandvoort,russell,mercedes,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,6.0,8.666666666666666,162.0,0,0.0
+2025_15,2025,15,zandvoort,sainz,williams,9,13,0.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,6.0,77.0,0,0.0
+2025_15,2025,15,zandvoort,stroll,aston_martin,19,7,6.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,11.333333333333334,52.0,0,0.0
+2025_15,2025,15,zandvoort,verstappen,red_bull,3,2,18.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,6.0,1.3333333333333333,173.0,0,0.0
+2025_16,2025,16,monza,albon,williams,14,7,6.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,8.0,77.0,0,0.0
+2025_16,2025,16,monza,alonso,aston_martin,8,19,0.0,Retired,0,25.0,9.0,Power/High-Speed,0,0,0,1,0,10.0,13.0,58.0,0,0.0
+2025_16,2025,16,monza,gasly,alpine,20,16,0.0,Lapped,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,15.333333333333334,12.666666666666666,19.0,0,0.0
+2025_16,2025,16,monza,hamilton,ferrari,10,6,8.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,13.0,5.333333333333333,237.0,0,0.0
+2025_16,2025,16,monza,hulkenberg,sauber,12,20,0.0,Did not start,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,13.0,17.0,37.0,0,0.0
+2025_16,2025,16,monza,leclerc,ferrari,4,4,12.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,2.3333333333333335,245.0,0,0.0
+2025_16,2025,16,monza,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,7.0,6.0,260.0,0,0.0
+2025_16,2025,16,monza,ocon,haas,15,15,0.0,Lapped,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,13.666666666666666,14.666666666666666,24.0,0,0.0
+2025_16,2025,16,monza,russell,mercedes,5,5,10.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,4.0,5.0,174.0,0,0.0
+2025_16,2025,16,monza,sainz,williams,13,11,0.0,Finished,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,15.0,3.6666666666666665,83.0,0,0.0
+2025_16,2025,16,monza,stroll,aston_martin,16,18,0.0,Lapped,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,17.666666666666668,58.0,0,0.0
+2025_16,2025,16,monza,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,5.0,2.6666666666666665,191.0,0,0.0
+2025_17,2025,17,baku,albon,williams,19,13,0.0,Finished,0,25.0,19.0,Street Circuit,3,0,0,0,1,9.0,10.333333333333334,83.0,0,0.0
+2025_17,2025,17,baku,alonso,aston_martin,11,15,0.0,Finished,0,25.0,11.0,Street Circuit,3,0,0,0,1,10.666666666666666,5.666666666666667,58.0,0,0.0
+2025_17,2025,17,baku,gasly,alpine,18,18,0.0,Lapped,0,25.0,18.0,Street Circuit,3,0,0,0,1,17.333333333333332,10.333333333333334,19.0,0,0.0
+2025_17,2025,17,baku,hamilton,ferrari,12,8,4.0,Finished,0,25.0,12.0,Street Circuit,3,0,0,0,1,12.666666666666666,6.333333333333333,257.0,0,0.0
+2025_17,2025,17,baku,hulkenberg,sauber,17,16,0.0,Finished,0,25.0,17.0,Street Circuit,3,0,0,0,1,15.666666666666666,14.0,37.0,0,0.0
+2025_17,2025,17,baku,leclerc,ferrari,10,9,2.0,Finished,0,25.0,10.0,Street Circuit,3,0,0,0,1,9.0,8.0,261.0,0,0.0
+2025_17,2025,17,baku,norris,mclaren,7,7,6.0,Finished,0,25.0,7.0,Street Circuit,3,0,0,0,1,7.0,7.333333333333333,278.0,0,0.0
+2025_17,2025,17,baku,ocon,haas,20,14,0.0,Finished,0,25.0,20.0,Street Circuit,3,0,0,0,1,13.666666666666666,13.333333333333334,24.0,0,0.0
+2025_17,2025,17,baku,russell,mercedes,5,2,18.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,4.0,4.666666666666667,184.0,0,0.0
+2025_17,2025,17,baku,sainz,williams,2,3,15.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,12.666666666666666,14.333333333333334,83.0,0,0.0
+2025_17,2025,17,baku,stroll,aston_martin,14,17,0.0,Finished,0,25.0,14.0,Street Circuit,3,0,0,0,1,10.666666666666666,14.0,58.0,0,0.0
+2025_17,2025,17,baku,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Street Circuit,3,0,0,0,1,4.0,2.6666666666666665,216.0,0,0.0
+2025_18,2025,18,marina_bay,albon,williams,20,14,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,8.333333333333334,16.0,98.0,0,0.0
+2025_18,2025,18,marina_bay,alonso,aston_martin,10,7,6.0,Finished,0,25.0,10.0,High-Downforce,1,0,1,0,0,14.0,13.666666666666666,58.0,0,0.0
+2025_18,2025,18,marina_bay,gasly,alpine,19,19,0.0,Lapped,0,25.0,18.0,High-Downforce,1,0,1,0,0,17.0,11.0,19.0,0,0.0
+2025_18,2025,18,marina_bay,hamilton,ferrari,6,8,4.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,11.333333333333334,6.0,263.0,0,0.0
+2025_18,2025,18,marina_bay,hulkenberg,sauber,11,20,0.0,Lapped,0,25.0,11.0,High-Downforce,1,0,1,0,0,16.666666666666668,11.0,37.0,0,0.0
+2025_18,2025,18,marina_bay,leclerc,ferrari,7,6,8.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,10.666666666666666,3.6666666666666665,267.0,0,0.0
+2025_18,2025,18,marina_bay,norris,mclaren,5,3,15.0,Finished,0,25.0,5.0,High-Downforce,1,0,1,0,0,9.0,2.3333333333333335,284.0,0,0.0
+2025_18,2025,18,marina_bay,ocon,haas,17,18,0.0,Lapped,0,25.0,17.0,High-Downforce,1,0,1,0,0,13.0,15.666666666666666,24.0,0,0.0
+2025_18,2025,18,marina_bay,russell,mercedes,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,3.6666666666666665,11.333333333333334,202.0,0,0.0
+2025_18,2025,18,marina_bay,sainz,williams,18,10,1.0,Lapped,0,25.0,20.0,High-Downforce,1,0,1,0,0,9.0,3.6666666666666665,98.0,0,0.0
+2025_18,2025,18,marina_bay,stroll,aston_martin,15,13,0.0,Lapped,0,25.0,15.0,High-Downforce,1,0,1,0,0,14.0,13.333333333333334,64.0,0,0.0
+2025_18,2025,18,marina_bay,verstappen,red_bull,2,2,18.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,1.3333333333333333,4.666666666666667,241.0,0,0.0
+2025_19,2025,19,americas,albon,williams,18,14,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,12.666666666666666,99.0,0,0.0
+2025_19,2025,19,americas,alonso,aston_martin,10,10,1.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,12.0,64.0,0,0.0
+2025_19,2025,19,americas,gasly,alpine,14,19,0.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,10.666666666666666,19.0,0,0.0
+2025_19,2025,19,americas,hamilton,ferrari,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,7.333333333333333,13.666666666666666,275.0,0,0.0
+2025_19,2025,19,americas,hulkenberg,sauber,11,8,4.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,9.5,37.0,0,0.0
+2025_19,2025,19,americas,leclerc,ferrari,3,3,15.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,6.333333333333333,8.0,287.0,0,0.0
+2025_19,2025,19,americas,norris,mclaren,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.0,4.0,299.0,0,0.0
+2025_19,2025,19,americas,ocon,haas,17,15,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,15.666666666666666,24.0,0,0.0
+2025_19,2025,19,americas,russell,mercedes,4,6,8.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,5.333333333333333,227.0,0,0.0
+2025_19,2025,19,americas,sainz,williams,9,20,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,8.0,8.333333333333334,99.0,0,0.0
+2025_19,2025,19,americas,stroll,aston_martin,19,12,0.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,16.0,13.333333333333334,65.0,0,0.0
+2025_19,2025,19,americas,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,1.6666666666666667,259.0,0,0.0
+2025_20,2025,20,rodriguez,albon,williams,17,12,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,13.333333333333334,99.0,0,0.0
+2025_20,2025,20,rodriguez,alonso,aston_martin,14,18,0.0,Retired,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,18.333333333333332,65.0,0,0.0
+2025_20,2025,20,rodriguez,gasly,alpine,18,15,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,10.666666666666666,19.0,0,0.0
+2025_20,2025,20,rodriguez,hamilton,ferrari,3,8,4.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,2.6666666666666665,302.0,0,0.0
+2025_20,2025,20,rodriguez,hulkenberg,sauber,13,19,0.0,Retired,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,11.0,41.0,0,0.0
+2025_20,2025,20,rodriguez,leclerc,ferrari,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,6.0,4.0,306.0,0,0.0
+2025_20,2025,20,rodriguez,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,4.0,5.333333333333333,317.0,0,0.0
+2025_20,2025,20,rodriguez,ocon,haas,11,9,2.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,10.333333333333334,24.0,0,0.0
+2025_20,2025,20,rodriguez,russell,mercedes,4,7,6.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.0,5.0,235.0,0,0.0
+2025_20,2025,20,rodriguez,sainz,williams,12,17,0.0,Retired,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.0,3.3333333333333335,99.0,0,0.0
+2025_20,2025,20,rodriguez,stroll,aston_martin,19,14,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,14.0,14.333333333333334,65.0,0,0.0
+2025_20,2025,20,rodriguez,verstappen,red_bull,5,3,15.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,2.6666666666666665,284.0,0,0.0
+2025_21,2025,21,interlagos,albon,williams,12,11,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,13.333333333333334,17.333333333333332,99.0,0,0.0
+2025_21,2025,21,interlagos,alonso,aston_martin,11,14,0.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,7.333333333333333,65.0,0,0.0
+2025_21,2025,21,interlagos,gasly,alpine,9,10,1.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,8.0,19.0,0,0.0
+2025_21,2025,21,interlagos,hamilton,ferrari,13,18,0.0,Retired,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,6.666666666666667,6.666666666666667,324.0,0,0.0
+2025_21,2025,21,interlagos,hulkenberg,sauber,10,9,2.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,16.0,41.0,0,0.0
+2025_21,2025,21,interlagos,leclerc,ferrari,3,19,0.0,Retired,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,9.666666666666666,324.0,0,0.0
+2025_21,2025,21,interlagos,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.0,8.666666666666666,342.0,0,0.0
+2025_21,2025,21,interlagos,ocon,haas,20,12,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,14.0,6.666666666666667,26.0,0,0.0
+2025_21,2025,21,interlagos,russell,mercedes,6,4,12.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,6.666666666666667,241.0,0,0.0
+2025_21,2025,21,interlagos,sainz,williams,15,13,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,8.333333333333334,99.0,0,0.0
+2025_21,2025,21,interlagos,stroll,aston_martin,14,16,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,13.0,11.333333333333334,65.0,0,0.0
+2025_21,2025,21,interlagos,verstappen,red_bull,19,3,15.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,2.0,2.6666666666666665,299.0,0,0.0
+2025_22,2025,22,vegas,albon,williams,16,16,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,15.5,99.0,0,0.0
+2025_22,2025,22,vegas,alonso,aston_martin,7,11,0.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,14.0,10.0,65.0,0,0.0
+2025_22,2025,22,vegas,gasly,alpine,10,13,0.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,15.5,20.0,0,0.0
+2025_22,2025,22,vegas,hamilton,ferrari,19,8,4.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,10.0,4.5,324.0,0,0.0
+2025_22,2025,22,vegas,hulkenberg,sauber,11,7,6.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,12.0,13.5,43.0,0,0.0
+2025_22,2025,22,vegas,leclerc,ferrari,9,4,12.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,8.0,3.0,328.0,0,0.0
+2025_22,2025,22,vegas,norris,mclaren,1,19,0.0,Disqualified,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,13.0,367.0,0,0.0
+2025_22,2025,22,vegas,ocon,haas,13,9,2.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,12.0,10.5,26.0,0,0.0
+2025_22,2025,22,vegas,russell,mercedes,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,5.666666666666667,4.5,253.0,0,0.0
+2025_22,2025,22,vegas,sainz,williams,3,5,10.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,4.5,99.0,0,0.0
+2025_22,2025,22,vegas,stroll,aston_martin,12,18,0.0,Retired,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,14.0,10.0,65.0,0,0.0
+2025_22,2025,22,vegas,verstappen,red_bull,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,3.0,314.0,0,0.0
+2025_23,2025,23,losail,albon,williams,14,11,0.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,13.0,14.0,109.0,0,0.0
+2025_23,2025,23,losail,alonso,aston_martin,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,6.5,65.0,0,0.0
+2025_23,2025,23,losail,gasly,alpine,9,16,0.0,Lapped,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,8.5,20.0,0,0.0
+2025_23,2025,23,losail,hamilton,ferrari,17,12,0.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,15.5,340.0,0,0.0
+2025_23,2025,23,losail,hulkenberg,sauber,11,20,0.0,Retired,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,16.0,49.0,0,0.0
+2025_23,2025,23,losail,leclerc,ferrari,10,8,4.0,Finished,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,3.5,340.0,0,0.0
+2025_23,2025,23,losail,norris,mclaren,2,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,7.0,6.5,367.0,0,0.0
+2025_23,2025,23,losail,ocon,haas,16,15,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,10.0,13.5,28.0,0,0.0
+2025_23,2025,23,losail,russell,mercedes,4,6,8.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,4.0,271.0,0,0.0
+2025_23,2025,23,losail,sainz,williams,7,3,15.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,13.0,109.0,0,0.0
+2025_23,2025,23,losail,stroll,aston_martin,18,17,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,16.0,14.5,71.0,0,0.0
+2025_23,2025,23,losail,verstappen,red_bull,3,1,25.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,1.0,339.0,0,0.0
+2025_24,2025,24,yas_marina,albon,williams,17,16,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,12.666666666666666,124.0,0,0.0
+2025_24,2025,24,yas_marina,alonso,aston_martin,6,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,12.0,71.0,0,0.0
+2025_24,2025,24,yas_marina,gasly,alpine,19,19,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,13.0,11.333333333333334,20.0,0,0.0
+2025_24,2025,24,yas_marina,hamilton,ferrari,16,8,4.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,12.666666666666666,10.333333333333334,344.0,0,0.0
+2025_24,2025,24,yas_marina,hulkenberg,sauber,18,9,2.0,Finished,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,12.0,11.5,49.0,0,0.0
+2025_24,2025,24,yas_marina,leclerc,ferrari,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,2.3333333333333335,348.0,0,0.0
+2025_24,2025,24,yas_marina,norris,mclaren,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,8.0,4.0,379.0,0,0.0
+2025_24,2025,24,yas_marina,ocon,haas,8,7,6.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,12.0,9.5,28.0,0,0.0
+2025_24,2025,24,yas_marina,russell,mercedes,4,5,10.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,4.0,4.333333333333333,279.0,0,0.0
+2025_24,2025,24,yas_marina,sainz,williams,12,13,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,7.0,8.0,124.0,0,0.0
+2025_24,2025,24,yas_marina,stroll,aston_martin,15,10,1.0,Finished,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,17.0,10.666666666666666,79.0,0,0.0
+2025_24,2025,24,yas_marina,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,2.6666666666666665,364.0,0,0.0
+2026_1,2026,1,albert_park,albon,williams,15,12,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,11.25,0.0,0,0.0
+2026_1,2026,1,albert_park,alonso,aston_martin,17,18,0.0,Retired,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,8.0,11.25,0.0,0,0.0
+2026_1,2026,1,albert_park,bottas,cadillac,19,19,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,11.0,0.0,0,
+2026_1,2026,1,albert_park,gasly,alpine,14,10,1.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,16.0,11.5,0.0,0,0.0
+2026_1,2026,1,albert_park,hamilton,ferrari,7,4,12.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,8.5,0.0,0,0.0
+2026_1,2026,1,albert_park,hulkenberg,audi,11,22,0.0,Did not start,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,12.0,7.666666666666667,0.0,0,
+2026_1,2026,1,albert_park,leclerc,ferrari,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,5.333333333333333,7.75,12.0,0,0.0
+2026_1,2026,1,albert_park,norris,mclaren,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,3.75,0.0,0,0.0
+2026_1,2026,1,albert_park,ocon,haas,13,11,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,12.5,0.0,0,0.0
+2026_1,2026,1,albert_park,perez,cadillac,18,16,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,15.666666666666666,4.0,0.0,0,
+2026_1,2026,1,albert_park,russell,mercedes,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,4.333333333333333,10.25,0.0,0,0.0
+2026_1,2026,1,albert_park,sainz,williams,21,15,0.0,Lapped,0,25.0,,Balanced/Technical,2,1,0,0,0,7.0,12.75,0.0,0,0.0
+2026_1,2026,1,albert_park,stroll,aston_martin,22,17,0.0,Lapped,0,25.0,,Balanced/Technical,2,1,0,0,0,15.0,7.0,0.0,0,0.0
+2026_1,2026,1,albert_park,verstappen,red_bull,20,6,8.0,Finished,0,25.0,,Balanced/Technical,2,1,0,0,0,1.0,10.0,0.0,0,0.0
+2026_2,2026,2,shanghai,albon,williams,22,22,0.0,Did not start,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,13.0,9.5,0.0,0,0.0
+2026_2,2026,2,shanghai,alonso,aston_martin,18,17,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,12.0,0.0,0,0.0
+2026_2,2026,2,shanghai,bottas,cadillac,19,13,0.0,Lapped,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,16.0,20.0,0.0,0,
+2026_2,2026,2,shanghai,gasly,alpine,7,6,8.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,15.0,16.5,1.0,0,0.0
+2026_2,2026,2,shanghai,hamilton,ferrari,3,3,15.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,8.0,14.0,27.0,0,0.0
+2026_2,2026,2,shanghai,hulkenberg,audi,11,11,0.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,17.0,12.5,0.0,0,
+2026_2,2026,2,shanghai,leclerc,ferrari,4,4,12.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,5.0,11.0,42.0,0,0.0
+2026_2,2026,2,shanghai,norris,mclaren,6,20,0.0,Did not start,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,4.0,2.0,10.0,0,0.0
+2026_2,2026,2,shanghai,ocon,haas,13,14,0.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,11.0,8.0,0.0,0,0.0
+2026_2,2026,2,shanghai,perez,cadillac,21,15,0.0,Lapped,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,3.0,0.0,0,0.0
+2026_2,2026,2,shanghai,russell,mercedes,2,2,18.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,4.0,4.5,25.0,0,0.0
+2026_2,2026,2,shanghai,sainz,williams,17,9,2.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,7.5,0.0,0,0.0
+2026_2,2026,2,shanghai,stroll,aston_martin,20,18,0.0,Retired,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,12.0,0.0,0,0.0
+2026_2,2026,2,shanghai,verstappen,red_bull,8,16,0.0,Retired,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,2.5,8.0,0,0.0
+2026_3,2026,3,suzuka,albon,williams,17,20,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,16.25,2.0,0,0.0
+2026_3,2026,3,suzuka,alonso,aston_martin,21,18,0.0,Lapped,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,8.0,0.0,0,0.0
+2026_3,2026,3,suzuka,bottas,cadillac,20,19,0.0,Lapped,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,16.333333333333332,0.0,0,0.0
+2026_3,2026,3,suzuka,gasly,alpine,7,7,6.0,Finished,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,14.25,9.0,0,0.0
+2026_3,2026,3,suzuka,hamilton,ferrari,6,6,8.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,5.0,6.5,54.0,0,0.0
+2026_3,2026,3,suzuka,hulkenberg,audi,13,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.0,13.666666666666666,0.0,0,
+2026_3,2026,3,suzuka,leclerc,ferrari,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,3.75,62.0,0,0.0
+2026_3,2026,3,suzuka,norris,mclaren,5,5,10.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,9.333333333333334,4.75,10.0,0,0.0
+2026_3,2026,3,suzuka,ocon,haas,12,10,1.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,11.5,0.0,0,0.0
+2026_3,2026,3,suzuka,perez,cadillac,19,17,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,17.0,7.666666666666667,0.0,0,0.0
+2026_3,2026,3,suzuka,russell,mercedes,2,4,12.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,6.75,43.0,0,0.0
+2026_3,2026,3,suzuka,sainz,williams,16,15,0.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,10.5,2.0,0,0.0
+2026_3,2026,3,suzuka,stroll,aston_martin,22,21,0.0,Retired,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,15.0,15.5,0.0,0,0.0
+2026_3,2026,3,suzuka,verstappen,red_bull,11,8,4.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,7.666666666666667,1.0,8.0,0,0.0
+2026_4,2026,4,miami,albon,williams,15,10,1.0,Finished,0,25.0,15.0,Street Circuit,3,0,0,0,1,18.0,11.5,2.0,0,0.0
+2026_4,2026,4,miami,alonso,aston_martin,17,15,0.0,Lapped,0,25.0,17.0,Street Circuit,3,0,0,0,1,17.666666666666668,9.5,0.0,0,0.0
+2026_4,2026,4,miami,bottas,cadillac,19,18,0.0,Lapped,0,25.0,19.0,Street Circuit,3,0,0,0,1,17.0,12.0,0.0,0,0.0
+2026_4,2026,4,miami,gasly,alpine,9,21,0.0,Retired,0,25.0,9.0,Street Circuit,3,0,0,0,1,7.666666666666667,12.75,15.0,0,0.0
+2026_4,2026,4,miami,hamilton,ferrari,6,6,8.0,Finished,0,25.0,6.0,Street Circuit,3,0,0,0,1,4.333333333333333,6.5,77.0,0,0.0
+2026_4,2026,4,miami,hulkenberg,audi,10,19,0.0,Retired,0,25.0,10.0,Street Circuit,3,0,0,0,1,14.666666666666666,13.333333333333334,0.0,0,0.0
+2026_4,2026,4,miami,leclerc,ferrari,3,8,4.0,Finished,0,25.0,3.0,Street Circuit,3,0,0,0,1,3.3333333333333335,4.75,85.0,0,0.0
+2026_4,2026,4,miami,norris,mclaren,4,2,18.0,Finished,0,25.0,4.0,Street Circuit,3,0,0,0,1,10.0,9.75,20.0,0,0.0
+2026_4,2026,4,miami,ocon,haas,14,13,0.0,Lapped,0,25.0,14.0,Street Circuit,3,0,0,0,1,11.666666666666666,9.75,1.0,0,0.0
+2026_4,2026,4,miami,perez,cadillac,20,16,0.0,Lapped,0,25.0,20.0,Street Circuit,3,0,0,0,1,16.0,3.3333333333333335,0.0,0,0.0
+2026_4,2026,4,miami,russell,mercedes,5,4,12.0,Finished,0,25.0,5.0,Street Circuit,3,0,0,0,1,2.3333333333333335,5.0,55.0,0,0.0
+2026_4,2026,4,miami,sainz,williams,13,9,2.0,Finished,0,25.0,13.0,Street Circuit,3,0,0,0,1,13.0,5.5,3.0,0,0.0
+2026_4,2026,4,miami,stroll,aston_martin,18,17,0.0,Lapped,0,25.0,18.0,Street Circuit,3,0,0,0,1,18.666666666666668,13.75,0.0,0,0.0
+2026_4,2026,4,miami,verstappen,red_bull,2,5,10.0,Finished,0,25.0,2.0,Street Circuit,3,0,0,0,1,10.0,2.0,12.0,0,0.0
+2026_5,2026,5,villeneuve,albon,williams,18,21,0.0,Retired,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,14.25,5.0,0,0.0
+2026_5,2026,5,villeneuve,alonso,aston_martin,19,20,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,6.0,0.0,0,0.0
+2026_5,2026,5,villeneuve,bottas,cadillac,21,16,0.0,Lapped,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,10.0,0.0,0,0.0
+2026_5,2026,5,villeneuve,gasly,alpine,14,8,4.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,12.5,15.0,0,0.0
+2026_5,2026,5,villeneuve,hamilton,ferrari,5,2,18.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,5.0,4.0,89.0,0,0.0
+2026_5,2026,5,villeneuve,hulkenberg,audi,11,12,0.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,11.333333333333334,0.0,0,0.0
+2026_5,2026,5,villeneuve,leclerc,ferrari,8,4,12.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,5.0,8.25,107.0,0,0.0
+2026_5,2026,5,villeneuve,norris,mclaren,3,18,0.0,Retired,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,9.0,12.0,38.0,0,0.0
+2026_5,2026,5,villeneuve,ocon,haas,17,14,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,8.25,1.0,0,0.0
+2026_5,2026,5,villeneuve,perez,cadillac,20,17,0.0,Retired,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,16.0,14.666666666666666,0.0,0,0.0
+2026_5,2026,5,villeneuve,russell,mercedes,1,19,0.0,Retired,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,6.75,67.0,0,0.0
+2026_5,2026,5,villeneuve,sainz,williams,15,9,2.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,11.0,8.25,5.0,0,0.0
+2026_5,2026,5,villeneuve,stroll,aston_martin,22,15,0.0,Lapped,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,10.75,0.0,0,0.0
+2026_5,2026,5,villeneuve,verstappen,red_bull,6,3,15.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,1.25,22.0,0,0.0
+2026_6,2026,6,monaco,albon,williams,11,8,4.0,Finished,0,25.0,11.0,High-Downforce,1,0,1,0,0,17.0,12.5,7.0,0,0.0
+2026_6,2026,6,monaco,alonso,aston_martin,21,10,1.0,Finished,0,25.0,21.0,High-Downforce,1,0,1,0,0,17.666666666666668,9.75,0.0,0,0.0
+2026_6,2026,6,monaco,bottas,cadillac,20,21,0.0,Retired,0,25.0,20.0,High-Downforce,1,0,1,0,0,17.666666666666668,11.0,0.0,0,0.0
+2026_6,2026,6,monaco,gasly,alpine,9,3,15.0,Finished,0,25.0,9.0,High-Downforce,1,0,1,0,0,12.0,12.0,19.0,0,0.0
+2026_6,2026,6,monaco,hamilton,ferrari,3,2,18.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,4.666666666666667,6.0,119.0,0,0.0
+2026_6,2026,6,monaco,hulkenberg,audi,13,13,0.0,Finished,0,25.0,13.0,High-Downforce,1,0,1,0,0,14.0,17.333333333333332,0.0,0,0.0
+2026_6,2026,6,monaco,leclerc,ferrari,4,17,0.0,Retired,0,25.0,4.0,High-Downforce,1,0,1,0,0,5.0,3.25,137.0,0,0.0
+2026_6,2026,6,monaco,norris,mclaren,8,19,0.0,Retired,0,25.0,8.0,High-Downforce,1,0,1,0,0,8.333333333333334,5.0,38.0,0,0.0
+2026_6,2026,6,monaco,ocon,haas,17,9,2.0,Finished,0,25.0,17.0,High-Downforce,1,0,1,0,0,12.333333333333334,9.75,1.0,0,0.0
+2026_6,2026,6,monaco,perez,cadillac,18,15,0.0,Finished,0,25.0,18.0,High-Downforce,1,0,1,0,0,16.666666666666668,11.666666666666666,0.0,0,0.0
+2026_6,2026,6,monaco,russell,mercedes,6,12,0.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,9.0,6.5,67.0,0,0.0
+2026_6,2026,6,monaco,sainz,williams,12,16,0.0,Retired,0,25.0,12.0,High-Downforce,1,0,1,0,0,11.0,5.75,11.0,0,0.0
+2026_6,2026,6,monaco,stroll,aston_martin,22,18,0.0,Retired,0,25.0,22.0,High-Downforce,1,0,1,0,0,17.666666666666668,15.75,1.0,0,0.0
+2026_6,2026,6,monaco,verstappen,red_bull,2,22,0.0,Retired,0,25.0,2.0,High-Downforce,1,0,1,0,0,5.333333333333333,3.5,37.0,0,0.0
+2026_7,2026,7,catalunya,albon,williams,18,18,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,13.0,17.75,11.0,0,0.0
+2026_7,2026,7,catalunya,alonso,aston_martin,22,19,0.0,Retired,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,15.0,9.25,1.0,0,0.0
+2026_7,2026,7,catalunya,bottas,cadillac,20,21,0.0,Retired,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,18.333333333333332,13.666666666666666,0.0,0,0.0
+2026_7,2026,7,catalunya,gasly,alpine,14,7,6.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,10.0,34.0,0,0.0
+2026_7,2026,7,catalunya,hamilton,ferrari,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,4.0,137.0,0,0.0
+2026_7,2026,7,catalunya,hulkenberg,audi,9,20,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,10.333333333333334,0.0,0,0.0
+2026_7,2026,7,catalunya,leclerc,ferrari,10,15,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,9.75,162.0,0,0.0
+2026_7,2026,7,catalunya,norris,mclaren,4,3,15.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,13.0,7.25,38.0,0,0.0
+2026_7,2026,7,catalunya,ocon,haas,17,13,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,12.0,10.25,3.0,0,0.0
+2026_7,2026,7,catalunya,perez,cadillac,19,14,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,16.0,4.666666666666667,0.0,0,0.0
+2026_7,2026,7,catalunya,russell,mercedes,1,2,18.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,3.5,67.0,0,0.0
+2026_7,2026,7,catalunya,sainz,williams,16,12,0.0,Lapped,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,7.25,11.0,0,0.0
+2026_7,2026,7,catalunya,stroll,aston_martin,21,22,0.0,Retired,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,11.666666666666666,1.0,0,0.0
+2026_7,2026,7,catalunya,verstappen,red_bull,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,10.0,3.25,37.0,0,0.0
+2026_8,2026,8,red_bull_ring,albon,williams,18,17,0.0,Lapped,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,13.75,11.0,0,0.0
+2026_8,2026,8,red_bull_ring,alonso,aston_martin,21,18,0.0,Lapped,0,25.0,21.0,Power/High-Speed,0,0,0,1,0,16.333333333333332,10.0,1.0,0,0.0
+2026_8,2026,8,red_bull_ring,bottas,cadillac,20,22,0.0,Retired,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,19.333333333333332,14.0,0.0,0,0.0
+2026_8,2026,8,red_bull_ring,gasly,alpine,11,13,0.0,Lapped,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,6.0,12.0,40.0,0,0.0
+2026_8,2026,8,red_bull_ring,hamilton,ferrari,3,5,10.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,1.6666666666666667,4.75,162.0,0,0.0
+2026_8,2026,8,red_bull_ring,hulkenberg,audi,14,12,0.0,Lapped,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,15.0,11.666666666666666,0.0,0,0.0
+2026_8,2026,8,red_bull_ring,leclerc,ferrari,2,8,4.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,12.0,4.25,172.0,0,0.0
+2026_8,2026,8,red_bull_ring,norris,mclaren,6,7,6.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,8.0,53.0,0,0.0
+2026_8,2026,8,red_bull_ring,ocon,haas,15,16,0.0,Lapped,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,12.0,10.25,3.0,0,0.0
+2026_8,2026,8,red_bull_ring,perez,cadillac,19,21,0.0,Retired,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,15.333333333333334,10.0,0.0,0,0.0
+2026_8,2026,8,red_bull_ring,russell,mercedes,1,1,25.0,Finished,0,25.0,1.0,Power/High-Speed,0,0,0,1,0,11.0,4.25,85.0,0,0.0
+2026_8,2026,8,red_bull_ring,sainz,williams,17,20,0.0,Retired,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,11.75,11.0,0,0.0
+2026_8,2026,8,red_bull_ring,stroll,aston_martin,22,19,0.0,Retired,0,25.0,22.0,Power/High-Speed,0,0,0,1,0,18.333333333333332,12.25,1.0,0,0.0
+2026_8,2026,8,red_bull_ring,verstappen,red_bull,5,2,18.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,6.5,49.0,0,0.0
+2026_9,2026,9,silverstone,albon,williams,16,21,0.0,Retired,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,14.333333333333334,11.25,11.0,0,0.0
+2026_9,2026,9,silverstone,alonso,aston_martin,21,18,0.0,Lapped,0,25.0,22.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,7.25,1.0,0,0.0
+2026_9,2026,9,silverstone,bottas,cadillac,18,16,0.0,Finished,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,21.333333333333332,14.666666666666666,0.0,0,0.0
+2026_9,2026,9,silverstone,gasly,alpine,15,10,1.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,15.0,40.0,0,0.0
+2026_9,2026,9,silverstone,hamilton,ferrari,3,3,15.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,2.75,176.0,0,0.0
+2026_9,2026,9,silverstone,hulkenberg,audi,12,22,0.0,Retired,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,15.0,7.333333333333333,0.0,0,0.0
+2026_9,2026,9,silverstone,leclerc,ferrari,2,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,10.25,191.0,0,0.0
+2026_9,2026,9,silverstone,norris,mclaren,6,4,12.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,3.0,59.0,0,0.0
+2026_9,2026,9,silverstone,ocon,haas,17,13,0.0,Finished,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,12.666666666666666,16.0,3.0,0,0.0
+2026_9,2026,9,silverstone,perez,cadillac,20,14,0.0,Finished,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,16.666666666666668,8.333333333333334,0.0,0,0.0
+2026_9,2026,9,silverstone,russell,mercedes,4,2,18.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,5.0,13.0,110.0,0,0.0
+2026_9,2026,9,silverstone,sainz,williams,14,17,0.0,Lapped,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,16.0,7.0,11.0,0,0.0
+2026_9,2026,9,silverstone,stroll,aston_martin,22,19,0.0,Lapped,0,25.0,21.0,Power/High-Speed,0,0,0,1,0,19.666666666666668,9.75,1.0,0,0.0
+2026_9,2026,9,silverstone,verstappen,red_bull,7,20,0.0,Retired,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,3.75,67.0,0,0.0
+2026_10,2026,10,spa,albon,williams,15,15,0.0,Finished,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,18.666666666666668,10.5,11.0,0,0.0
+2026_10,2026,10,spa,alonso,aston_martin,22,19,0.0,Lapped,0,25.0,21.0,Power/High-Speed,0,0,0,1,0,18.333333333333332,8.75,1.0,0,0.0
+2026_10,2026,10,spa,bottas,cadillac,17,18,0.0,Lapped,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,19.666666666666668,15.333333333333334,0.0,0,0.0
+2026_10,2026,10,spa,gasly,alpine,10,11,0.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,10.0,10.75,41.0,0,0.0
+2026_10,2026,10,spa,hamilton,ferrari,5,4,12.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,3.0,8.0,216.0,0,0.0
+2026_10,2026,10,spa,hulkenberg,audi,12,13,0.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,18.0,16.0,0.0,0,0.0
+2026_10,2026,10,spa,leclerc,ferrari,4,2,18.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,8.0,3.75,228.0,0,0.0
+2026_10,2026,10,spa,norris,mclaren,13,7,6.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,4.666666666666667,6.5,71.0,0,0.0
+2026_10,2026,10,spa,ocon,haas,16,17,0.0,Finished,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,14.0,9.75,3.0,0,0.0
+2026_10,2026,10,spa,perez,cadillac,18,21,0.0,Retired,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,16.333333333333332,3.6666666666666665,0.0,0,0.0
+2026_10,2026,10,spa,russell,mercedes,3,22,0.0,Retired,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,1.6666666666666667,8.75,128.0,0,0.0
+2026_10,2026,10,spa,sainz,williams,19,16,0.0,Finished,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,16.333333333333332,11.5,11.0,0,0.0
+2026_10,2026,10,spa,stroll,aston_martin,20,20,0.0,Retired,0,25.0,22.0,Power/High-Speed,0,0,0,1,0,20.0,11.25,1.0,0,0.0
+2026_10,2026,10,spa,verstappen,red_bull,2,3,15.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,8.666666666666666,2.5,67.0,0,0.0
+2026_11,2026,11,hungaroring,albon,williams,19,17,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,17.666666666666668,14.25,11.0,0,0.0
+2026_11,2026,11,hungaroring,alonso,aston_martin,16,14,0.0,Lapped,0,25.0,16.0,High-Downforce,1,0,1,0,0,18.333333333333332,8.25,1.0,0,0.0
+2026_11,2026,11,hungaroring,bottas,cadillac,21,22,0.0,Retired,0,25.0,21.0,High-Downforce,1,0,1,0,0,18.666666666666668,16.0,0.0,0,0.0
+2026_11,2026,11,hungaroring,gasly,alpine,12,12,0.0,Lapped,0,25.0,12.0,High-Downforce,1,0,1,0,0,11.333333333333334,17.75,41.0,0,0.0
+2026_11,2026,11,hungaroring,hamilton,ferrari,5,5,10.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,4.0,5.25,246.0,0,0.0
+2026_11,2026,11,hungaroring,hulkenberg,audi,10,9,2.0,Lapped,0,25.0,10.0,High-Downforce,1,0,1,0,0,15.666666666666666,13.333333333333334,0.0,0,0.0
+2026_11,2026,11,hungaroring,leclerc,ferrari,2,4,12.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,3.6666666666666665,5.25,256.0,0,0.0
+2026_11,2026,11,hungaroring,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,6.0,3.0,77.0,0,0.0
+2026_11,2026,11,hungaroring,ocon,haas,15,16,0.0,Lapped,0,25.0,15.0,High-Downforce,1,0,1,0,0,15.333333333333334,15.5,3.0,0,0.0
+2026_11,2026,11,hungaroring,perez,cadillac,22,21,0.0,Retired,0,25.0,22.0,High-Downforce,1,0,1,0,0,18.666666666666668,5.0,0.0,0,0.0
+2026_11,2026,11,hungaroring,russell,mercedes,6,7,6.0,Finished,0,25.0,7.0,High-Downforce,1,0,1,0,0,8.333333333333334,5.0,128.0,0,0.0
+2026_11,2026,11,hungaroring,sainz,williams,18,18,0.0,Lapped,0,25.0,18.0,High-Downforce,1,0,1,0,0,17.666666666666668,8.0,11.0,0,0.0
+2026_11,2026,11,hungaroring,stroll,aston_martin,20,13,0.0,Lapped,0,25.0,20.0,High-Downforce,1,0,1,0,0,19.333333333333332,9.5,1.0,0,0.0
+2026_11,2026,11,hungaroring,verstappen,red_bull,4,2,18.0,Finished,0,25.0,6.0,High-Downforce,1,0,1,0,0,8.333333333333334,4.0,82.0,0,0.0
+2026_12,2026,12,zandvoort,albon,williams,16,17,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,9.75,11.0,0,0.0
+2026_12,2026,12,zandvoort,alonso,aston_martin,18,9,2.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,17.0,6.5,1.0,0,0.0
+2026_12,2026,12,zandvoort,bottas,cadillac,21,18,0.0,Retired,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,17.333333333333332,0.0,0,0.0
+2026_12,2026,12,zandvoort,gasly,alpine,11,10,1.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,10.0,41.0,0,0.0
+2026_12,2026,12,zandvoort,hamilton,ferrari,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.0,9.5,268.0,0,0.0
+2026_12,2026,12,zandvoort,hulkenberg,audi,13,8,4.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,12.333333333333334,2.0,0,0.0
+2026_12,2026,12,zandvoort,leclerc,ferrari,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,11.0,280.0,0,0.0
+2026_12,2026,12,zandvoort,norris,mclaren,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,4.0,8.25,102.0,0,0.0
+2026_12,2026,12,zandvoort,ocon,haas,15,19,0.0,Retired,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.333333333333334,11.0,3.0,0,0.0
+2026_12,2026,12,zandvoort,perez,cadillac,22,15,0.0,Lapped,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,5.0,0.0,0,0.0
+2026_12,2026,12,zandvoort,russell,mercedes,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,10.333333333333334,7.5,134.0,0,0.0
+2026_12,2026,12,zandvoort,sainz,williams,17,16,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,17.0,7.75,11.0,0,0.0
+2026_12,2026,12,zandvoort,stroll,aston_martin,19,20,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,10.25,3.0,0,0.0
+2026_12,2026,12,zandvoort,verstappen,red_bull,7,22,0.0,Retired,0,25.0,7.0,Balanced/Technical,2,1,0,0,0,8.333333333333334,1.5,100.0,0,0.0

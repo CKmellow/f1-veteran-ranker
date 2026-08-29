@@ -155,6 +155,20 @@ Each run uploads the following artifacts:
 - `outputs/reports/xgb_shap_summary.png`
 - `outputs/reports/lgb_shap_summary.png`
 
+### Streamlit deployment note (missing model files)
+
+If Streamlit shows missing artifacts such as `models/f1_xgb_ranker.pkl` or
+`models/f1_lgb_ranker.pkl`, use the in-app recovery button:
+
+- Open the deployed app.
+- Click `Build Missing Artifacts Now`.
+- Wait for the full pipeline to finish (results ingestion -> qualifying merge ->
+    veteran feature matrix build -> ranker training).
+- The app reloads automatically with the rebuilt model artifacts.
+
+This recovery flow is useful because GitHub Actions artifacts are not a
+persistent model registry for Streamlit deployments.
+
 ## Primary Artifacts Produced
 
 - `models/f1_xgb_ranker.pkl`: optimized XGBoost ranker package with metadata.

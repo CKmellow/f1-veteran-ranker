@@ -3,6 +3,7 @@ import pickle
 from datetime import UTC, datetime
 
 import pandas as pd
+import requests
 import streamlit as st
 
 try:
@@ -53,6 +54,29 @@ CIRCUIT_TYPE_CODE = {
     "High-Downforce": 1,
     "Balanced/Technical": 2,
     "Street Circuit": 3,
+}
+
+DEFAULT_SIM_PROFILE = {
+    "circuit_label": "Balanced/Technical",
+    "is_wet": 0,
+    "track_temp": 25.0,
+}
+
+CIRCUIT_PROFILE_BY_CIRCUIT_ID = {
+    "spa": {"circuit_label": "Power/High-Speed", "is_wet": 1, "track_temp": 18.0},
+    "zandvoort": {"circuit_label": "Balanced/Technical", "is_wet": 0, "track_temp": 21.0},
+    "monza": {"circuit_label": "Power/High-Speed", "is_wet": 0, "track_temp": 27.0},
+    "marina_bay": {"circuit_label": "Street Circuit", "is_wet": 0, "track_temp": 30.0},
+    "silverstone": {"circuit_label": "Power/High-Speed", "is_wet": 0, "track_temp": 22.0},
+    "hungaroring": {"circuit_label": "High-Downforce", "is_wet": 0, "track_temp": 29.0},
+    "monaco": {"circuit_label": "High-Downforce", "is_wet": 0, "track_temp": 24.0},
+    "red_bull_ring": {"circuit_label": "Power/High-Speed", "is_wet": 0, "track_temp": 23.0},
+    "suzuka": {"circuit_label": "Balanced/Technical", "is_wet": 0, "track_temp": 23.0},
+    "jeddah": {"circuit_label": "Street Circuit", "is_wet": 0, "track_temp": 31.0},
+    "baku": {"circuit_label": "Street Circuit", "is_wet": 0, "track_temp": 26.0},
+    "miami": {"circuit_label": "Street Circuit", "is_wet": 1, "track_temp": 30.0},
+    "circuit_americas": {"circuit_label": "Balanced/Technical", "is_wet": 0, "track_temp": 28.0},
+    "catalunya": {"circuit_label": "Balanced/Technical", "is_wet": 0, "track_temp": 27.0},
 }
 
 DRIVER_ORDER = [
@@ -106,42 +130,6 @@ TEAM_META = {
     "hulkenberg": {"team": "Audi", "prefix": "AUD", "brand": "AUDI", "color": "#C92D4B"},
     "bottas": {"team": "Cadillac", "prefix": "CAD", "brand": "CADILLAC", "color": "#1D3557"},
 }
-
-RACE_2026_MAP = {
-    1: "Australia",
-    2: "China",
-    3: "Japan",
-    4: "Miami",
-    5: "Canada",
-    6: "Monaco",
-    7: "Barcelona",
-    8: "Austria",
-    9: "Silverstone",
-}
-
-UPCOMING_GP_PROFILES = {
-    "Spa - Belgian GP": {
-        "circuit_label": "Power/High-Speed",
-        "is_wet": 1,
-        "track_temp": 18.0,
-    },
-    "Zandvoort - Dutch GP": {
-        "circuit_label": "Balanced/Technical",
-        "is_wet": 0,
-        "track_temp": 21.0,
-    },
-    "Monza - Italian GP": {
-        "circuit_label": "Power/High-Speed",
-        "is_wet": 0,
-        "track_temp": 27.0,
-    },
-    "Singapore - Singapore GP": {
-        "circuit_label": "Street Circuit",
-        "is_wet": 0,
-        "track_temp": 30.0,
-    },
-}
-
 
 def style_app():
     st.markdown(
@@ -477,6 +465,95 @@ def load_full_grid(path):
         return None, f"Unable to load full grid file at {path}: {exc}"
 
 
+def latest_available_season(df):
+    seasons = pd.to_numeric(df.get("season"), errors="coerce").dropna()
+    if seasons.empty:
+        return datetime.now(UTC).year
+    return int(seasons.max())
+
+
+def completed_rounds_for_season(full_grid_df, season):
+    work = full_grid_df.copy()
+    work["season"] = pd.to_numeric(work["season"], errors="coerce")
+    work["round"] = pd.to_numeric(work["round"], errors="coerce")
+    work["finish_position"] = pd.to_numeric(work["finish_position"], errors="coerce")
+    work = work[(work["season"] == int(season)) & (work["finish_position"].notna())]
+    return sorted({int(r) for r in work["round"].dropna().tolist()})
+
+
+@st.cache_data(ttl=6 * 3600, show_spinner=False)
+def fetch_season_schedule(season):
+    url = f"https://api.jolpi.ca/ergast/f1/{int(season)}.json?limit=100"
+    try:
+        response = requests.get(url, timeout=25)
+        response.raise_for_status()
+        payload = response.json()
+        races = payload.get("MRData", {}).get("RaceTable", {}).get("Races", [])
+        if not isinstance(races, list):
+            return []
+        schedule = []
+        for race in races:
+            circuit = race.get("Circuit", {}) if isinstance(race, dict) else {}
+            schedule.append(
+                {
+                    "round": int(race.get("round")),
+                    "race_name": str(race.get("raceName", "")).strip(),
+                    "circuit_id": str(circuit.get("circuitId", "")).strip().lower(),
+                }
+            )
+        schedule.sort(key=lambda item: item["round"])
+        return schedule
+    except (requests.RequestException, ValueError, TypeError, KeyError):
+        return []
+
+
+def race_name_map(schedule):
+    return {
+        int(item["round"]): item["race_name"]
+        for item in schedule
+        if isinstance(item, dict) and item.get("round") is not None
+    }
+
+
+def profile_from_circuit(circuit_id):
+    cid = str(circuit_id).strip().lower()
+    profile = CIRCUIT_PROFILE_BY_CIRCUIT_ID.get(cid)
+    if profile is None:
+        return DEFAULT_SIM_PROFILE.copy()
+    return profile.copy()
+
+
+def upcoming_event_options(season, completed_rounds, schedule):
+    if not schedule:
+        return [
+            {
+                "label": f"Round ? - Next Race ({season})",
+                "profile": DEFAULT_SIM_PROFILE.copy(),
+            }
+        ]
+
+    max_completed = max(completed_rounds) if completed_rounds else 0
+    remaining = [item for item in schedule if int(item["round"]) > max_completed]
+    if not remaining:
+        fallback = schedule[-1]
+        return [
+            {
+                "label": f"Round {int(fallback['round'])} - {fallback['race_name']} (Season Complete)",
+                "profile": profile_from_circuit(fallback.get("circuit_id", "")),
+            }
+        ]
+
+    options = []
+    for item in remaining:
+        options.append(
+            {
+                "label": f"Round {int(item['round'])} - {item['race_name']}",
+                "profile": profile_from_circuit(item.get("circuit_id", "")),
+            }
+        )
+    return options
+
+
 def build_missing_artifacts(start_year=2022):
     """Run end-to-end pipeline to rebuild required app artifacts."""
     current_year = datetime.now(UTC).year
@@ -652,19 +729,21 @@ def build_simulated_leaderboard(model, edited_inputs, state_df):
     return leaderboard
 
 
-def get_completed_2026(df):
+def get_completed_season(df, season, allowed_rounds=None):
     work = df.copy()
     work["season"] = pd.to_numeric(work["season"], errors="coerce")
     work["round"] = pd.to_numeric(work["round"], errors="coerce")
     work["finish_position"] = pd.to_numeric(work["finish_position"], errors="coerce")
     work["driver_id"] = work["driver_id"].map(normalize_driver_id)
-    work = work[(work["season"] == 2026) & (work["round"].isin(RACE_2026_MAP.keys()))].copy()
+    work = work[(work["season"] == int(season))].copy()
+    if allowed_rounds:
+        work = work[work["round"].isin(allowed_rounds)].copy()
     work = work[work["driver_id"].isin(DRIVER_ORDER)].copy()
     return work
 
 
-def build_retro_predictions(model, data_2026, selected_round, full_grid_df):
-    race_df = data_2026[data_2026["round"] == selected_round].copy()
+def build_retro_predictions(model, season_data, selected_round, full_grid_df, season):
+    race_df = season_data[season_data["round"] == selected_round].copy()
     race_df = race_df.sort_values("driver_id").reset_index(drop=True)
 
     for col in FEATURE_COLUMNS:
@@ -692,7 +771,7 @@ def build_retro_predictions(model, data_2026, selected_round, full_grid_df):
     race_df["error_delta"] = (race_df["predicted_rank"] - race_df["actual_relative_rank"]).abs()
 
     full_race = full_grid_df[
-        (pd.to_numeric(full_grid_df["season"], errors="coerce") == 2026)
+        (pd.to_numeric(full_grid_df["season"], errors="coerce") == int(season))
         & (pd.to_numeric(full_grid_df["round"], errors="coerce") == selected_round)
     ].copy()
     race_df["full_grid_size"] = max(len(full_race), len(race_df))
@@ -716,7 +795,7 @@ def main():
 
     st.title(APP_TITLE)
     st.caption(
-        "Broadcast graphics dashboard for live race simulation and 2026 retrospective audits "
+        "Broadcast graphics dashboard for live race simulation and in-season retrospective audits "
         "across the veteran 14-driver cohort."
     )
 
@@ -754,8 +833,16 @@ def main():
     model_choice, selected_model = sidebar_model_picker(xgb_model, lgb_model)
     st.sidebar.success(f"Active model: {model_choice}")
 
-    selected_gp = st.sidebar.selectbox("Select Upcoming Grand Prix", list(UPCOMING_GP_PROFILES.keys()))
-    profile = UPCOMING_GP_PROFILES[selected_gp]
+    active_season = latest_available_season(feature_df)
+    completed_rounds = completed_rounds_for_season(full_grid_df, active_season)
+    season_schedule = fetch_season_schedule(active_season)
+    upcoming_options = upcoming_event_options(active_season, completed_rounds, season_schedule)
+    round_to_name = race_name_map(season_schedule)
+
+    gp_labels = [opt["label"] for opt in upcoming_options]
+    selected_gp = st.sidebar.selectbox("Select Upcoming Grand Prix", gp_labels)
+    selected_option = next((opt for opt in upcoming_options if opt["label"] == selected_gp), upcoming_options[0])
+    profile = selected_option["profile"]
     sim_circuit_type = profile["circuit_label"]
     sim_is_wet = int(profile["is_wet"])
     sim_track_temp = float(profile["track_temp"])
@@ -785,7 +872,7 @@ def main():
     state_df = latest_driver_states(feature_df)
     base_input = build_default_input(state_df)
 
-    tab1, tab2 = st.tabs(["Live Grand Prix Simulator", "2026 Retrospective: Predicted vs Actual"])
+    tab1, tab2 = st.tabs(["Live Grand Prix Simulator", f"{active_season} Retrospective: Predicted vs Actual"])
 
     with tab1:
         st.subheader("Upcoming Weekend Forecast")
@@ -841,35 +928,38 @@ def main():
             render_live_standings_rows(simulated)
 
     with tab2:
-        st.subheader("2026 Season Performance Retrospective")
+        st.subheader(f"{active_season} Season Performance Retrospective")
         st.markdown(
             "<div class='telemetry-badge' style='color: #FFFFFF !important; background: #1b2b44 !important;'>PREDICTED VS ACTUAL AUDIT</div>",
             unsafe_allow_html=True,
         )
 
-        data_2026 = get_completed_2026(feature_df)
-        if data_2026.empty:
-            st.warning("No completed 2026 rounds detected in the processed matrix.")
+        season_data = get_completed_season(feature_df, active_season, allowed_rounds=completed_rounds)
+        if season_data.empty:
+            st.warning(f"No completed {active_season} rounds detected in the processed matrix.")
             return
 
-        available_rounds = sorted(set(int(r) for r in data_2026["round"].dropna().unique()))
-        available_rounds = [r for r in available_rounds if r in RACE_2026_MAP]
+        available_rounds = sorted(set(int(r) for r in season_data["round"].dropna().unique()))
         if not available_rounds:
-            st.warning("No supported rounds found for retrospective view (expected rounds 1-8).")
+            st.warning("No completed rounds currently available for retrospective view.")
             return
 
+        label_to_round = {
+            f"Round {r} - {round_to_name.get(r, f'Race {r}')}": r
+            for r in available_rounds
+        }
         selected_label = st.selectbox(
-            "Completed 2026 Race Round",
-            [f"Round {r} - {RACE_2026_MAP[r]}" for r in available_rounds],
+            f"Completed {active_season} Race Round",
+            list(label_to_round.keys()),
         )
-        selected_round = int(selected_label.split(" - ")[0].replace("Round ", ""))
+        selected_round = int(label_to_round[selected_label])
 
-        retro = build_retro_predictions(selected_model, data_2026, selected_round, full_grid_df)
+        retro = build_retro_predictions(selected_model, season_data, selected_round, full_grid_df, active_season)
         render_retrospective_rows(retro)
 
         with st.expander("View Unfiltered Full Race Grid Context"):
             full_race = full_grid_df[
-                (pd.to_numeric(full_grid_df["season"], errors="coerce") == 2026)
+                (pd.to_numeric(full_grid_df["season"], errors="coerce") == int(active_season))
                 & (pd.to_numeric(full_grid_df["round"], errors="coerce") == selected_round)
             ].copy()
             if full_race.empty:

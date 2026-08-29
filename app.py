@@ -32,7 +32,7 @@ FEATURE_MATRIX_PATH = "data/processed/veteran_training_matrix.csv"
 FULL_GRID_PATH = "data/raw/f1_canonical_master.csv"
 REFRESH_METADATA_PATH = "outputs/reports/refresh_metadata.json"
 
-MODEL_REGISTRY_REPO = os.environ.get("MODEL_REGISTRY_REPO", "CKmellow/Machine_Learning_Group_Project")
+MODEL_REGISTRY_REPO = os.environ.get("MODEL_REGISTRY_REPO", "CKmellow/f1-veteran-ranker")
 MODEL_REGISTRY_BRANCH = os.environ.get("MODEL_REGISTRY_BRANCH", "model-registry")
 
 FEATURE_COLUMNS = [

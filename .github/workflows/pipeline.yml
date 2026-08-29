@@ -2,7 +2,7 @@ name: f1-veteran-pipeline
 
 on:
   schedule:
-    - cron: "0 21 * * 0" # Weekly Sunday refresh
+    - cron: "15 2 * * *" # Daily refresh at 02:15 UTC
   workflow_dispatch:
     inputs:
       ingest_mode:

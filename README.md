@@ -124,6 +124,7 @@ This repository includes a scheduled workflow at `.github/workflows/pipeline.yml
 ### Automated schedule
 
 - Runs daily at 02:15 UTC.
+- Runs additional race-window refreshes every 6 hours from Friday through Monday (UTC).
 - Uses `historical` ingestion mode from `START_YEAR=2022` through the current year.
 - Rebuilds datasets, retrains rankers, and uploads artifacts.
 
@@ -169,6 +170,22 @@ If Streamlit shows missing artifacts such as `models/f1_xgb_ranker.pkl` or
 This recovery flow is useful because GitHub Actions artifacts are not a
 persistent model registry for Streamlit deployments.
 
+### Durable model storage
+
+The workflow now writes a durable snapshot branch named `model-registry` that
+stores the latest deployable artifacts:
+
+- `models/f1_xgb_ranker.pkl`
+- `models/f1_lgb_ranker.pkl`
+- `data/raw/f1_canonical_master.csv`
+- `data/processed/veteran_training_matrix.csv`
+- `outputs/reports/xgb_shap_summary.png`
+- `outputs/reports/lgb_shap_summary.png`
+- `outputs/reports/refresh_metadata.json`
+
+The Streamlit app uses this branch as a fallback source if local artifacts are
+missing during startup.
+
 ### Streamlit race-week auto-refresh behavior
 
 The app now derives race-week context dynamically from refreshed data:
@@ -181,6 +198,10 @@ The app now derives race-week context dynamically from refreshed data:
 After a race weekend, run the data/training pipeline (or wait for scheduled
 GitHub Actions) and restart/reload Streamlit to reflect the new current vs
 historical split.
+
+The app sidebar also displays `Last data/model refresh` using
+`outputs/reports/refresh_metadata.json` (or filesystem timestamps as fallback)
+for run-to-run trust and traceability.
 
 ## Primary Artifacts Produced
 

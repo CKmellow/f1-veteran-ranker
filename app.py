@@ -1,5 +1,6 @@
 import os
 import pickle
+import json
 from datetime import UTC, datetime
 
 import pandas as pd
@@ -29,6 +30,10 @@ XGB_MODEL_PATH = "models/f1_xgb_ranker.pkl"
 LGB_MODEL_PATH = "models/f1_lgb_ranker.pkl"
 FEATURE_MATRIX_PATH = "data/processed/veteran_training_matrix.csv"
 FULL_GRID_PATH = "data/raw/f1_canonical_master.csv"
+REFRESH_METADATA_PATH = "outputs/reports/refresh_metadata.json"
+
+MODEL_REGISTRY_REPO = os.environ.get("MODEL_REGISTRY_REPO", "CKmellow/Machine_Learning_Group_Project")
+MODEL_REGISTRY_BRANCH = os.environ.get("MODEL_REGISTRY_BRANCH", "model-registry")
 
 FEATURE_COLUMNS = [
     "grid_position",
@@ -403,7 +408,9 @@ def team_meta(driver_id):
 def load_model(model_path):
     try:
         if not os.path.exists(model_path):
-            raise FileNotFoundError(model_path)
+            pulled = pull_registry_artifact(model_path)
+            if not pulled:
+                raise FileNotFoundError(model_path)
         with open(model_path, "rb") as file_obj:
             raw = pickle.load(file_obj)
         return _extract_estimator(raw), None
@@ -419,7 +426,9 @@ def load_model(model_path):
 def load_feature_matrix(path):
     try:
         if not os.path.exists(path):
-            raise FileNotFoundError(path)
+            pulled = pull_registry_artifact(path)
+            if not pulled:
+                raise FileNotFoundError(path)
         df = pd.read_csv(path)
         required_columns = {
             "driver_id",
@@ -449,7 +458,9 @@ def load_feature_matrix(path):
 def load_full_grid(path):
     try:
         if not os.path.exists(path):
-            raise FileNotFoundError(path)
+            pulled = pull_registry_artifact(path)
+            if not pulled:
+                raise FileNotFoundError(path)
         df = pd.read_csv(path)
         required = {"season", "round", "driver_id", "finish_position", "status_str"}
         missing = sorted(required.difference(df.columns))
@@ -470,6 +481,58 @@ def latest_available_season(df):
     if seasons.empty:
         return datetime.now(UTC).year
     return int(seasons.max())
+
+
+def _registry_raw_url(relative_path):
+    normalized = str(relative_path).replace("\\", "/").lstrip("/")
+    return (
+        f"https://raw.githubusercontent.com/{MODEL_REGISTRY_REPO}/"
+        f"{MODEL_REGISTRY_BRANCH}/{normalized}"
+    )
+
+
+def pull_registry_artifact(relative_path):
+    destination = str(relative_path)
+    try:
+        response = requests.get(_registry_raw_url(destination), timeout=25)
+        if response.status_code != 200:
+            return False
+        os.makedirs(os.path.dirname(destination), exist_ok=True)
+        with open(destination, "wb") as file_obj:
+            file_obj.write(response.content)
+        return True
+    except (requests.RequestException, OSError):
+        return False
+
+
+def write_refresh_metadata(source="app_bootstrap"):
+    payload = {
+        "generated_at_utc": datetime.now(UTC).isoformat(),
+        "source": source,
+    }
+    os.makedirs(os.path.dirname(REFRESH_METADATA_PATH), exist_ok=True)
+    with open(REFRESH_METADATA_PATH, "w", encoding="utf-8") as file_obj:
+        json.dump(payload, file_obj, indent=2)
+
+
+def read_refresh_metadata():
+    if not os.path.exists(REFRESH_METADATA_PATH):
+        pull_registry_artifact(REFRESH_METADATA_PATH)
+
+    if os.path.exists(REFRESH_METADATA_PATH):
+        try:
+            with open(REFRESH_METADATA_PATH, encoding="utf-8") as file_obj:
+                payload = json.load(file_obj)
+            return payload.get("generated_at_utc"), payload.get("source", "unknown")
+        except (OSError, ValueError, TypeError):
+            pass
+
+    candidates = [XGB_MODEL_PATH, LGB_MODEL_PATH, FEATURE_MATRIX_PATH, FULL_GRID_PATH]
+    mtimes = [os.path.getmtime(path) for path in candidates if os.path.exists(path)]
+    if not mtimes:
+        return None, None
+    fallback = datetime.fromtimestamp(max(mtimes), tz=UTC).isoformat()
+    return fallback, "filesystem"
 
 
 def completed_rounds_for_season(full_grid_df, season):
@@ -577,6 +640,7 @@ def build_missing_artifacts(start_year=2022):
         output_csv_path="data/processed/veteran_training_matrix.csv",
     )
     train_rankers(input_path="data/processed/veteran_training_matrix.csv")
+    write_refresh_metadata(source="app_bootstrap")
 
 
 def latest_driver_states(df):
@@ -832,6 +896,12 @@ def main():
 
     model_choice, selected_model = sidebar_model_picker(xgb_model, lgb_model)
     st.sidebar.success(f"Active model: {model_choice}")
+
+    refresh_ts, refresh_source = read_refresh_metadata()
+    if refresh_ts:
+        st.sidebar.caption(f"Last data/model refresh: {refresh_ts} | source: {refresh_source}")
+    else:
+        st.sidebar.caption("Last data/model refresh: unavailable")
 
     active_season = latest_available_season(feature_df)
     completed_rounds = completed_rounds_for_season(full_grid_df, active_season)

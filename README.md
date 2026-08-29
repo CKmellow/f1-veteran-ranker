@@ -123,7 +123,7 @@ This repository includes a scheduled workflow at `.github/workflows/pipeline.yml
 
 ### Automated schedule
 
-- Runs every Sunday at 21:00 UTC.
+- Runs daily at 02:15 UTC.
 - Uses `historical` ingestion mode from `START_YEAR=2022` through the current year.
 - Rebuilds datasets, retrains rankers, and uploads artifacts.
 

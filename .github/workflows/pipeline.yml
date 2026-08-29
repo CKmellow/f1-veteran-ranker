@@ -107,7 +107,9 @@ jobs:
         shell: bash
         run: |
           set -e
+          WORKSPACE_DIR="$PWD"
           SNAPSHOT_DIR="$(mktemp -d)"
+          REGISTRY_WT="$(mktemp -d)"
           mkdir -p "$SNAPSHOT_DIR/models" "$SNAPSHOT_DIR/data/raw" "$SNAPSHOT_DIR/data/processed" "$SNAPSHOT_DIR/outputs/reports"
 
           cp models/f1_xgb_ranker.pkl "$SNAPSHOT_DIR/models/"
@@ -123,12 +125,16 @@ jobs:
 
           if git ls-remote --exit-code --heads origin model-registry >/dev/null 2>&1; then
             git fetch origin model-registry
-            git checkout -B model-registry origin/model-registry
+            git worktree add "$REGISTRY_WT" origin/model-registry
           else
+            git worktree add --detach "$REGISTRY_WT"
+            pushd "$REGISTRY_WT" >/dev/null
             git checkout --orphan model-registry
             git rm -rf . >/dev/null 2>&1 || true
+            popd >/dev/null
           fi
 
+          cd "$REGISTRY_WT"
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           mkdir -p models data/raw data/processed outputs/reports
           cp "$SNAPSHOT_DIR/models/f1_xgb_ranker.pkl" models/
@@ -150,12 +156,14 @@ jobs:
           git add models data outputs README.md
           if ! git diff --cached --quiet; then
             git commit -m "ci: update durable model registry snapshot"
-            git push origin model-registry
+            git push origin HEAD:model-registry
           else
             echo "No model registry changes to commit."
           fi
 
-          git checkout -
+          cd "$WORKSPACE_DIR"
+          git worktree remove --force "$REGISTRY_WT"
+          rm -rf "$SNAPSHOT_DIR"
 
       - name: Upload Pipeline Artifacts
         uses: actions/upload-artifact@v4

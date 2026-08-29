@@ -117,6 +117,44 @@ python src/models/train_ranker.py
 streamlit run app.py
 ```
 
+## GitHub Actions Automation (Weekly + Race-Week)
+
+This repository includes a scheduled workflow at `.github/workflows/pipeline.yml` that keeps the model refreshed automatically.
+
+### Automated schedule
+
+- Runs every Sunday at 21:00 UTC.
+- Uses `historical` ingestion mode from `START_YEAR=2022` through the current year.
+- Rebuilds datasets, retrains rankers, and uploads artifacts.
+
+### Manual trigger options
+
+In GitHub: `Actions` -> `f1-veteran-pipeline` -> `Run workflow`
+
+- `ingest_mode=historical`:
+    - Full refresh and retraining.
+- `ingest_mode=incremental`:
+    - Set both `year` and `round` to ingest a specific race weekend, then retrain.
+
+Example manual run values:
+
+- `ingest_mode`: `incremental`
+- `year`: `2026`
+- `round`: `15`
+
+### Workflow outputs
+
+Each run uploads the following artifacts:
+
+- `data/raw/jolpica_results_master.csv`
+- `data/raw/jolpica_qualifying_master.csv`
+- `data/raw/f1_canonical_master.csv`
+- `data/processed/veteran_training_matrix.csv`
+- `models/f1_xgb_ranker.pkl`
+- `models/f1_lgb_ranker.pkl`
+- `outputs/reports/xgb_shap_summary.png`
+- `outputs/reports/lgb_shap_summary.png`
+
 ## Primary Artifacts Produced
 
 - `models/f1_xgb_ranker.pkl`: optimized XGBoost ranker package with metadata.

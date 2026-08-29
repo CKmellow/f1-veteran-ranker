@@ -2,8 +2,28 @@ name: f1-veteran-pipeline
 
 on:
   schedule:
-    - cron: "0 21 * * 0" # Every Sunday at 21:00 UTC
+    - cron: "0 21 * * 0" # Weekly Sunday refresh
   workflow_dispatch:
+    inputs:
+      ingest_mode:
+        description: "historical for full refresh, incremental for one race"
+        required: true
+        default: "historical"
+        type: choice
+        options:
+          - historical
+          - incremental
+      year:
+        description: "Required when ingest_mode=incremental"
+        required: false
+        type: string
+      round:
+        description: "Required when ingest_mode=incremental"
+        required: false
+        type: string
+
+permissions:
+  contents: read
 
 jobs:
   run-pipeline:
@@ -17,25 +37,40 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Ingest Results (historical baseline refresh)
+      - name: Resolve ingestion mode and inputs
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "INGEST_MODE=historical" >> "$GITHUB_ENV"
+            echo "START_YEAR=2022" >> "$GITHUB_ENV"
+          else
+            echo "INGEST_MODE=${{ github.event.inputs.ingest_mode }}" >> "$GITHUB_ENV"
+            if [[ "${{ github.event.inputs.ingest_mode }}" == "historical" ]]; then
+              echo "START_YEAR=2022" >> "$GITHUB_ENV"
+            else
+              if [[ -z "${{ github.event.inputs.year }}" || -z "${{ github.event.inputs.round }}" ]]; then
+                echo "For incremental mode, provide both year and round inputs."
+                exit 1
+              fi
+              echo "YEAR=${{ github.event.inputs.year }}" >> "$GITHUB_ENV"
+              echo "ROUND=${{ github.event.inputs.round }}" >> "$GITHUB_ENV"
+            fi
+          fi
+
+      - name: Ingest Results
         env:
-          INGEST_MODE: historical
-          START_YEAR: "2022"
-          END_YEAR: "2026"
           OUTPUT_CSV_PATH: data/raw/jolpica_results_master.csv
         run: python src/preprocessing/ingest_jolpica_results.py
 
       - name: Ingest Qualifying and Build Canonical
         env:
-          INGEST_MODE: historical
-          START_YEAR: "2022"
-          END_YEAR: "2026"
           RESULTS_MASTER_CSV_PATH: data/raw/jolpica_results_master.csv
           QUALIFYING_MASTER_CSV_PATH: data/raw/jolpica_qualifying_master.csv
           CANONICAL_OUTPUT_CSV_PATH: data/raw/f1_canonical_master.csv

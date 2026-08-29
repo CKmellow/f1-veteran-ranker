@@ -123,7 +123,7 @@ This repository includes a scheduled workflow at `.github/workflows/pipeline.yml
 
 ### Automated schedule
 
-- Runs every Sunday at 21:00 UTC.
+- Runs daily at 02:15 UTC.
 - Uses `historical` ingestion mode from `START_YEAR=2022` through the current year.
 - Rebuilds datasets, retrains rankers, and uploads artifacts.
 
@@ -154,6 +154,33 @@ Each run uploads the following artifacts:
 - `models/f1_lgb_ranker.pkl`
 - `outputs/reports/xgb_shap_summary.png`
 - `outputs/reports/lgb_shap_summary.png`
+
+### Streamlit deployment note (missing model files)
+
+If Streamlit shows missing artifacts such as `models/f1_xgb_ranker.pkl` or
+`models/f1_lgb_ranker.pkl`, use the in-app recovery button:
+
+- Open the deployed app.
+- Click `Build Missing Artifacts Now`.
+- Wait for the full pipeline to finish (results ingestion -> qualifying merge ->
+    veteran feature matrix build -> ranker training).
+- The app reloads automatically with the rebuilt model artifacts.
+
+This recovery flow is useful because GitHub Actions artifacts are not a
+persistent model registry for Streamlit deployments.
+
+### Streamlit race-week auto-refresh behavior
+
+The app now derives race-week context dynamically from refreshed data:
+
+- Retrospective rounds are populated from completed rounds in the latest
+    available season data.
+- Upcoming GP options are pulled from the current season schedule and move
+    forward automatically as rounds are completed.
+
+After a race weekend, run the data/training pipeline (or wait for scheduled
+GitHub Actions) and restart/reload Streamlit to reflect the new current vs
+historical split.
 
 ## Primary Artifacts Produced
 

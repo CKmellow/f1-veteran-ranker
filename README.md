@@ -169,6 +169,19 @@ If Streamlit shows missing artifacts such as `models/f1_xgb_ranker.pkl` or
 This recovery flow is useful because GitHub Actions artifacts are not a
 persistent model registry for Streamlit deployments.
 
+### Streamlit race-week auto-refresh behavior
+
+The app now derives race-week context dynamically from refreshed data:
+
+- Retrospective rounds are populated from completed rounds in the latest
+    available season data.
+- Upcoming GP options are pulled from the current season schedule and move
+    forward automatically as rounds are completed.
+
+After a race weekend, run the data/training pipeline (or wait for scheduled
+GitHub Actions) and restart/reload Streamlit to reflect the new current vs
+historical split.
+
 ## Primary Artifacts Produced
 
 - `models/f1_xgb_ranker.pkl`: optimized XGBoost ranker package with metadata.

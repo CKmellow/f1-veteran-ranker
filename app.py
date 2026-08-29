@@ -1,8 +1,26 @@
 import os
 import pickle
+from datetime import UTC, datetime
 
 import pandas as pd
 import streamlit as st
+
+try:
+    from src.models.train_ranker import train_rankers
+    from src.preprocessing.build_veteran_features import build_veteran_training_matrix
+    from src.preprocessing.ingest_jolpica_qualifying import run_ingestion as run_qualifying_ingestion
+    from src.preprocessing.ingest_jolpica_results import run_ingestion as run_results_ingestion
+except ModuleNotFoundError:
+    import sys
+    from pathlib import Path
+
+    project_root = Path(__file__).resolve().parent
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+    from src.models.train_ranker import train_rankers
+    from src.preprocessing.build_veteran_features import build_veteran_training_matrix
+    from src.preprocessing.ingest_jolpica_qualifying import run_ingestion as run_qualifying_ingestion
+    from src.preprocessing.ingest_jolpica_results import run_ingestion as run_results_ingestion
 
 APP_TITLE = "Explainable Rank Prediction of F1 Veterans"
 
@@ -98,14 +116,10 @@ RACE_2026_MAP = {
     6: "Monaco",
     7: "Barcelona",
     8: "Austria",
+    9: "Silverstone",
 }
 
 UPCOMING_GP_PROFILES = {
-    "Silverstone - British GP": {
-        "circuit_label": "Power/High-Speed",
-        "is_wet": 0,
-        "track_temp": 22.0,
-    },
     "Spa - Belgian GP": {
         "circuit_label": "Power/High-Speed",
         "is_wet": 1,
@@ -463,6 +477,31 @@ def load_full_grid(path):
         return None, f"Unable to load full grid file at {path}: {exc}"
 
 
+def build_missing_artifacts(start_year=2022):
+    """Run end-to-end pipeline to rebuild required app artifacts."""
+    current_year = datetime.now(UTC).year
+
+    run_results_ingestion(
+        mode="historical",
+        output_csv_path="data/raw/jolpica_results_master.csv",
+        start_year=int(start_year),
+        end_year=int(current_year),
+    )
+    run_qualifying_ingestion(
+        mode="historical",
+        results_master_csv_path="data/raw/jolpica_results_master.csv",
+        canonical_output_csv_path="data/raw/f1_canonical_master.csv",
+        qualifying_master_csv_path="data/raw/jolpica_qualifying_master.csv",
+        start_year=int(start_year),
+        end_year=int(current_year),
+    )
+    build_veteran_training_matrix(
+        input_csv_path="data/raw/f1_canonical_master.csv",
+        output_csv_path="data/processed/veteran_training_matrix.csv",
+    )
+    train_rankers(input_path="data/processed/veteran_training_matrix.csv")
+
+
 def latest_driver_states(df):
     work = df.copy()
     work["season"] = pd.to_numeric(work["season"], errors="coerce")
@@ -696,10 +735,20 @@ def main():
         st.error(full_grid_err)
 
     if any([xgb_err, lgb_err, feature_err, full_grid_err]):
+        st.warning("Required artifacts are missing in this deployment environment.")
         st.info(
             "Pipeline order: 1) ingest_jolpica_results.py, 2) ingest_jolpica_qualifying.py, "
             "3) build_veteran_features.py, 4) train_ranker.py"
         )
+        if st.button("Build Missing Artifacts Now", type="primary", use_container_width=True):
+            with st.spinner("Running ingestion, feature engineering, and model training. This may take several minutes..."):
+                try:
+                    build_missing_artifacts(start_year=2022)
+                except (FileNotFoundError, ValueError, RuntimeError, OSError) as exc:
+                    st.error(f"Bootstrap failed: {exc}")
+                    return
+            st.success("Artifacts built successfully. Reloading app with fresh models...")
+            st.rerun()
         return
 
     model_choice, selected_model = sidebar_model_picker(xgb_model, lgb_model)

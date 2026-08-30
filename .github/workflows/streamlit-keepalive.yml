@@ -13,16 +13,42 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Ping Streamlit app health endpoint
+      - name: Probe Streamlit health endpoint
         env:
           APP_BASE_URL: https://f1-veteran-ranker.streamlit.app
         run: |
           set -e
-          curl --fail --silent --show-error "$APP_BASE_URL/_stcore/health"
+          HTTP_CODE=$(curl --silent --show-error --output /dev/null \
+            --write-out "%{http_code}" \
+            --max-redirs 0 \
+            --user-agent "GitHub-Actions-keepalive" \
+            "$APP_BASE_URL/_stcore/health")
+          case "$HTTP_CODE" in
+            200|301|302|307|308)
+              echo "Health endpoint responded with acceptable status: $HTTP_CODE"
+              ;;
+            *)
+              echo "Unexpected health endpoint status: $HTTP_CODE"
+              exit 1
+              ;;
+          esac
 
-      - name: Ping Streamlit app root endpoint
+      - name: Probe Streamlit root endpoint
         env:
           APP_BASE_URL: https://f1-veteran-ranker.streamlit.app
         run: |
           set -e
-          curl --fail --silent --show-error --location "$APP_BASE_URL/" > /dev/null
+          HTTP_CODE=$(curl --silent --show-error --output /dev/null \
+            --write-out "%{http_code}" \
+            --max-redirs 0 \
+            --user-agent "GitHub-Actions-keepalive" \
+            "$APP_BASE_URL/")
+          case "$HTTP_CODE" in
+            200|301|302|307|308)
+              echo "Root endpoint responded with acceptable status: $HTTP_CODE"
+              ;;
+            *)
+              echo "Unexpected root endpoint status: $HTTP_CODE"
+              exit 1
+              ;;
+          esac

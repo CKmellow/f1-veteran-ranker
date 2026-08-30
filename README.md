@@ -128,6 +128,18 @@ This repository includes a scheduled workflow at `.github/workflows/pipeline.yml
 - Uses `historical` ingestion mode from `START_YEAR=2022` through the current year.
 - Rebuilds datasets, retrains rankers, and uploads artifacts.
 
+### Streamlit keepalive automation
+
+To reduce Streamlit inactivity pauses, the repository includes a keepalive
+workflow at `.github/workflows/streamlit-keepalive.yml` that pings the deployed
+app every 30 minutes.
+
+- Health endpoint: `/_stcore/health`
+- Root endpoint: `/`
+
+Note: on free hosting tiers, keepalive is best-effort and may not fully bypass
+provider inactivity policies.
+
 ### Manual trigger options
 
 In GitHub: `Actions` -> `f1-veteran-pipeline` -> `Run workflow`

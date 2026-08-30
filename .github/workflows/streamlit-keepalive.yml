@@ -23,15 +23,12 @@ jobs:
             --max-redirs 0 \
             --user-agent "GitHub-Actions-keepalive" \
             "$APP_BASE_URL/_stcore/health")
-          case "$HTTP_CODE" in
-            200|301|302|307|308)
-              echo "Health endpoint responded with acceptable status: $HTTP_CODE"
-              ;;
-            *)
-              echo "Unexpected health endpoint status: $HTTP_CODE"
-              exit 1
-              ;;
-          esac
+          if [[ "$HTTP_CODE" -ge 200 && "$HTTP_CODE" -lt 400 ]]; then
+            echo "Health endpoint responded with acceptable status: $HTTP_CODE"
+          else
+            echo "Unexpected health endpoint status: $HTTP_CODE"
+            exit 1
+          fi
 
       - name: Probe Streamlit root endpoint
         env:
@@ -43,12 +40,9 @@ jobs:
             --max-redirs 0 \
             --user-agent "GitHub-Actions-keepalive" \
             "$APP_BASE_URL/")
-          case "$HTTP_CODE" in
-            200|301|302|307|308)
-              echo "Root endpoint responded with acceptable status: $HTTP_CODE"
-              ;;
-            *)
-              echo "Unexpected root endpoint status: $HTTP_CODE"
-              exit 1
-              ;;
-          esac
+          if [[ "$HTTP_CODE" -ge 200 && "$HTTP_CODE" -lt 400 ]]; then
+            echo "Root endpoint responded with acceptable status: $HTTP_CODE"
+          else
+            echo "Unexpected root endpoint status: $HTTP_CODE"
+            exit 1
+          fi

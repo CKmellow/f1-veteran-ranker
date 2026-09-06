@@ -1288,7 +1288,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_6,2026,6,monaco,albon,williams,11,8,4.0,Finished,0,25.0,11.0,High-Downforce,1,0,1,0,0,17.0,12.5,7.0,0,0.0
 2026_6,2026,6,monaco,alonso,aston_martin,21,10,1.0,Finished,0,25.0,21.0,High-Downforce,1,0,1,0,0,17.666666666666668,9.75,0.0,0,0.0
 2026_6,2026,6,monaco,bottas,cadillac,20,21,0.0,Retired,0,25.0,20.0,High-Downforce,1,0,1,0,0,17.666666666666668,11.0,0.0,0,0.0
-2026_6,2026,6,monaco,gasly,alpine,9,3,15.0,Finished,0,25.0,9.0,High-Downforce,1,0,1,0,0,12.0,12.0,19.0,0,0.0
+2026_6,2026,6,monaco,gasly,alpine,9,7,6.0,Finished,0,25.0,9.0,High-Downforce,1,0,1,0,0,12.0,12.0,19.0,0,0.0
 2026_6,2026,6,monaco,hamilton,ferrari,3,2,18.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,4.666666666666667,6.0,119.0,0,0.0
 2026_6,2026,6,monaco,hulkenberg,audi,13,13,0.0,Finished,0,25.0,13.0,High-Downforce,1,0,1,0,0,14.0,17.333333333333332,0.0,0,0.0
 2026_6,2026,6,monaco,leclerc,ferrari,4,17,0.0,Retired,0,25.0,4.0,High-Downforce,1,0,1,0,0,5.0,3.25,137.0,0,0.0
@@ -1302,7 +1302,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_7,2026,7,catalunya,albon,williams,18,18,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,13.0,17.75,11.0,0,0.0
 2026_7,2026,7,catalunya,alonso,aston_martin,22,19,0.0,Retired,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,15.0,9.25,1.0,0,0.0
 2026_7,2026,7,catalunya,bottas,cadillac,20,21,0.0,Retired,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,18.333333333333332,13.666666666666666,0.0,0,0.0
-2026_7,2026,7,catalunya,gasly,alpine,14,7,6.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,10.0,34.0,0,0.0
+2026_7,2026,7,catalunya,gasly,alpine,14,7,6.0,Lapped,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,12.0,10.0,25.0,0,0.0
 2026_7,2026,7,catalunya,hamilton,ferrari,2,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,4.0,137.0,0,0.0
 2026_7,2026,7,catalunya,hulkenberg,audi,9,20,0.0,Retired,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,10.333333333333334,0.0,0,0.0
 2026_7,2026,7,catalunya,leclerc,ferrari,10,15,0.0,Retired,0,25.0,10.0,Balanced/Technical,2,1,0,0,0,9.666666666666666,9.75,162.0,0,0.0
@@ -1316,7 +1316,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_8,2026,8,red_bull_ring,albon,williams,18,17,0.0,Lapped,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,13.75,11.0,0,0.0
 2026_8,2026,8,red_bull_ring,alonso,aston_martin,21,18,0.0,Lapped,0,25.0,21.0,Power/High-Speed,0,0,0,1,0,16.333333333333332,10.0,1.0,0,0.0
 2026_8,2026,8,red_bull_ring,bottas,cadillac,20,22,0.0,Retired,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,19.333333333333332,14.0,0.0,0,0.0
-2026_8,2026,8,red_bull_ring,gasly,alpine,11,13,0.0,Lapped,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,6.0,12.0,40.0,0,0.0
+2026_8,2026,8,red_bull_ring,gasly,alpine,11,13,0.0,Lapped,0,25.0,11.0,Power/High-Speed,0,0,0,1,0,7.333333333333333,12.0,31.0,0,0.0
 2026_8,2026,8,red_bull_ring,hamilton,ferrari,3,5,10.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,1.6666666666666667,4.75,162.0,0,0.0
 2026_8,2026,8,red_bull_ring,hulkenberg,audi,14,12,0.0,Lapped,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,15.0,11.666666666666666,0.0,0,0.0
 2026_8,2026,8,red_bull_ring,leclerc,ferrari,2,8,4.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,12.0,4.25,172.0,0,0.0
@@ -1330,7 +1330,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_9,2026,9,silverstone,albon,williams,16,21,0.0,Retired,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,14.333333333333334,11.25,11.0,0,0.0
 2026_9,2026,9,silverstone,alonso,aston_martin,21,18,0.0,Lapped,0,25.0,22.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,7.25,1.0,0,0.0
 2026_9,2026,9,silverstone,bottas,cadillac,18,16,0.0,Finished,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,21.333333333333332,14.666666666666666,0.0,0,0.0
-2026_9,2026,9,silverstone,gasly,alpine,15,10,1.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,15.0,40.0,0,0.0
+2026_9,2026,9,silverstone,gasly,alpine,15,10,1.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,9.0,15.0,31.0,0,0.0
 2026_9,2026,9,silverstone,hamilton,ferrari,3,3,15.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,2.75,176.0,0,0.0
 2026_9,2026,9,silverstone,hulkenberg,audi,12,22,0.0,Retired,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,15.0,7.333333333333333,0.0,0,0.0
 2026_9,2026,9,silverstone,leclerc,ferrari,2,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,10.25,191.0,0,0.0
@@ -1344,7 +1344,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_10,2026,10,spa,albon,williams,15,15,0.0,Finished,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,18.666666666666668,10.5,11.0,0,0.0
 2026_10,2026,10,spa,alonso,aston_martin,22,19,0.0,Lapped,0,25.0,21.0,Power/High-Speed,0,0,0,1,0,18.333333333333332,8.75,1.0,0,0.0
 2026_10,2026,10,spa,bottas,cadillac,17,18,0.0,Lapped,0,25.0,19.0,Power/High-Speed,0,0,0,1,0,19.666666666666668,15.333333333333334,0.0,0,0.0
-2026_10,2026,10,spa,gasly,alpine,10,11,0.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,10.0,10.75,41.0,0,0.0
+2026_10,2026,10,spa,gasly,alpine,10,11,0.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,10.0,10.75,32.0,0,0.0
 2026_10,2026,10,spa,hamilton,ferrari,5,4,12.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,3.0,8.0,216.0,0,0.0
 2026_10,2026,10,spa,hulkenberg,audi,12,13,0.0,Finished,0,25.0,14.0,Power/High-Speed,0,0,0,1,0,18.0,16.0,0.0,0,0.0
 2026_10,2026,10,spa,leclerc,ferrari,4,2,18.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,8.0,3.75,228.0,0,0.0
@@ -1358,7 +1358,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_11,2026,11,hungaroring,albon,williams,19,17,0.0,Lapped,0,25.0,19.0,High-Downforce,1,0,1,0,0,17.666666666666668,14.25,11.0,0,0.0
 2026_11,2026,11,hungaroring,alonso,aston_martin,16,14,0.0,Lapped,0,25.0,16.0,High-Downforce,1,0,1,0,0,18.333333333333332,8.25,1.0,0,0.0
 2026_11,2026,11,hungaroring,bottas,cadillac,21,22,0.0,Retired,0,25.0,21.0,High-Downforce,1,0,1,0,0,18.666666666666668,16.0,0.0,0,0.0
-2026_11,2026,11,hungaroring,gasly,alpine,12,12,0.0,Lapped,0,25.0,12.0,High-Downforce,1,0,1,0,0,11.333333333333334,17.75,41.0,0,0.0
+2026_11,2026,11,hungaroring,gasly,alpine,12,12,0.0,Lapped,0,25.0,12.0,High-Downforce,1,0,1,0,0,11.333333333333334,17.75,32.0,0,0.0
 2026_11,2026,11,hungaroring,hamilton,ferrari,5,5,10.0,Finished,0,25.0,2.0,High-Downforce,1,0,1,0,0,4.0,5.25,246.0,0,0.0
 2026_11,2026,11,hungaroring,hulkenberg,audi,10,9,2.0,Lapped,0,25.0,10.0,High-Downforce,1,0,1,0,0,15.666666666666666,13.333333333333334,0.0,0,0.0
 2026_11,2026,11,hungaroring,leclerc,ferrari,2,4,12.0,Finished,0,25.0,3.0,High-Downforce,1,0,1,0,0,3.6666666666666665,5.25,256.0,0,0.0
@@ -1372,7 +1372,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_12,2026,12,zandvoort,albon,williams,16,17,0.0,Retired,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,9.75,11.0,0,0.0
 2026_12,2026,12,zandvoort,alonso,aston_martin,18,9,2.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,17.0,6.5,1.0,0,0.0
 2026_12,2026,12,zandvoort,bottas,cadillac,21,18,0.0,Retired,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,17.333333333333332,0.0,0,0.0
-2026_12,2026,12,zandvoort,gasly,alpine,11,10,1.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,10.0,41.0,0,0.0
+2026_12,2026,12,zandvoort,gasly,alpine,11,10,1.0,Lapped,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,11.0,10.0,32.0,0,0.0
 2026_12,2026,12,zandvoort,hamilton,ferrari,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,4.0,9.5,268.0,0,0.0
 2026_12,2026,12,zandvoort,hulkenberg,audi,13,8,4.0,Lapped,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,12.333333333333334,2.0,0,0.0
 2026_12,2026,12,zandvoort,leclerc,ferrari,6,5,10.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,11.0,280.0,0,0.0

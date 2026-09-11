@@ -70,6 +70,25 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+### 3.1) Configure local environment variables
+
+This repo includes a local `.env` file for runtime configuration. The file is
+gitignored and loaded automatically by both `app.py` and `api/index.py`.
+
+If needed, copy from the template and edit values:
+
+```bash
+cp .env.example .env
+```
+
+Current keys used:
+
+- `MODEL_REGISTRY_REPO`
+- `MODEL_REGISTRY_BRANCH`
+- `START_YEAR` (optional pipeline override)
+- `SIM_DEFAULT_IS_WET` (optional)
+- `SIM_DEFAULT_TRACK_TEMP` (optional)
+
 ### 4) Optional environment verification
 
 ```bash
@@ -116,6 +135,87 @@ python src/models/train_ranker.py
 ```bash
 streamlit run app.py
 ```
+
+## Vercel Deployment Guide (Recommended For Always-On Hosting)
+
+This repository is now Vercel-ready using a Python serverless API in `api/index.py`.
+The Streamlit app remains available for local usage, while Vercel hosts a stable
+JSON API that does not auto-sleep like Streamlit Community Cloud.
+
+### What was added for Vercel
+
+- `api/index.py`: FastAPI inference service
+- `vercel.json`: Vercel build/runtime config
+- `requirements-vercel.txt`: lean dependency set for serverless builds
+- `.vercelignore`: trims large folders from deployment bundle
+
+### 1) Push repository updates
+
+```bash
+git add .
+git commit -m "Add Vercel-ready inference API deployment"
+git push
+```
+
+### 2) Import project into Vercel
+
+- Go to Vercel dashboard -> `Add New...` -> `Project`
+- Import this GitHub repository
+- Framework preset: `Other`
+- Keep default root directory (repository root)
+
+### 3) Configure environment variables in Vercel
+
+Set these in Project Settings -> Environment Variables:
+
+- `MODEL_REGISTRY_REPO` (default: `CKmellow/f1-veteran-ranker`)
+- `MODEL_REGISTRY_BRANCH` (default: `model-registry`)
+
+Important: the API fetches model/data artifacts from the model registry branch
+when local artifacts are not bundled. If the branch is private, artifact download
+will fail without a public endpoint.
+
+### 4) Deploy
+
+- Trigger deployment from the Vercel dashboard
+- After deploy, verify:
+
+```bash
+curl https://<your-vercel-domain>/api/health
+```
+
+Expected: `status: ok` when model and feature artifacts are available.
+
+### 5) Inference endpoint usage
+
+```bash
+curl -X POST https://<your-vercel-domain>/api/predict/live \
+    -H "Content-Type: application/json" \
+    -d '{
+        "circuit_label": "Balanced/Technical",
+        "is_wet": 0,
+        "track_temp": 25,
+        "overrides": [
+            {"driver_id": "hamilton", "grid_position": 3, "quali_position": 2},
+            {"driver_id": "verstappen", "grid_position": 1, "quali_position": 1}
+        ]
+    }'
+```
+
+### API routes
+
+- `GET /api`
+- `GET /api/health`
+- `GET /api/drivers`
+- `POST /api/predict/live`
+
+### Notes on architecture
+
+- Vercel deployment targets the API, not Streamlit UI.
+- Model/data artifacts are loaded from repository files if present; otherwise,
+    fetched from model registry and cached in `/tmp` per serverless instance.
+- This keeps deployments lightweight and resilient when large ML artifacts are
+    not committed directly to the branch.
 
 ## GitHub Actions Automation (Weekly + Race-Week)
 

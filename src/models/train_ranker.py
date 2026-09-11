@@ -12,7 +12,9 @@ from __future__ import annotations
 
 import os
 import pickle
+import sys
 from itertools import product
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -21,6 +23,15 @@ import shap
 from lightgbm import LGBMRanker
 from sklearn.metrics import ndcg_score
 from xgboost import XGBRanker
+
+try:
+    from src.visualization.visualize_results import generate_presentation_bundle
+except ModuleNotFoundError:
+    # Support direct script execution: `python src/models/train_ranker.py`.
+    project_root = Path(__file__).resolve().parents[2]
+    if str(project_root) not in sys.path:
+        sys.path.insert(0, str(project_root))
+    from src.visualization.visualize_results import generate_presentation_bundle
 
 INPUT_PATH = "data/processed/veteran_training_matrix.csv"
 
@@ -509,7 +520,7 @@ def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
     print(f"XGB SHAP summary saved to: {XGB_SHAP_PATH}")
     print(f"LGB SHAP summary saved to: {LGB_SHAP_PATH}")
 
-    return {
+    metrics_payload = {
         "xgb_cv_ndcg": xgb_cv_ndcg,
         "lgb_cv_ndcg": lgb_cv_ndcg,
         "baseline_ndcg": baseline_ndcg,
@@ -529,6 +540,16 @@ def train_rankers(input_path: str = INPUT_PATH) -> dict[str, float]:
         "lgb_ndcg_at_3": lgb_ndcg_at_3,
         "lgb_precision_at_3": lgb_precision_at_3,
     }
+
+    try:
+        plot_outputs = generate_presentation_bundle(metrics_payload, output_dir="docs/plots/")
+        print("Presentation plots generated:")
+        for name, path in plot_outputs.items():
+            print(f" - {name}: {path}")
+    except Exception as exc:
+        print(f"Warning: failed to generate presentation plots: {exc}")
+
+    return metrics_payload
 
 
 if __name__ == "__main__":

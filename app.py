@@ -8,6 +8,13 @@ import requests
 import streamlit as st
 
 try:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except ModuleNotFoundError:
+    pass
+
+try:
     from src.models.train_ranker import train_rankers
     from src.preprocessing.build_veteran_features import build_veteran_training_matrix
     from src.preprocessing.ingest_jolpica_qualifying import run_ingestion as run_qualifying_ingestion

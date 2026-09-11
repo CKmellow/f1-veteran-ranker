@@ -1,0 +1,7 @@
+[theme]
+base = "dark"
+
+[server]
+enableCORS = false
+enableXsrfProtection = false
+port = 8501

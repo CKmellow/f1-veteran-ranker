@@ -1327,3 +1327,17 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_8,2026,8,red_bull_ring,sainz,williams,17,20,0.0,Retired,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,12.333333333333334,11.75,11.0,0,0.0
 2026_8,2026,8,red_bull_ring,stroll,aston_martin,22,19,0.0,Retired,0,25.0,22.0,Power/High-Speed,0,0,0,1,0,18.333333333333332,12.25,1.0,0,0.0
 2026_8,2026,8,red_bull_ring,verstappen,red_bull,5,2,18.0,Finished,0,25.0,5.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,6.5,49.0,0,0.0
+2026_9,2026,9,silverstone,albon,williams,16,21,0.0,Retired,0,25.0,16.0,Power/High-Speed,0,0,0,1,0,14.333333333333334,11.25,11.0,0,0.0
+2026_9,2026,9,silverstone,alonso,aston_martin,21,18,0.0,Lapped,0,25.0,22.0,Power/High-Speed,0,0,0,1,0,15.666666666666666,7.25,1.0,0,0.0
+2026_9,2026,9,silverstone,bottas,cadillac,18,16,0.0,Finished,0,25.0,18.0,Power/High-Speed,0,0,0,1,0,21.333333333333332,14.666666666666666,0.0,0,0.0
+2026_9,2026,9,silverstone,gasly,alpine,15,10,1.0,Finished,0,25.0,12.0,Power/High-Speed,0,0,0,1,0,7.666666666666667,15.0,40.0,0,0.0
+2026_9,2026,9,silverstone,hamilton,ferrari,3,3,15.0,Finished,0,25.0,3.0,Power/High-Speed,0,0,0,1,0,2.6666666666666665,2.75,176.0,0,0.0
+2026_9,2026,9,silverstone,hulkenberg,audi,12,22,0.0,Retired,0,25.0,13.0,Power/High-Speed,0,0,0,1,0,15.0,7.333333333333333,0.0,0,0.0
+2026_9,2026,9,silverstone,leclerc,ferrari,2,1,25.0,Finished,0,25.0,2.0,Power/High-Speed,0,0,0,1,0,13.333333333333334,10.25,191.0,0,0.0
+2026_9,2026,9,silverstone,norris,mclaren,6,4,12.0,Finished,0,25.0,6.0,Power/High-Speed,0,0,0,1,0,9.666666666666666,3.0,59.0,0,0.0
+2026_9,2026,9,silverstone,ocon,haas,17,13,0.0,Finished,0,25.0,17.0,Power/High-Speed,0,0,0,1,0,12.666666666666666,16.0,3.0,0,0.0
+2026_9,2026,9,silverstone,perez,cadillac,20,14,0.0,Finished,0,25.0,20.0,Power/High-Speed,0,0,0,1,0,16.666666666666668,8.333333333333334,0.0,0,0.0
+2026_9,2026,9,silverstone,russell,mercedes,4,2,18.0,Finished,0,25.0,4.0,Power/High-Speed,0,0,0,1,0,5.0,13.0,110.0,0,0.0
+2026_9,2026,9,silverstone,sainz,williams,14,17,0.0,Lapped,0,25.0,15.0,Power/High-Speed,0,0,0,1,0,16.0,7.0,11.0,0,0.0
+2026_9,2026,9,silverstone,stroll,aston_martin,22,19,0.0,Lapped,0,25.0,21.0,Power/High-Speed,0,0,0,1,0,19.666666666666668,9.75,1.0,0,0.0
+2026_9,2026,9,silverstone,verstappen,red_bull,7,20,0.0,Retired,0,25.0,7.0,Power/High-Speed,0,0,0,1,0,9.333333333333334,3.75,67.0,0,0.0

@@ -236,8 +236,14 @@ def fetch_incremental_results(year, round_number):
     payload = fetch_raw_payload(url)
     race_df = flatten_json_to_df(payload)
 
-    if len(race_df) != 20:
-        raise ValueError("Incomplete data payload from API. Aborting execution.")
+    unique_driver_count = race_df["driver_id"].nunique(dropna=True)
+    if unique_driver_count < 20:
+        raise ValueError(
+            "Incomplete data payload from API. "
+            f"Expected at least 20 unique drivers, got {unique_driver_count}."
+        )
+
+    race_df = race_df.drop_duplicates(subset=["race_id", "driver_id"], keep="last")
 
     race_df = race_df.sort_values(["finish_position", "driver_id"], na_position="last").reset_index(drop=True)
     return race_df

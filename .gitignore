@@ -26,6 +26,11 @@ dist/
 .mypy_cache/
 .ruff_cache/
 
+# Environment files
+.env
+.env.*
+!.env.example
+
 # Model artifacts and experiment outputs
 models/*
 !models/.gitkeep

@@ -119,11 +119,15 @@ streamlit run app.py
 
 ## Vercel API Deployment (Main Branch)
 
-This repository includes a Python serverless entrypoint at `api/index.py` and
-an explicit Vercel runtime entrypoint in `pyproject.toml`:
+This repository deploys a lightweight frontend at `/` and a Python serverless
+API at `/api/*`.
 
-- `[tool.vercel]`
-- `entrypoint = "api/index.py"`
+Runtime/deploy files:
+
+- `index.html` (frontend rendered at `/`)
+- `api/index.py` (serverless API)
+- `vercel.json` (routing + install command)
+- `requirements-vercel.txt` (minimal Python runtime dependencies)
 
 Deploy configuration checklist:
 
@@ -135,6 +139,13 @@ Health check after deploy:
 
 ```bash
 curl https://<your-vercel-domain>/api/health
+```
+
+Route checks after deploy:
+
+```bash
+curl https://<your-vercel-domain>/
+curl https://<your-vercel-domain>/api
 ```
 
 ## GitHub Actions Automation (Weekly + Race-Week)

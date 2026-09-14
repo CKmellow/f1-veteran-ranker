@@ -25,7 +25,7 @@ TMP_ARTIFACT_ROOT = Path("/tmp/f1-artifacts")
 MODEL_REGISTRY_REPO = os.environ.get("MODEL_REGISTRY_REPO", "CKmellow/f1-veteran-ranker")
 MODEL_REGISTRY_BRANCH = os.environ.get("MODEL_REGISTRY_BRANCH", "model-registry")
 
-XGB_MODEL_PATH = "models/f1_xgb_ranker.pkl"
+LGB_MODEL_PATH = "models/f1_lgb_ranker.pkl"
 FEATURE_MATRIX_PATH = "data/processed/veteran_training_matrix.csv"
 
 FEATURE_COLUMNS = [
@@ -152,7 +152,7 @@ def _resolve_artifact_path(relative_path):
 
 @lru_cache(maxsize=1)
 def _load_model():
-    model_path = _resolve_artifact_path(XGB_MODEL_PATH)
+    model_path = _resolve_artifact_path(LGB_MODEL_PATH)
     with model_path.open("rb") as file_obj:
         raw = pickle.load(file_obj)
     return _extract_estimator(raw)
@@ -370,7 +370,7 @@ class Handler(BaseHTTPRequestHandler):
                     self,
                     {
                         "status": "ok",
-                        "model": "xgboost",
+                        "model": "lightgbm",
                         "checked_at_utc": datetime.now(UTC).isoformat(),
                     },
                     200,
@@ -380,7 +380,7 @@ class Handler(BaseHTTPRequestHandler):
                     self,
                     {
                         "status": "degraded",
-                        "model": "xgboost",
+                        "model": "lightgbm",
                         "checked_at_utc": datetime.now(UTC).isoformat(),
                         "detail": str(exc),
                     },
@@ -413,7 +413,7 @@ class Handler(BaseHTTPRequestHandler):
         return _send_json(
             self,
             {
-                "model": "xgboost",
+                "model": "lightgbm",
                 "generated_at_utc": datetime.now(UTC).isoformat(),
                 "inputs": {
                     "circuit_label": validated["circuit_label"],

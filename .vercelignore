@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.mypy_cache/
+.streamlit/
+.git/
+.github/
+notebooks/
+presentation/
+reports/
+docs/plots/
+outputs/
+data/raw/
+data/processed/
+models/

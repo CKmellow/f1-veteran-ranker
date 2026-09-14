@@ -117,6 +117,26 @@ python src/models/train_ranker.py
 streamlit run app.py
 ```
 
+## Vercel API Deployment (Main Branch)
+
+This repository includes a Python serverless entrypoint at `api/index.py` and
+an explicit Vercel runtime entrypoint in `pyproject.toml`:
+
+- `[tool.vercel]`
+- `entrypoint = "api/index.py"`
+
+Deploy configuration checklist:
+
+- In Vercel `Project Settings -> Git`, set `Production Branch` to `main`.
+- Do not use `model-registry` as the Production Branch (it is for artifact snapshots).
+- Keep repository root as the project root directory.
+
+Health check after deploy:
+
+```bash
+curl https://<your-vercel-domain>/api/health
+```
+
 ## GitHub Actions Automation (Weekly + Race-Week)
 
 This repository includes a scheduled workflow at `.github/workflows/pipeline.yml` that keeps the model refreshed automatically.

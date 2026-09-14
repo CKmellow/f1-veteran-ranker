@@ -158,6 +158,19 @@ def _load_model():
     return _extract_estimator(raw)
 
 
+def _predict_scores(model, features_df):
+    """Predict safely across environments with or without scikit-learn installed."""
+    try:
+        return model.predict(features_df)
+    except (AttributeError, TypeError):
+        booster = getattr(model, "booster_", None)
+        if booster is None:
+            booster = getattr(model, "_Booster", None)
+        if booster is None:
+            raise
+        return booster.predict(features_df)
+
+
 @lru_cache(maxsize=1)
 def _load_latest_driver_states():
     matrix_path = _resolve_artifact_path(FEATURE_MATRIX_PATH)
@@ -322,7 +335,7 @@ def _predict_live(validated_payload):
     merged["track_temp"] = validated_payload["track_temp"]
 
     x = merged[FEATURE_COLUMNS].apply(pd.to_numeric, errors="coerce").fillna(0.0)
-    merged["predicted_score"] = model.predict(x)
+    merged["predicted_score"] = _predict_scores(model, x)
 
     leaderboard_df = merged.sort_values("predicted_score", ascending=False).reset_index(drop=True)
     leaderboard_df["predicted_position"] = range(1, len(leaderboard_df) + 1)

@@ -1,2 +1,0 @@
-[tool.uv]
-environments = ["sys_platform == 'linux'"]

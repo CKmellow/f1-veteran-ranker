@@ -1425,3 +1425,17 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_15,2026,15,baku,sainz,williams,14,10,1.0,Finished,0,25.0,9.0,Street Circuit,3,0,0,0,1,16.0,11.5,11.0,0,0.0
 2026_15,2026,15,baku,stroll,aston_martin,22,22,0.0,Retired,0,25.0,21.0,Street Circuit,3,0,0,0,1,20.333333333333332,14.75,3.0,0,0.0
 2026_15,2026,15,baku,verstappen,red_bull,8,2,18.0,Finished,0,25.0,8.0,Street Circuit,3,0,0,0,1,9.0,2.25,133.0,0,0.0
+2026_16,2026,16,sepang,albon,williams,18,21,0.0,Retired,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,,12.0,0,0.0
+2026_16,2026,16,sepang,alonso,aston_martin,12,8,4.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,19.666666666666668,,3.0,0,0.0
+2026_16,2026,16,sepang,bottas,cadillac,19,22,0.0,Retired,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,,0.0,0,0.0
+2026_16,2026,16,sepang,gasly,alpine,9,16,0.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,12.333333333333334,,39.0,0,0.0
+2026_16,2026,16,sepang,hamilton,ferrari,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,11.333333333333334,,330.0,0,0.0
+2026_16,2026,16,sepang,hulkenberg,audi,15,11,0.0,Finished,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,11.0,,7.0,0,0.0
+2026_16,2026,16,sepang,leclerc,ferrari,4,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,10.0,,345.0,0,0.0
+2026_16,2026,16,sepang,norris,mclaren,5,9,2.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,8.666666666666666,,154.0,0,0.0
+2026_16,2026,16,sepang,ocon,haas,17,15,0.0,Finished,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,,7.0,0,0.0
+2026_16,2026,16,sepang,perez,cadillac,20,19,0.0,Finished,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,17.333333333333332,,0.0,0,0.0
+2026_16,2026,16,sepang,russell,mercedes,7,20,0.0,Retired,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,2.6666666666666665,,202.0,0,0.0
+2026_16,2026,16,sepang,sainz,williams,13,17,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,14.0,,12.0,0,0.0
+2026_16,2026,16,sepang,stroll,aston_martin,14,12,0.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,21.0,,7.0,0,0.0
+2026_16,2026,16,sepang,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,Balanced/Technical,2,1,0,0,0,2.3333333333333335,,151.0,0,0.0

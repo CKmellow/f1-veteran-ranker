@@ -1453,3 +1453,17 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_17,2026,17,marina_bay,sainz,williams,13,14,0.0,Lapped,0,25.0,14.0,High-Downforce,1,0,1,0,0,15.333333333333334,5.25,12.0,0,0.0
 2026_17,2026,17,marina_bay,stroll,aston_martin,21,20,0.0,Retired,0,25.0,19.0,High-Downforce,1,0,1,0,0,18.333333333333332,13.25,7.0,0,0.0
 2026_17,2026,17,marina_bay,verstappen,red_bull,1,1,25.0,Finished,0,25.0,1.0,High-Downforce,1,0,1,0,0,1.6666666666666667,4.0,176.0,0,0.0
+2026_18,2026,18,americas,albon,williams,17,17,0.0,Lapped,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,19.666666666666668,13.0,12.0,0,0.0
+2026_18,2026,18,americas,alonso,aston_martin,12,16,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,15.0,11.5,7.0,0,0.0
+2026_18,2026,18,americas,bottas,cadillac,19,20,0.0,Retired,0,25.0,22.0,Balanced/Technical,2,1,0,0,0,19.0,16.0,0.0,0,0.0
+2026_18,2026,18,americas,gasly,alpine,10,10,1.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,15.0,12.75,39.0,0,0.0
+2026_18,2026,18,americas,hamilton,ferrari,5,4,12.0,Finished,0,25.0,5.0,Balanced/Technical,2,1,0,0,0,5.0,11.25,383.0,0,0.0
+2026_18,2026,18,americas,hulkenberg,audi,11,11,0.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,10.0,9.0,11.0,0,0.0
+2026_18,2026,18,americas,leclerc,ferrari,4,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.3333333333333335,6.75,395.0,0,0.0
+2026_18,2026,18,americas,norris,mclaren,8,5,10.0,Finished,0,25.0,8.0,Balanced/Technical,2,1,0,0,0,10.666666666666666,3.5,168.0,0,0.0
+2026_18,2026,18,americas,ocon,haas,15,14,0.0,Lapped,0,25.0,17.0,Balanced/Technical,2,1,0,0,0,12.0,15.5,7.0,0,0.0
+2026_18,2026,18,americas,perez,cadillac,18,19,0.0,Lapped,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,5.0,0.0,0,0.0
+2026_18,2026,18,americas,russell,mercedes,6,8,4.0,Finished,0,25.0,6.0,Balanced/Technical,2,1,0,0,0,10.0,5.5,204.0,0,0.0
+2026_18,2026,18,americas,sainz,williams,16,18,0.0,Lapped,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,11.25,12.0,0,0.0
+2026_18,2026,18,americas,stroll,aston_martin,22,15,0.0,Lapped,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,18.0,13.0,7.0,0,0.0
+2026_18,2026,18,americas,verstappen,red_bull,2,3,15.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,1.3333333333333333,1.5,201.0,0,0.0

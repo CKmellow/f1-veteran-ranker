@@ -2239,7 +2239,7 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_19,2026,19,rodriguez,leclerc,ferrari,3,4,12.0,Finished,0,25.0,3.0
 2026_19,2026,19,rodriguez,norris,mclaren,6,5,10.0,Finished,0,25.0,6.0
 2026_19,2026,19,rodriguez,russell,mercedes,2,6,8.0,Finished,0,25.0,2.0
-2026_19,2026,19,rodriguez,lawson,rb,22,7,6.0,Finished,0,25.0,8.0
+2026_19,2026,19,rodriguez,lawson,rb,22,7,6.0,Finished,0,25.0,22.0
 2026_19,2026,19,rodriguez,bortoleto,audi,13,8,4.0,Finished,0,25.0,13.0
 2026_19,2026,19,rodriguez,hadjar,red_bull,7,9,2.0,Finished,0,25.0,7.0
 2026_19,2026,19,rodriguez,ryo_hirakawa,haas,18,10,1.0,Finished,0,25.0,18.0

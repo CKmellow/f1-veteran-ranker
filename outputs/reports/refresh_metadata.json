@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-11-16T09:34:32Z",
+  "generated_at_utc": "2026-11-16T22:09:35Z",
   "source": "github_actions",
   "workflow": "f1-veteran-pipeline",
-  "run_id": "43840616224",
+  "run_id": "43966850652",
   "sha": "3b56c03ebd722ce29738396c019e13d3e0fc3861",
   "ingest_mode": "historical"
 }

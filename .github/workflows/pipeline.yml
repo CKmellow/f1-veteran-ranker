@@ -153,7 +153,12 @@ jobs:
           Updated at: $(date -u +%Y-%m-%dT%H:%M:%SZ)
           EOF
 
-          git add models data outputs README.md
+          # Data-only branch: stop Vercel from trying (and failing) to deploy it.
+          cat > vercel.json <<EOF
+          { "git": { "deploymentEnabled": false } }
+          EOF
+
+          git add models data outputs README.md vercel.json
           if ! git diff --cached --quiet; then
             git commit -m "ci: update durable model registry snapshot"
             git push origin HEAD:model-registry

@@ -12,3 +12,4 @@ outputs/
 data/raw/
 data/processed/
 models/
+app.py

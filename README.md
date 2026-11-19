@@ -119,14 +119,16 @@ streamlit run app.py
 
 ## Vercel API Deployment (Main Branch)
 
-This repository deploys a lightweight frontend at `/` and a Python serverless
-API at `/api/*`.
+This repository deploys the full dashboard (live Grand Prix simulator and season
+retrospective, ported from the Streamlit app) at `/` and a Python serverless API
+at `/api/*`. Model artifacts are pulled at runtime from the `model-registry`
+branch, so the daily pipeline refresh shows up without a redeploy.
 
 Runtime/deploy files:
 
-- `index.html` (frontend rendered at `/`)
+- `public/index.html` (dashboard served statically at `/`)
 - `api/index.py` (serverless API)
-- `vercel.json` (routing + install command)
+- `vercel.json` (function config + install command)
 - `requirements-vercel.txt` (minimal Python runtime dependencies)
 
 Deploy configuration checklist:

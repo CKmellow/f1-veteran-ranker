@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Veteran Ranker</title>
+  <meta name="description" content="Explainable rank prediction of F1 veterans: live Grand Prix simulator and season retrospective." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #060b14;
+      --bg-glow: #12253d;
+      --panel: #0b1320;
+      --card: #111a2a;
+      --row: #121d2f;
+      --row-head: #1b2b44;
+      --line: rgba(234, 242, 255, 0.14);
+      --line-strong: rgba(234, 242, 255, 0.26);
+      --text: #eaf2ff;
+      --muted: #9fb1c8;
+      --accent: #ff3b30;
+      --accent-2: #ff6a3d;
+      --good: #27b66c;
+      --high: #ff5757;
+      --warn: #ffd166;
+      --radius: 12px;
+      --head: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+      --body: 'Rajdhani', 'Segoe UI', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background: radial-gradient(circle at 8% 8%, var(--bg-glow) 0%, #0a1321 40%, var(--bg) 100%) fixed, var(--bg);
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    h1, h2, h3 { font-family: var(--head); letter-spacing: 0.04em; margin: 0; font-weight: 700; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    /* ---------- Sidebar ---------- */
+    .sidebar {
+      background: var(--panel);
+      border-right: 1px solid var(--line);
+      padding: 22px 18px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 { font-size: 1.35rem; }
+    .collapsible { display: grid; gap: 18px; }
+    .collapsible[hidden] { display: none; }
+    .caption { color: var(--muted); font-size: 0.9rem; margin: 4px 0 0; }
+
+    .group { display: grid; gap: 8px; }
+    .group-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .model-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 11px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.02);
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .model-option:has(input:checked) { border-color: var(--accent); background: rgba(255, 59, 48, 0.1); }
+    .model-option input { accent-color: var(--accent); margin: 0; }
+
+    select, input[type="number"] {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #0f1828;
+      color: var(--text);
+      padding: 9px 10px;
+      font: inherit;
+      font-weight: 600;
+    }
+    select:focus, input:focus { outline: 2px solid var(--accent-2); outline-offset: 1px; }
+
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .check input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
+
+    .range-row { display: flex; justify-content: space-between; font-weight: 600; }
+    input[type="range"] { width: 100%; accent-color: var(--accent); }
+
+    .overrides {
+      display: grid;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px dashed var(--line-strong);
+    }
+    .overrides[hidden] { display: none; }
+
+    .profile-box {
+      font-size: 0.88rem;
+      color: var(--muted);
+      padding: 9px 11px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+    }
+    .profile-box strong { color: var(--text); }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      width: fit-content;
+    }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--warn); box-shadow: 0 0 10px currentColor; color: var(--warn); }
+    .status-pill.ok .dot { background: var(--good); color: var(--good); }
+    .status-pill.bad .dot { background: var(--high); color: var(--high); }
+
+    /* ---------- Main ---------- */
+    main { padding: 26px 28px 48px; min-width: 0; }
+
+    .title { font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+    .subtitle { color: var(--muted); margin: 6px 0 0; max-width: 72ch; }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin: 22px 0 18px;
+      border-bottom: 1px solid var(--line);
+      overflow-x: auto;
+    }
+    .tab {
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 10px 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); }
+    .tab:hover { color: var(--text); }
+
+    .panel[hidden] { display: none; }
+    .panel > * + * { margin-top: 18px; }
+
+    .card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: var(--row-head);
+      padding: 4px 11px;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+    }
+
+    .section-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+    .section-head h2 { font-size: 1.45rem; }
+    .meta-line { color: var(--muted); font-weight: 600; margin: 10px 0 0; }
+    .meta-line strong { color: var(--text); }
+
+    /* Grid editor */
+    .editor-wrap { overflow-x: auto; margin-top: 14px; }
+    table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+    th { font-size: 0.78rem; letter-spacing: 0.07em; color: var(--muted); text-transform: uppercase; }
+    td.num, th.num { text-align: right; }
+    .editor input[type="number"] { width: 74px; padding: 6px 8px; text-align: right; }
+    .team-dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; vertical-align: middle; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .btn {
+      border: none;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      transition: filter 0.15s ease, transform 0.15s ease;
+    }
+    .btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .btn:disabled { opacity: 0.6; cursor: progress; transform: none; }
+    .btn.primary { flex: 1 1 260px; }
+    .btn.ghost { background: transparent; border: 1px solid var(--line-strong); color: var(--text); }
+
+    /* Podium */
+    .podium { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .podium-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      color: #fff;
+      animation: rise 0.4s ease both;
+    }
+    .podium-card .stripe { height: 8px; }
+    .podium-card .body { padding: 13px 14px 15px; }
+    .podium-rank { font-family: var(--head); font-size: 1.6rem; line-height: 1; }
+    .podium-driver { font-weight: 700; font-size: 1.15rem; margin-top: 6px; letter-spacing: 0.02em; }
+    .podium-team { font-size: 0.92rem; opacity: 0.92; }
+    .medal {
+      display: inline-block;
+      margin-top: 9px;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: rgba(10, 15, 23, 0.55);
+    }
+
+    /* Broadcast rows */
+    .broadcast { display: grid; gap: 6px; }
+    .b-row {
+      display: grid;
+      grid-template-columns: 64px minmax(140px, 1.2fr) minmax(160px, 1.2fr) repeat(3, minmax(100px, 0.8fr));
+      gap: 10px;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--row);
+      padding: 8px 10px;
+      animation: rise 0.3s ease both;
+    }
+    .b-row.live { grid-template-columns: 64px minmax(140px, 1.3fr) minmax(160px, 1.3fr) repeat(3, minmax(80px, 0.6fr)); }
+    .b-head { background: var(--row-head); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.06em; animation: none; }
+    .b-head > div:first-child { text-align: center; }
+    .rank-badge {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--head);
+      font-size: 1.05rem;
+      font-weight: 700;
+      border: 1px solid var(--line-strong);
+      background: #172438;
+      margin: 0 auto;
+    }
+    .driver-cell { font-weight: 700; letter-spacing: 0.03em; }
+    .brand-cell { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.92rem; }
+    .brand-bar { width: 12px; height: 24px; border-radius: 3px; flex: none; }
+    .r { text-align: right; font-family: var(--head); font-size: 1.05rem; }
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 2px 10px;
+      border: 1px solid var(--line-strong);
+      font-weight: 700;
+      font-size: 0.85rem;
+      font-family: var(--body);
+    }
+    .pill.good { color: var(--good); background: rgba(39, 182, 108, 0.14); }
+    .pill.neutral { color: var(--text); background: rgba(234, 242, 255, 0.08); }
+    .pill.high { color: var(--high); background: rgba(255, 87, 87, 0.14); }
+    .move-up { color: var(--good); }
+    .move-down { color: var(--high); }
+
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+    .stat { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--row); }
+    .stat .k { font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+    .stat .v { font-family: var(--head); font-size: 1.6rem; }
+
+    details.card summary { cursor: pointer; font-weight: 700; }
+    details.card[open] summary { margin-bottom: 10px; }
+
+    .notice {
+      border-radius: 10px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255, 209, 102, 0.4);
+      background: rgba(255, 209, 102, 0.08);
+      color: var(--warn);
+      font-weight: 600;
+    }
+    .notice.error { border-color: rgba(255, 87, 87, 0.45); background: rgba(255, 87, 87, 0.08); color: #ff8a8a; }
+    .muted { color: var(--muted); }
+
+    .skeleton { height: 52px; border-radius: 10px; background: linear-gradient(90deg, var(--row) 0%, #1a2840 50%, var(--row) 100%); background-size: 200% 100%; animation: shimmer 1.2s linear infinite; }
+
+    .menu-btn { display: none; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+    @media (max-width: 1100px) {
+      .b-row, .b-row.live { grid-template-columns: 56px minmax(120px, 1fr) minmax(130px, 1fr) repeat(3, minmax(70px, 0.6fr)); }
+    }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--line); padding: 16px; }
+      .menu-btn { display: inline-block; }
+      main { padding: 18px 16px 40px; }
+      .podium { grid-template-columns: 1fr; }
+      .b-row, .b-row.live { grid-template-columns: 50px minmax(0, 1fr) auto; row-gap: 4px; }
+      .b-row .brand-cell { grid-column: 2 / -1; grid-row: 2; font-size: 0.85rem; }
+      .b-row .r.extra { display: none; }
+      .b-head .hide-sm { display: none; }
+      .rank-badge { width: 38px; height: 38px; grid-row: span 2; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Telemetry controls">
+      <div class="section-head" style="justify-content: space-between;">
+        <div>
+          <h2>Telemetry Controls</h2>
+          <p class="caption">Model switch and profile-driven race environment.</p>
+        </div>
+        <button class="btn ghost menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="controls">Controls</button>
+      </div>
+
+      <div class="collapsible" id="controls">
+        <div class="group" role="radiogroup" aria-label="Model artifact">
+          <span class="group-label">Model Artifact</span>
+          <div id="modelOptions" class="group"></div>
+        </div>
+
+        <div class="group">
+          <label class="group-label" for="gpSelect">Upcoming Grand Prix</label>
+          <select id="gpSelect" disabled><option>Loading calendar…</option></select>
+          <div class="profile-box" id="profileBox">Auto profile: –</div>
+        </div>
+
+        <label class="check"><input type="checkbox" id="overrideToggle" /> Manual environmental overrides</label>
+
+        <div class="overrides" id="overridesBox" hidden>
+          <label class="check"><input type="checkbox" id="wetInput" /> Wet conditions</label>
+          <div class="group">
+            <div class="range-row"><label for="tempInput">Track temperature</label><span id="tempValue">25.0°C</span></div>
+            <input type="range" id="tempInput" min="10" max="50" step="0.5" value="25" />
+          </div>
+          <div class="group">
+            <label class="group-label" for="circuitInput">Circuit type</label>
+            <select id="circuitInput"></select>
+          </div>
+        </div>
+
+        <div class="group">
+          <span class="status-pill" id="statusPill"><span class="dot"></span><span id="statusText">Connecting…</span></span>
+          <p class="caption" id="refreshText">Last data/model refresh: –</p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <h1 class="title">Explainable Rank Prediction of F1 Veterans</h1>
+      <p class="subtitle">Broadcast graphics dashboard for live race simulation and in-season retrospective audits across the veteran 14-driver cohort.</p>
+
+      <div id="globalNotice"></div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="tab-live" aria-controls="panel-live" aria-selected="true">Live Grand Prix Simulator</button>
+        <button class="tab" role="tab" id="tab-retro" aria-controls="panel-retro" aria-selected="false"><span id="retroTabLabel">Season</span> Retrospective: Predicted vs Actual</button>
+      </div>
+
+      <!-- Live simulator -->
+      <section class="panel" id="panel-live" role="tabpanel" aria-labelledby="tab-live">
+        <div class="card">
+          <div class="section-head">
+            <h2>Upcoming Weekend Forecast</h2>
+            <span class="badge">LIVE SIMULATION INPUTS</span>
+          </div>
+          <p class="meta-line" id="eventLine">–</p>
+
+          <div class="editor-wrap">
+            <table class="editor">
+              <thead>
+                <tr><th>Driver</th><th>Team</th><th class="num">Quali</th><th class="num">Grid</th></tr>
+              </thead>
+              <tbody id="editorBody">
+                <tr><td colspan="4"><div class="skeleton"></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="actions">
+            <button class="btn primary" id="simulateBtn" type="button" disabled>Simulate Grand Prix</button>
+            <button class="btn ghost" id="resetBtn" type="button">Reset grid</button>
+          </div>
+        </div>
+
+        <div id="liveResults"></div>
+      </section>
+
+      <!-- Retrospective -->
+      <section class="panel" id="panel-retro" role="tabpanel" aria-labelledby="tab-retro" hidden>
+        <div class="card">
+          <div class="section-head">
+            <h2 id="retroTitle">Season Performance Retrospective</h2>
+            <span class="badge">PREDICTED VS ACTUAL AUDIT</span>
+          </div>
+          <div class="group" style="margin-top: 14px; max-width: 420px;">
+            <label class="group-label" for="roundSelect" id="roundLabel">Completed race round</label>
+            <select id="roundSelect" disabled><option>Loading…</option></select>
+          </div>
+        </div>
+        <div id="retroResults"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    "use strict";
+
+    const $ = (id) => document.getElementById(id);
+    const state = {
+      meta: null,
+      drivers: [],
+      model: "xgb",
+      retroLoadedKey: null,
+    };
+
+    const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const safeColor = (c) => (/^#[0-9a-f]{3,8}$/i.test(c || "") ? c : "#6f7a87");
+
+    async function api(path, options) {
+      const res = await fetch(path, options);
+      let data;
+      try { data = await res.json(); } catch { throw new Error(`Unexpected response (${res.status})`); }
+      if (!res.ok || data.error) throw new Error(data.error || `Request failed (${res.status})`);
+      return data;
+    }
+
+    function setStatus(kind, text) {
+      $("statusPill").className = `status-pill ${kind}`;
+      $("statusText").textContent = text;
+    }
+
+    function notice(target, message, kind = "") {
+      $(target).innerHTML = message ? `<div class="notice ${kind}">${esc(message)}</div>` : "";
+    }
+
+    // ---------- Environment ----------
+    function selectedEvent() {
+      const events = state.meta?.upcoming_events || [];
+      return events[Number($("gpSelect").value)] || events[0] || null;
+    }
+
+    function environment() {
+      const ev = selectedEvent();
+      const profile = ev?.profile || { circuit_label: "Balanced/Technical", is_wet: 0, track_temp: 25 };
+      if ($("overrideToggle").checked) {
+        return {
+          circuit_label: $("circuitInput").value,
+          is_wet: $("wetInput").checked ? 1 : 0,
+          track_temp: Number($("tempInput").value),
+          manual: true,
+        };
+      }
+      return { ...profile, track_temp: Number(profile.track_temp), manual: false };
+    }
+
+    function syncOverridesFromProfile() {
+      const profile = selectedEvent()?.profile;
+      if (!profile) return;
+      $("wetInput").checked = Boolean(profile.is_wet);
+      $("tempInput").value = profile.track_temp;
+      $("circuitInput").value = profile.circuit_label;
+      $("tempValue").textContent = `${Number(profile.track_temp).toFixed(1)}°C`;
+    }
+
+    function renderEnvironment() {
+      const ev = selectedEvent();
+      const profile = ev?.profile;
+      $("profileBox").innerHTML = profile
+        ? `Auto profile: <strong>${esc(profile.circuit_label)}</strong> · ${profile.is_wet ? "wet" : "dry"} · ${Number(profile.track_temp).toFixed(1)}°C`
+        : "Auto profile: –";
+
+      const env = environment();
+      $("eventLine").innerHTML =
+        `Event: <strong>${esc(ev?.label || "–")}</strong> · Circuit: <strong>${esc(env.circuit_label)}</strong>` +
+        ` · Wet: <strong>${env.is_wet ? "Yes" : "No"}</strong> · Track temp: <strong>${env.track_temp.toFixed(1)}°C</strong>` +
+        (env.manual ? ' · <span class="muted">(manual override)</span>' : "");
+    }
+
+    // ---------- Grid editor ----------
+    function renderEditor() {
+      $("editorBody").innerHTML = state.drivers.map((d) => `
+        <tr>
+          <td><span class="team-dot" style="background:${safeColor(d.team_color)}"></span><strong>${esc(d.driver_label)}</strong></td>
+          <td class="muted">${esc(d.team)}</td>
+          <td class="num"><input type="number" min="1" max="20" step="1" value="${d.default_quali_position}" data-driver="${esc(d.driver_id)}" data-field="quali_position" aria-label="${esc(d.driver_label)} qualifying position" /></td>
+          <td class="num"><input type="number" min="1" max="20" step="1" value="${d.default_grid_position}" data-driver="${esc(d.driver_id)}" data-field="grid_position" aria-label="${esc(d.driver_label)} grid position" /></td>
+        </tr>`).join("");
+    }
+
+    function readOverrides() {
+      const byDriver = {};
+      for (const input of $("editorBody").querySelectorAll("input[data-driver]")) {
+        const value = Math.round(Number(input.value));
+        if (!Number.isFinite(value) || value < 1 || value > 20) {
+          input.focus();
+          throw new Error("Quali and grid positions must be whole numbers from 1 to 20.");
+        }
+        (byDriver[input.dataset.driver] ||= { driver_id: input.dataset.driver })[input.dataset.field] = value;
+      }
+      return Object.values(byDriver);
+    }
+
+    // ---------- Live simulation ----------
+    async function simulate() {
+      const btn = $("simulateBtn");
+      let overrides;
+      try { overrides = readOverrides(); } catch (err) { notice("liveResults", err.message, "error"); return; }
+
+      const env = environment();
+      btn.disabled = true;
+      btn.textContent = "Simulating…";
+      $("liveResults").innerHTML = '<div class="card"><div class="skeleton"></div></div>';
+      try {
+        const data = await api("/api/predict/live", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ model: state.model, circuit_label: env.circuit_label, is_wet: env.is_wet, track_temp: env.track_temp, overrides }),
+        });
+        renderLive(data);
+      } catch (err) {
+        notice("liveResults", `Simulation failed: ${err.message}`, "error");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Simulate Grand Prix";
+      }
+    }
+
+    function podiumHtml(rows) {
+      const medals = ["GOLD", "SILVER", "BRONZE"];
+      return `<div class="podium">${rows.slice(0, 3).map((r, i) => {
+        const c = safeColor(r.team_color);
+        return `<div class="podium-card" style="background: linear-gradient(145deg, ${c} 0%, color-mix(in srgb, ${c} 62%, #070b12) 100%); animation-delay:${i * 80}ms">
+          <div class="stripe" style="background: color-mix(in srgb, #fff 26%, ${c})"></div>
+          <div class="body">
+            <div class="podium-rank">P${i + 1}</div>
+            <div class="podium-driver">${esc(r.driver_label)}</div>
+            <div class="podium-team">${esc(r.team)}</div>
+            <span class="medal">${medals[i]}</span>
+          </div>
+        </div>`;
+      }).join("")}</div>`;
+    }
+
+    function brandCell(r) {
+      return `<div class="brand-cell"><span class="brand-bar" style="background:${safeColor(r.team_color)}"></span><span>${esc(r.team)}</span></div>`;
+    }
+
+    function renderLive(data) {
+      const rows = data.leaderboard;
+      const head = `<div class="b-row live b-head"><div>PRED</div><div>DRIVER</div><div class="hide-sm">TEAM</div><div class="r">GRID</div><div class="r hide-sm">MOVE</div><div class="r hide-sm">SCORE</div></div>`;
+      const body = rows.map((r, i) => {
+        const move = r.grid_position - r.predicted_position;
+        const moveHtml = move > 0 ? `<span class="move-up">▲ ${move}</span>` : move < 0 ? `<span class="move-down">▼ ${-move}</span>` : '<span class="muted">–</span>';
+        return `<div class="b-row live" style="animation-delay:${i * 25}ms">
+          <div class="rank-badge">P${r.predicted_position}</div>
+          <div class="driver-cell">${esc(r.driver_label)}</div>
+          ${brandCell(r)}
+          <div class="r">P${r.grid_position}</div>
+          <div class="r extra">${moveHtml}</div>
+          <div class="r extra">${r.predicted_score.toFixed(3)}</div>
+        </div>`;
+      }).join("");
+
+      $("liveResults").innerHTML = `
+        <div class="card">
+          <div class="section-head"><h2>Predicted Podium</h2><span class="badge">${esc(data.model_label)}</span></div>
+          <div style="margin-top:14px">${podiumHtml(rows)}</div>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <div class="section-head"><h2>Predicted Full Order</h2></div>
+          <p class="meta-line">Ranked by model score. Move = places gained or lost against the starting grid.</p>
+          <div class="broadcast" style="margin-top:12px">${head}${body}</div>
+        </div>`;
+    }
+
+    // ---------- Retrospective ----------
+    async function loadRetro() {
+      const round = $("roundSelect").value;
+      if (!state.meta || !/^\d+$/.test(round)) return;
+      const key = `${state.model}:${round}`;
+      if (state.retroLoadedKey === key) return;
+      state.retroLoadedKey = key;
+      $("retroResults").innerHTML = '<div class="card"><div class="skeleton"></div></div>';
+      try {
+        const data = await api(`/api/retro?round=${encodeURIComponent(round)}&model=${encodeURIComponent(state.model)}`);
+        if (state.retroLoadedKey === key) renderRetro(data);
+      } catch (err) {
+        state.retroLoadedKey = null;
+        notice("retroResults", `Retrospective failed: ${err.message}`, "error");
+      }
+    }
+
+    function renderRetro(data) {
+      const head = `<div class="b-row b-head"><div>PRED</div><div>DRIVER</div><div class="hide-sm">TEAM</div><div class="r hide-sm">GLOBAL FINISH</div><div class="r hide-sm">COHORT RANK</div><div class="r">ERROR Δ</div></div>`;
+      const body = data.rows.map((r, i) => {
+        const cls = r.error_delta === 0 ? "good" : r.error_delta >= 5 ? "high" : "neutral";
+        const finish = r.actual_finish == null ? "DNF" : `P${r.actual_finish} / ${data.full_grid_size}`;
+        return `<div class="b-row" style="animation-delay:${i * 25}ms">
+          <div class="rank-badge">P${r.predicted_rank}</div>
+          <div class="driver-cell">${esc(r.driver_label)}</div>
+          ${brandCell(r)}
+          <div class="r extra">${finish}</div>
+          <div class="r extra">${r.actual_relative_rank} of ${data.cohort_size}</div>
+          <div class="r"><span class="pill ${cls}">Δ ${r.error_delta}</span></div>
+        </div>`;
+      }).join("");
+
+      const within1 = data.rows.filter((r) => r.error_delta <= 1).length;
+      const gridRows = data.full_grid.map((g) => `
+        <tr><td class="num">${g.global_order}</td><td><strong>${esc(g.driver_label)}</strong></td><td class="muted">${esc(g.driver_id)}</td>
+        <td>${esc(g.constructor_id ?? "–")}</td><td class="num">${g.finish_position ?? "–"}</td><td>${esc(g.status ?? "–")}</td></tr>`).join("");
+
+      $("retroResults").innerHTML = `
+        <div class="stats">
+          <div class="stat"><div class="k">Exact hits</div><div class="v">${data.summary.exact_hits} / ${data.cohort_size}</div></div>
+          <div class="stat"><div class="k">Within ±1 place</div><div class="v">${within1} / ${data.cohort_size}</div></div>
+          <div class="stat"><div class="k">Mean abs. error</div><div class="v">${data.summary.mean_abs_error ?? "–"}</div></div>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <div class="broadcast">${head}${body}</div>
+        </div>
+        <details class="card" style="margin-top:18px">
+          <summary>View unfiltered full race grid context</summary>
+          <div class="editor-wrap"><table>
+            <thead><tr><th class="num">#</th><th>Driver</th><th>Driver ID</th><th>Constructor</th><th class="num">Finish</th><th>Status</th></tr></thead>
+            <tbody>${gridRows || '<tr><td colspan="6" class="muted">No unfiltered race rows for this round.</td></tr>'}</tbody>
+          </table></div>
+        </details>`;
+    }
+
+    // ---------- Tabs ----------
+    function selectTab(name) {
+      for (const t of ["live", "retro"]) {
+        $(`tab-${t}`).setAttribute("aria-selected", String(t === name));
+        $(`panel-${t}`).hidden = t !== name;
+      }
+      if (name === "retro") loadRetro();
+      try { localStorage.setItem("f1-tab", name); } catch {}
+    }
+
+    // ---------- Boot ----------
+    function renderMeta(meta) {
+      state.meta = meta;
+      state.model = meta.default_model || "xgb";
+      try {
+        const saved = localStorage.getItem("f1-model");
+        if (meta.models.some((m) => m.key === saved)) state.model = saved;
+      } catch {}
+
+      $("modelOptions").innerHTML = meta.models.map((m) => `
+        <label class="model-option"><input type="radio" name="model" value="${esc(m.key)}" ${m.key === state.model ? "checked" : ""} /> ${esc(m.label)}</label>`).join("");
+
+      $("circuitInput").innerHTML = meta.circuit_types.map((c) => `<option>${esc(c)}</option>`).join("");
+
+      $("gpSelect").innerHTML = meta.upcoming_events.map((ev, i) => `<option value="${i}">${esc(ev.label)}</option>`).join("");
+      $("gpSelect").disabled = false;
+
+      $("retroTabLabel").textContent = meta.season;
+      $("retroTitle").textContent = `${meta.season} Season Performance Retrospective`;
+      $("roundLabel").textContent = `Completed ${meta.season} race round`;
+      if (meta.completed_rounds.length) {
+        $("roundSelect").innerHTML = meta.completed_rounds.slice().reverse()
+          .map((r) => `<option value="${r.round}">${esc(r.label)}</option>`).join("");
+        $("roundSelect").disabled = false;
+      } else {
+        $("roundSelect").innerHTML = "<option value=''>No completed rounds</option>";
+        notice("retroResults", `No completed ${meta.season} rounds detected in the processed matrix.`);
+      }
+
+      const ts = meta.refresh?.generated_at_utc;
+      $("refreshText").textContent = ts
+        ? `Last data/model refresh: ${new Date(ts).toLocaleString()} · source: ${meta.refresh.source}`
+        : "Last data/model refresh: unavailable";
+
+      syncOverridesFromProfile();
+      renderEnvironment();
+    }
+
+    async function boot() {
+      try {
+        const [meta, drivers] = await Promise.all([api("/api/meta"), api("/api/drivers")]);
+        renderMeta(meta);
+        state.drivers = drivers.drivers;
+        renderEditor();
+        $("simulateBtn").disabled = false;
+        setStatus("ok", "Models online");
+        if (!$("panel-retro").hidden) loadRetro();
+      } catch (err) {
+        setStatus("bad", "API unavailable");
+        notice("globalNotice", `Could not load model artifacts: ${err.message}. The daily pipeline may still be publishing them — try again shortly.`, "error");
+        $("editorBody").innerHTML = '<tr><td colspan="4" class="muted">Driver data unavailable.</td></tr>';
+      }
+    }
+
+    $("tab-live").addEventListener("click", () => selectTab("live"));
+    $("tab-retro").addEventListener("click", () => selectTab("retro"));
+    $("simulateBtn").addEventListener("click", simulate);
+    $("resetBtn").addEventListener("click", () => { renderEditor(); $("liveResults").innerHTML = ""; });
+    $("roundSelect").addEventListener("change", loadRetro);
+    $("gpSelect").addEventListener("change", () => { syncOverridesFromProfile(); renderEnvironment(); });
+    $("overrideToggle").addEventListener("change", (e) => { $("overridesBox").hidden = !e.target.checked; renderEnvironment(); });
+    $("wetInput").addEventListener("change", renderEnvironment);
+    $("circuitInput").addEventListener("change", renderEnvironment);
+    $("tempInput").addEventListener("input", (e) => { $("tempValue").textContent = `${Number(e.target.value).toFixed(1)}°C`; renderEnvironment(); });
+    $("modelOptions").addEventListener("change", (e) => {
+      if (e.target.name !== "model") return;
+      state.model = e.target.value;
+      try { localStorage.setItem("f1-model", state.model); } catch {}
+      $("liveResults").innerHTML = "";
+      state.retroLoadedKey = null;
+      if (!$("panel-retro").hidden) loadRetro();
+    });
+    $("menuBtn").addEventListener("click", () => {
+      const controls = $("controls");
+      controls.hidden = !controls.hidden;
+      $("menuBtn").setAttribute("aria-expanded", String(!controls.hidden));
+    });
+
+    if (window.matchMedia("(max-width: 860px)").matches) $("controls").hidden = true;
+    try { if (localStorage.getItem("f1-tab") === "retro") selectTab("retro"); } catch {}
+    boot();
+  </script>
+</body>
+</html>

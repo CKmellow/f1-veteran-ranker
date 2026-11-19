@@ -55,3 +55,5 @@ $RECYCLE.BIN/
 # IDE files
 .vscode/
 .idea/
+.env
+.env 

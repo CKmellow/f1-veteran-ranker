@@ -1,4 +1,6 @@
+import csv
 import json
+import math
 import os
 import pickle
 import time
@@ -8,7 +10,7 @@ from http.server import BaseHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-import pandas as pd
+import numpy as np
 import requests
 
 try:
@@ -233,40 +235,51 @@ def _predict_scores(model, features_df):
         return booster.predict(features_df)
 
 
+def _to_float(value):
+    """Parse a CSV cell to float; blanks and junk become None (like pandas' NaN)."""
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    return None if math.isnan(number) else number
+
+
+def _read_csv(relative_path, required, numeric):
+    with _resolve_artifact_path(relative_path).open(newline="", encoding="utf-8") as file_obj:
+        reader = csv.DictReader(file_obj)
+        missing = sorted(set(required).difference(reader.fieldnames or []))
+        if missing:
+            raise ValueError(f"{relative_path} missing required columns: {missing}")
+        rows = list(reader)
+    for row in rows:
+        row["driver_id"] = normalize_driver_id(row["driver_id"])
+        for col in numeric:
+            row[col] = _to_float(row.get(col))
+    return rows
+
+
 @lru_cache(maxsize=1)
 def _load_feature_matrix():
-    df = pd.read_csv(_resolve_artifact_path(FEATURE_MATRIX_PATH))
-    required = {
-        "driver_id",
-        "season",
-        "round",
-        "finish_position",
-        "grid_position",
-        "quali_position",
-        "circuit_type_code",
-        "is_wet",
-        "track_temp",
-    }.union(ROLLING_COLUMNS)
-    missing = sorted(required.difference(df.columns))
-    if missing:
-        raise ValueError(f"Feature matrix missing required columns: {missing}")
-
-    df["driver_id"] = df["driver_id"].map(normalize_driver_id)
-    for col in ["season", "round", "finish_position"] + FEATURE_COLUMNS:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
-    return df
+    numeric = ["season", "round", "finish_position"] + FEATURE_COLUMNS
+    return _read_csv(FEATURE_MATRIX_PATH, ["driver_id"] + numeric, numeric)
 
 
 @lru_cache(maxsize=1)
 def _load_full_grid():
-    df = pd.read_csv(_resolve_artifact_path(FULL_GRID_PATH))
-    required = {"season", "round", "driver_id", "finish_position", "status_str"}
-    missing = sorted(required.difference(df.columns))
-    if missing:
-        raise ValueError(f"Full grid file missing required columns: {missing}")
-    for col in ["season", "round", "finish_position"]:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
-    return df
+    numeric = ["season", "round", "finish_position"]
+    required = ["driver_id", "status_str"] + numeric
+    return _read_csv(FULL_GRID_PATH, required, numeric)
+
+
+def _feature_array(rows):
+    return np.array(
+        [[row.get(col) if row.get(col) is not None else 0.0 for col in FEATURE_COLUMNS] for row in rows],
+        dtype=float,
+    )
+
+
+def _missing_last(value):
+    return (value is None, value if value is not None else 0.0)
 
 
 def _read_refresh_metadata():
@@ -318,16 +331,19 @@ def _profile_from_circuit(circuit_id):
     return dict(profile if profile is not None else DEFAULT_SIM_PROFILE)
 
 
-def _latest_season(df):
-    seasons = df["season"].dropna()
-    return int(seasons.max()) if not seasons.empty else datetime.now(UTC).year
+def _latest_season(rows):
+    seasons = [row["season"] for row in rows if row["season"] is not None]
+    return int(max(seasons)) if seasons else datetime.now(UTC).year
 
 
-def _completed_rounds(full_grid_df, season):
-    work = full_grid_df[
-        (full_grid_df["season"] == int(season)) & full_grid_df["finish_position"].notna()
-    ]
-    return sorted({int(r) for r in work["round"].dropna().tolist()})
+def _completed_rounds(full_grid_rows, season):
+    return sorted(
+        {
+            int(row["round"])
+            for row in full_grid_rows
+            if row["season"] == season and row["finish_position"] is not None and row["round"] is not None
+        }
+    )
 
 
 def _upcoming_events(season, completed_rounds, schedule):
@@ -371,12 +387,13 @@ def _build_meta():
     schedule = _fetch_season_schedule(season)
     round_names = {int(item["round"]): item["race_name"] for item in schedule}
 
-    season_rounds = feature_df[
-        (feature_df["season"] == season)
-        & feature_df["round"].isin(completed)
-        & feature_df["driver_id"].isin(DRIVER_ORDER)
-    ]["round"]
-    retro_rounds = sorted({int(r) for r in season_rounds.dropna().unique()})
+    retro_rounds = sorted(
+        {
+            int(row["round"])
+            for row in feature_df
+            if row["season"] == season and row["round"] in completed and row["driver_id"] in DRIVER_ORDER
+        }
+    )
 
     return {
         "season": season,
@@ -393,18 +410,27 @@ def _build_meta():
 
 
 def _load_latest_driver_states():
-    work = _load_feature_matrix().sort_values(["season", "round", "driver_id"])
-    latest = work.groupby("driver_id", as_index=False).tail(1).copy()
-    latest = latest[latest["driver_id"].isin(DRIVER_ORDER)].copy()
-    latest[ROLLING_COLUMNS] = latest[ROLLING_COLUMNS].fillna(0.0)
-    return latest[["driver_id"] + ROLLING_COLUMNS].reset_index(drop=True)
+    """Latest rolling-feature snapshot per veteran driver, keyed by driver_id."""
+    latest = {}
+    ordered = sorted(
+        _load_feature_matrix(),
+        key=lambda r: (_missing_last(r["season"]), _missing_last(r["round"]), r["driver_id"]),
+    )
+    for row in ordered:
+        if row["driver_id"] in DRIVER_ORDER:
+            latest[row["driver_id"]] = {col: row[col] or 0.0 for col in ROLLING_COLUMNS}
+    return latest
 
 
 def _build_default_grid():
-    frame = pd.DataFrame({"driver_id": DRIVER_ORDER})
-    frame["grid_position"] = list(range(1, len(frame) + 1))
-    frame["quali_position"] = list(range(1, len(frame) + 1))
-    return frame
+    """One row per veteran with default grid/quali order and latest rolling features."""
+    states = _load_latest_driver_states()
+    grid = []
+    for position, driver_id in enumerate(DRIVER_ORDER, start=1):
+        row = {"driver_id": driver_id, "grid_position": position, "quali_position": position}
+        row.update(states.get(driver_id, {col: 0.0 for col in ROLLING_COLUMNS}))
+        grid.append(row)
+    return grid
 
 
 def _send_json(req, payload, status=200):
@@ -499,13 +525,9 @@ def _validate_predict_payload(payload):
 
 
 def _build_driver_payload():
-    state_df = _load_latest_driver_states()
-    merged = _build_default_grid().merge(state_df, on="driver_id", how="left")
-    merged[ROLLING_COLUMNS] = merged[ROLLING_COLUMNS].fillna(0.0)
-
     drivers = []
-    for _, row in merged.iterrows():
-        driver_id = normalize_driver_id(row["driver_id"])
+    for row in _build_default_grid():
+        driver_id = row["driver_id"]
         meta = team_meta(driver_id)
         drivers.append(
             {
@@ -513,12 +535,9 @@ def _build_driver_payload():
                 "driver_label": driver_label(driver_id),
                 "team": meta["team"],
                 "team_color": meta["color"],
-                "default_grid_position": int(row["grid_position"]),
-                "default_quali_position": int(row["quali_position"]),
-                "driver_form_3races": float(row["driver_form_3races"]),
-                "circuit_historical_avg": float(row["circuit_historical_avg"]),
-                "constructor_points_current": float(row["constructor_points_current"]),
-                "constructor_dnf_rate_10races": float(row["constructor_dnf_rate_10races"]),
+                "default_grid_position": row["grid_position"],
+                "default_quali_position": row["quali_position"],
+                **{col: float(row[col]) for col in ROLLING_COLUMNS},
             }
         )
     return drivers
@@ -526,43 +545,38 @@ def _build_driver_payload():
 
 def _predict_live(validated_payload):
     model = _load_model(validated_payload["model"])
-    state_df = _load_latest_driver_states()
+    grid = _build_default_grid()
+    overrides = {item["driver_id"]: item for item in validated_payload["overrides"]}
 
-    merged = _build_default_grid().merge(state_df, on="driver_id", how="left")
-    merged[ROLLING_COLUMNS] = merged[ROLLING_COLUMNS].fillna(0.0)
+    for row in grid:
+        override = overrides.get(row["driver_id"])
+        if override:
+            row["grid_position"] = override["grid_position"]
+            row["quali_position"] = override["quali_position"]
+        row["circuit_type_code"] = CIRCUIT_TYPE_CODE[validated_payload["circuit_label"]]
+        row["is_wet"] = validated_payload["is_wet"]
+        row["track_temp"] = validated_payload["track_temp"]
 
-    for item in validated_payload["overrides"]:
-        mask = merged["driver_id"] == item["driver_id"]
-        merged.loc[mask, "grid_position"] = item["grid_position"]
-        merged.loc[mask, "quali_position"] = item["quali_position"]
-
-    merged["circuit_type_code"] = CIRCUIT_TYPE_CODE[validated_payload["circuit_label"]]
-    merged["is_wet"] = validated_payload["is_wet"]
-    merged["track_temp"] = validated_payload["track_temp"]
-
-    x = merged[FEATURE_COLUMNS].apply(pd.to_numeric, errors="coerce").fillna(0.0)
-    merged["predicted_score"] = _predict_scores(model, x)
-
-    leaderboard_df = merged.sort_values("predicted_score", ascending=False).reset_index(drop=True)
-    leaderboard_df["predicted_position"] = range(1, len(leaderboard_df) + 1)
+    scores = _predict_scores(model, _feature_array(grid))
+    for row, score in zip(grid, scores):
+        row["predicted_score"] = float(score)
+    grid.sort(key=lambda r: r["predicted_score"], reverse=True)
 
     leaderboard = []
-    for _, row in leaderboard_df.iterrows():
-        driver_id = normalize_driver_id(row["driver_id"])
-        meta = team_meta(driver_id)
+    for position, row in enumerate(grid, start=1):
+        meta = team_meta(row["driver_id"])
         leaderboard.append(
             {
-                "predicted_position": int(row["predicted_position"]),
-                "driver_id": driver_id,
-                "driver_label": driver_label(driver_id),
+                "predicted_position": position,
+                "driver_id": row["driver_id"],
+                "driver_label": driver_label(row["driver_id"]),
                 "team": meta["team"],
                 "team_color": meta["color"],
                 "grid_position": int(row["grid_position"]),
                 "quali_position": int(row["quali_position"]),
-                "predicted_score": float(row["predicted_score"]),
+                "predicted_score": row["predicted_score"],
             }
         )
-
     return leaderboard
 
 
@@ -574,63 +588,64 @@ def _retrospective(model_key, round_number):
     if round_number not in completed:
         raise LookupError(f"Round {round_number} of {season} has no completed results.")
 
-    race_df = feature_df[
-        (feature_df["season"] == season)
-        & (feature_df["round"] == round_number)
-        & feature_df["driver_id"].isin(DRIVER_ORDER)
-    ].copy()
-    if race_df.empty:
+    race = sorted(
+        (
+            dict(row)
+            for row in feature_df
+            if row["season"] == season and row["round"] == round_number and row["driver_id"] in DRIVER_ORDER
+        ),
+        key=lambda r: r["driver_id"],
+    )
+    if not race:
         raise LookupError(f"No veteran rows for round {round_number} of {season}.")
 
-    race_df = race_df.sort_values("driver_id").reset_index(drop=True)
-    race_df[FEATURE_COLUMNS] = race_df[FEATURE_COLUMNS].fillna(0.0)
-    race_df["predicted_score"] = _predict_scores(_load_model(model_key), race_df[FEATURE_COLUMNS])
-    race_df = race_df.sort_values("predicted_score", ascending=False).reset_index(drop=True)
-    race_df["predicted_rank"] = range(1, len(race_df) + 1)
+    scores = _predict_scores(_load_model(model_key), _feature_array(race))
+    for row, score in zip(race, scores):
+        row["predicted_score"] = float(score)
+    race.sort(key=lambda r: r["predicted_score"], reverse=True)
+    for rank, row in enumerate(race, start=1):
+        row["predicted_rank"] = rank
+    by_actual = sorted(race, key=lambda r: _missing_last(r["finish_position"]))
+    for rank, row in enumerate(by_actual, start=1):
+        row["actual_relative_rank"] = rank
+        row["error_delta"] = abs(row["predicted_rank"] - rank)
 
-    relative = race_df.sort_values("finish_position").reset_index(drop=True)
-    relative["actual_relative_rank"] = range(1, len(relative) + 1)
-    race_df = race_df.merge(relative[["driver_id", "actual_relative_rank"]], on="driver_id")
-    race_df["error_delta"] = (race_df["predicted_rank"] - race_df["actual_relative_rank"]).abs()
-
-    full_race = full_grid_df[
-        (full_grid_df["season"] == season) & (full_grid_df["round"] == round_number)
-    ].copy()
-    full_grid_size = max(len(full_race), len(race_df))
-    cohort_size = len(race_df)
+    full_race = sorted(
+        (row for row in full_grid_df if row["season"] == season and row["round"] == round_number),
+        key=lambda r: _missing_last(r["finish_position"]),
+    )
+    full_grid_size = max(len(full_race), len(race))
+    cohort_size = len(race)
 
     rows = []
-    for _, row in race_df.iterrows():
+    for row in race:
         meta = team_meta(row["driver_id"])
-        actual = row["finish_position"]
+        finish = row["finish_position"]
         rows.append(
             {
-                "predicted_rank": int(row["predicted_rank"]),
+                "predicted_rank": row["predicted_rank"],
                 "driver_id": row["driver_id"],
                 "driver_label": driver_label(row["driver_id"]),
                 "team": meta["team"],
                 "team_color": meta["color"],
-                "actual_finish": None if pd.isna(actual) else int(actual),
-                "actual_relative_rank": int(row["actual_relative_rank"]),
-                "error_delta": int(row["error_delta"]),
-                "predicted_score": float(row["predicted_score"]),
+                "actual_finish": None if finish is None else int(finish),
+                "actual_relative_rank": row["actual_relative_rank"],
+                "error_delta": row["error_delta"],
+                "predicted_score": row["predicted_score"],
             }
         )
 
-    full_race = full_race.sort_values("finish_position", na_position="last").reset_index(drop=True)
     full_grid = []
-    for idx, row in full_race.iterrows():
+    for order, row in enumerate(full_race, start=1):
         finish = row["finish_position"]
         full_grid.append(
             {
-                "global_order": idx + 1,
-                "driver_id": normalize_driver_id(row["driver_id"]),
+                "global_order": order,
+                "driver_id": row["driver_id"],
                 "driver_label": driver_label(row["driver_id"]),
-                "constructor_id": None
-                if pd.isna(row.get("constructor_id"))
-                else str(row.get("constructor_id")),
-                "finish_position": None if pd.isna(finish) else int(finish),
-                "status": None if pd.isna(row["status_str"]) else str(row["status_str"]),
+                "constructor_id": row.get("constructor_id") or None,
+                "finish_position": None if finish is None else int(finish),
+                "status": row.get("status_str") or None,
             }
         )
 

@@ -1493,3 +1493,16 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_20,2026,20,interlagos,sainz,williams,12,19,0.0,Lapped,0,25.0,15.0,Balanced/Technical,2,1,0,0,0,14.666666666666666,9.5,12.0,0,0.0
 2026_20,2026,20,interlagos,stroll,aston_martin,16,21,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,18.666666666666668,12.5,7.0,0,0.0
 2026_20,2026,20,interlagos,verstappen,red_bull,21,2,18.0,Finished,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,1.6666666666666667,2.75,241.0,0,0.0
+2026_21,2026,21,vegas,albon,williams,14,22,0.0,Did not start,0,25.0,16.0,Balanced/Technical,2,1,0,0,0,14.333333333333334,15.666666666666666,12.0,0,0.0
+2026_21,2026,21,vegas,alonso,aston_martin,18,19,0.0,Retired,0,25.0,19.0,Balanced/Technical,2,1,0,0,0,16.666666666666668,10.333333333333334,7.0,0,0.0
+2026_21,2026,21,vegas,bottas,cadillac,19,18,0.0,Finished,0,25.0,21.0,Balanced/Technical,2,1,0,0,0,20.666666666666668,17.5,0.0,0,0.0
+2026_21,2026,21,vegas,gasly,alpine,8,5,10.0,Finished,0,25.0,9.0,Balanced/Technical,2,1,0,0,0,13.666666666666666,14.666666666666666,40.0,0,0.0
+2026_21,2026,21,vegas,hamilton,ferrari,11,7,6.0,Finished,0,25.0,12.0,Balanced/Technical,2,1,0,0,0,5.0,5.666666666666667,449.0,0,0.0
+2026_21,2026,21,vegas,hulkenberg,audi,12,11,0.0,Finished,0,25.0,13.0,Balanced/Technical,2,1,0,0,0,11.666666666666666,11.333333333333334,12.0,0,0.0
+2026_21,2026,21,vegas,leclerc,ferrari,10,10,1.0,Finished,0,25.0,11.0,Balanced/Technical,2,1,0,0,0,4.666666666666667,3.3333333333333335,455.0,0,0.0
+2026_21,2026,21,vegas,norris,mclaren,3,2,18.0,Finished,0,25.0,4.0,Balanced/Technical,2,1,0,0,0,3.6666666666666665,15.0,213.0,0,0.0
+2026_21,2026,21,vegas,perez,cadillac,16,21,0.0,Retired,0,25.0,18.0,Balanced/Technical,2,1,0,0,0,17.666666666666668,6.5,0.0,0,0.0
+2026_21,2026,21,vegas,russell,mercedes,2,9,2.0,Finished,0,25.0,3.0,Balanced/Technical,2,1,0,0,0,6.0,3.6666666666666665,228.0,0,0.0
+2026_21,2026,21,vegas,sainz,williams,20,8,4.0,Finished,0,25.0,14.0,Balanced/Technical,2,1,0,0,0,16.333333333333332,4.666666666666667,12.0,0,0.0
+2026_21,2026,21,vegas,stroll,aston_martin,21,17,0.0,Finished,0,25.0,20.0,Balanced/Technical,2,1,0,0,0,19.0,12.666666666666666,7.0,0,0.0
+2026_21,2026,21,vegas,verstappen,red_bull,1,1,25.0,Finished,0,25.0,2.0,Balanced/Technical,2,1,0,0,0,2.0,2.3333333333333335,259.0,0,0.0

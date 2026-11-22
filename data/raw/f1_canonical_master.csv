@@ -2277,3 +2277,25 @@ race_id,season,round,circuit_id,driver_id,constructor_id,grid_position,finish_po
 2026_20,2026,20,interlagos,rafael_camara,haas,11,20,0.0,Lapped,0,25.0,13.0
 2026_20,2026,20,interlagos,stroll,aston_martin,16,21,0.0,Retired,0,25.0,19.0
 2026_20,2026,20,interlagos,bottas,cadillac,17,22,0.0,Did not start,0,25.0,20.0
+2026_21,2026,21,vegas,max_verstappen,red_bull,1,1,25.0,Finished,0,25.0,2.0
+2026_21,2026,21,vegas,norris,mclaren,3,2,18.0,Finished,0,25.0,4.0
+2026_21,2026,21,vegas,piastri,mclaren,17,3,15.0,Finished,0,25.0,7.0
+2026_21,2026,21,vegas,antonelli,mercedes,6,4,12.0,Finished,0,25.0,1.0
+2026_21,2026,21,vegas,gasly,alpine,8,5,10.0,Finished,0,25.0,9.0
+2026_21,2026,21,vegas,colapinto,alpine,9,6,8.0,Finished,0,25.0,10.0
+2026_21,2026,21,vegas,hamilton,ferrari,11,7,6.0,Finished,0,25.0,12.0
+2026_21,2026,21,vegas,sainz,williams,20,8,4.0,Finished,0,25.0,14.0
+2026_21,2026,21,vegas,russell,mercedes,2,9,2.0,Finished,0,25.0,3.0
+2026_21,2026,21,vegas,leclerc,ferrari,10,10,1.0,Finished,0,25.0,11.0
+2026_21,2026,21,vegas,hulkenberg,audi,12,11,0.0,Finished,0,25.0,13.0
+2026_21,2026,21,vegas,bortoleto,audi,13,12,0.0,Finished,0,25.0,15.0
+2026_21,2026,21,vegas,bearman,haas,22,13,0.0,Finished,0,25.0,22.0
+2026_21,2026,21,vegas,lawson,rb,7,14,0.0,Finished,0,25.0,8.0
+2026_21,2026,21,vegas,hadjar,red_bull,4,15,0.0,Finished,0,25.0,5.0
+2026_21,2026,21,vegas,rafael_camara,haas,15,16,0.0,Finished,0,25.0,17.0
+2026_21,2026,21,vegas,stroll,aston_martin,21,17,0.0,Finished,0,25.0,20.0
+2026_21,2026,21,vegas,bottas,cadillac,19,18,0.0,Finished,0,25.0,21.0
+2026_21,2026,21,vegas,alonso,aston_martin,18,19,0.0,Retired,0,25.0,19.0
+2026_21,2026,21,vegas,arvid_lindblad,rb,5,20,0.0,Retired,0,25.0,6.0
+2026_21,2026,21,vegas,perez,cadillac,16,21,0.0,Retired,0,25.0,18.0
+2026_21,2026,21,vegas,albon,williams,14,22,0.0,Did not start,0,25.0,16.0
